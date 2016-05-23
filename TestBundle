@@ -152,7 +152,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <h2>v3 map for ProcedureStatus (http://hl7.org/fhir/ConceptMap/v3-procedure-status)</h2>
+            <h2>v3 map  for ProcedureStatus (http://hl7.org/fhir/ConceptMap/v3-procedure-status)</h2>
             <p>Mapping from 
               <a href="valueset-procedure-status.html">http://hl7.org/fhir/ValueSet/procedure-status</a> to 
               <a href="v3/ActStatus/index.html">http://hl7.org/fhir/ValueSet/v3-ActStatus</a>
