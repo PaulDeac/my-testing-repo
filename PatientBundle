@@ -1,0 +1,281 @@
+<Bundle xmlns="http://hl7.org/fhir"><id value="7b75b3eb-3bea-4781-9cbd-117166ef9b16" /><meta><versionId value="1da36b91-e8bd-4a44-9132-1b17d205de49" /><lastUpdated value="2017-05-17T15:25:08.249+00:00" /></meta><total value="16" /><link><relation value="self" /><url value="https://stu3.simplifier.net/Patient" /></link><link><relation value="first" /><url value="https://stu3.simplifier.net/Patient?_skip=0" /></link><link><relation value="last" /><url value="https://stu3.simplifier.net/Patient?_skip=0" /></link><entry><fullUrl value="https://stu3.simplifier.net/Patient/TestA05-Patient-example3/_history/5" /><resource><Patient><id value="TestA05-Patient-example3" /><meta><versionId value="5" /><profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" /></meta><text><status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <p>
+    <b>Generated Narrative with Details</b>
+  </p>
+  <p>
+    <b>id</b>: example</p>
+  <p>
+    <b>identifier</b>: Medical Record Number = 1032702 (USUAL)</p>
+  <p>
+    <b>active</b>: true</p>
+  <p>
+    <b>name</b>: Amy V. Shaw </p>
+  <p>
+    <b>telecom</b>: ph: 555-555-5555(HOME), amy.shaw@example.com</p>
+  <p>
+    <b>gender</b>: </p>
+  <p>
+    <b>birthsex</b>: Female</p>
+  <p>
+    <b>birthDate</b>: Feb 20, 2007</p>
+  <p>
+    <b>address</b>: 49 Meadow St Mounds OK 74047 US </p>
+  <p>
+    <b>race</b>: White, American Indian or Alaska Native, Asian, Shoshone, Filipino</p>
+  <p>
+    <b>ethnicity</b>: Hispanic or Latino, Dominican, Mexican</p>
+</div></text><extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"><extension url="ombCategory"><valueCoding><system value="urn:oid:2.16.840.1.113883.6.238" /><code value="2106-3" /><display value="White" /></valueCoding></extension><extension url="ombCategory"><valueCoding><system value="urn:oid:2.16.840.1.113883.6.238" /><code value="1002-5" /><display value="American Indian or Alaska Native" /></valueCoding></extension><extension url="ombCategory"><valueCoding><system value="urn:oid:2.16.840.1.113883.6.238" /><code value="2028-9" /><display value="Asian" /></valueCoding></extension><extension url="detailed"><valueCoding><system value="urn:oid:2.16.840.1.113883.6.238" /><code value="1586-7" /><display value="Shoshone" /></valueCoding></extension><extension url="detailed"><valueCoding><system value="urn:oid:2.16.840.1.113883.6.238" /><code value="2036-2" /><display value="Filipino" /></valueCoding></extension><extension url="text"><valueString value="Mixed" /></extension></extension><extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"><extension url="ombCategory"><valueCoding><system value="urn:oid:2.16.840.1.113883.6.238" /><code value="2135-2" /><display value="Hispanic or Latino" /></valueCoding></extension><extension url="detailed"><valueCoding><system value="urn:oid:2.16.840.1.113883.6.238" /><code value="2184-0" /><display value="Dominican" /></valueCoding></extension><extension url="detailed"><valueCoding><system value="urn:oid:2.16.840.1.113883.6.238" /><code value="2148-5" /><display value="Mexican" /></valueCoding></extension><extension url="text"><valueString value="Hispanic or Latino" /></extension></extension><extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"><valueCode value="F" /></extension><identifier><use value="usual" /><type><coding><system value="http://hl7.org/fhir/v2/0203" /><code value="MR" /><display value="Medical Record Number" /></coding><text value="Medical Record Number" /></type><system value="http://hospital.smarthealthit.org" /><value value="1032702" /></identifier><active value="true" /><name><family value="Shaw" /><given value="Amy" /><given value="V." /></name><telecom><system value="phone" /><value value="555-555-5555" /><use value="home" /></telecom><telecom><system value="email" /><value value="amy.shaw@example.com" /></telecom><gender value="female" /><birthDate value="2007-02-20" /><address><line value="49 Meadow St" /><city value="Mounds" /><state value="OK" /><postalCode value="74047" /><country value="US" /></address></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/c635d3bf-8728-41dd-b10a-4dbd4c1443e8/_history/1" /><resource><Patient><id value="c635d3bf-8728-41dd-b10a-4dbd4c1443e8" /><meta><versionId value="1" /></meta><text><status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <p>
+    <b> Generated Narrative with Details</b>
+  </p>
+  <p>
+    <b> id</b> : f204</p>
+  <p>
+    <b> identifier</b> : UZI-nummer = 12345678904 (OFFICIAL)</p>
+  <p>
+    <b> name</b> : Carla Espinosa</p>
+  <p>
+    <b> telecom</b> : ph: +31715262169(WORK)</p>
+  <p>
+    <b> address</b> : Walvisbaai 3 Den helder 2333ZA NLD (WORK)</p>
+  <p>
+    <b> gender</b> : female</p>
+  <p>
+    <b> birthDate</b> : 05/11/1967</p>
+</div></text><identifier><use value="official" /><type><text value="UZI-nummer kkkk pretty" /></type><system value="urn:oid:2.16.528.1.1007.3.1" /><value value="12345678904" /></identifier><name><use value="usual" /><text value="Carla Espinosa" /></name><telecom><system value="phone" /><value value="+31715262169" /><use value="work" /></telecom><gender value="female" /><birthDate value="1967-11-05" /><address><use value="work" /><line value="Walvisbaai 3" /><city value="Den helder" /><postalCode value="2333ZA" /><country value="NLD" /></address></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/2540bb3e-d53b-4b88-b085-80534d6868ea/_history/1" /><resource><Patient><id value="2540bb3e-d53b-4b88-b085-80534d6868ea" /><meta><versionId value="1" /><lastUpdated value="2017-03-22T16:15:15.215-04:00" /></meta><text><status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <p>
+    <b>Generated Narrative with Details</b>
+  </p>
+  <p>
+    <b>identifier</b>: HOSP-CD14D9 (USUAL)</p>
+  <p>
+    <b>name</b>: Todd G. Lerr (OFFICIAL)</p>
+  <p>
+    <b>gender</b>: male</p>
+  <p>
+    <b>birthDate</b>: Jun 7, 2012</p>
+  <p>
+    <b>deceased</b>: false</p>
+  <p>
+    <b>address</b>: 123 North 102nd Street Apt 4d Harrisburg PA 17102 USA (HOME)</p>
+</div></text><identifier><use value="usual" /><system value="http://happyvalley.com/patient" /><value value="HOSP-CD14D9" /></identifier><name><use value="official" /><family value="Lerr" /><given value="Todd" /><given value="G." /><suffix value="Jr" /></name><gender value="male" /><birthDate value="2012-06-07" /><deceasedBoolean value="false" /><address><use value="home" /><line value="123 North 102nd Street" /><line value="Apt 4d" /><city value="Harrisburg" /><state value="PA" /><postalCode value="17102" /><country value="USA" /></address></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/a2239ae0-c594-4cec-9a94-0897047dc0d9/_history/1" /><resource><Patient><id value="a2239ae0-c594-4cec-9a94-0897047dc0d9" /><meta><versionId value="1" /><lastUpdated value="2017-01-14T15:48:02.594-05:00" /><profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" /></meta><text><status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <p>
+    <b>Generated Narrative with Details</b>
+  </p>
+  <p>
+    <b>id</b>: example</p>
+  <p>
+    <b>identifier</b>: Medical Record Number = 1032702 (USUAL)</p>
+  <p>
+    <b>active</b>: true</p>
+  <p>
+    <b>name</b>: Amy V. Shaw </p>
+  <p>
+    <b>telecom</b>: ph: 555-555-5555(HOME), amy.shaw@example.com</p>
+  <p>
+    <b>gender</b>: </p>
+  <p>
+    <b>birthsex</b>: Female</p>
+  <p>
+    <b>birthDate</b>: Feb 20, 2007</p>
+  <p>
+    <b>address</b>: 49 Meadow St Mounds OK 74047 US </p>
+  <p>
+    <b>race</b>: White, American Indian or Alaska Native, Asian, Shoshone, Filipino</p>
+  <p>
+    <b>ethnicity</b>: Hispanic or Latino, Dominican, Mexican</p>
+</div></text><extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"><extension url="ombCategory"><valueCoding><system value="http://hl7.org/fhir/v3/Race" /><code value="2106-3" /><display value="White" /></valueCoding></extension><extension url="ombCategory"><valueCoding><system value="http://hl7.org/fhir/v3/Race" /><code value="1002-5" /><display value="American Indian or Alaska Native" /></valueCoding></extension><extension url="ombCategory"><valueCoding><system value="http://hl7.org/fhir/v3/Race" /><code value="2028-9" /><display value="Asian" /></valueCoding></extension><extension url="detailed"><valueCoding><system value="http://hl7.org/fhir/v3/Race" /><code value="1586-7" /><display value="Shoshone" /></valueCoding></extension><extension url="detailed"><valueCoding><system value="http://hl7.org/fhir/v3/Race" /><code value="2036-2" /><display value="Filipino" /></valueCoding></extension></extension><extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"><extension url="ombCategory"><valueCoding><system value="http://hl7.org/fhir/v3/Ethnicity" /><code value="2135-2" /><display value="Hispanic or Latino" /></valueCoding></extension><extension url="detailed"><valueCoding><system value="http://hl7.org/fhir/v3/Ethnicity" /><code value="2184-0" /><display value="Dominican" /></valueCoding></extension><extension url="detailed"><valueCoding><system value="http://hl7.org/fhir/v3/Ethnicity" /><code value="2148-5" /><display value="Mexican" /></valueCoding></extension></extension><extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"><valueCode value="F" /></extension><identifier><use value="usual" /><type><coding><system value="http://hl7.org/fhir/v2/0203" /><code value="MR" /><display value="Medical Record Number" /></coding><text value="Medical Record Number" /></type><system value="http://hospital.smarthealthit.org" /><value value="1032702" /></identifier><active value="true" /><name><family value="Shaw" /><given value="Amy" /><given value="V." /></name><telecom><system value="phone" /><value value="555-555-5555" /><use value="home" /></telecom><telecom><system value="email" /><value value="amy.shaw@example.com" /></telecom><gender value="female" /><birthDate value="2007-02-20" /><address><line value="49 Meadow St" /><city value="Mounds" /><state value="OK" /><postalCode value="74047" /><country value="US" /></address></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/604db473-54b7-4d01-b5eb-d05ed0e72a3b/_history/1" /><resource><Patient><id value="604db473-54b7-4d01-b5eb-d05ed0e72a3b" /><meta><versionId value="1" /><lastUpdated value="2017-03-21T15:14:30.808-04:00" /></meta><text><status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <p>
+    <b>Generated Narrative with Details</b>
+  </p>
+  <p>
+    <b>id</b>: f201
+      </p>
+  <p>
+    <b>identifier</b>: BSN = 123456789 (OFFICIAL), BSN = 123456789 (OFFICIAL)
+      </p>
+  <p>
+    <b>active</b>: true
+      </p>
+  <p>
+    <b>name</b>: Roel(OFFICIAL)
+      </p>
+  <p>
+    <b>telecom</b>: ph: +31612345678(MOBILE), ph: +31201234567(HOME)
+      </p>
+  <p>
+    <b>gender</b>: male
+      </p>
+  <p>
+    <b>birthDate</b>: Mar 13, 1960
+      </p>
+  <p>
+    <b>deceased</b>: false
+      </p>
+  <p>
+    <b>address</b>: Bos en Lommerplein 280 Amsterdam 1055RW NLD (HOME)
+      </p>
+  <p>
+    <b>maritalStatus</b>: Legally married 
+        <span>(Details : {SNOMED CT code '36629006' = 'Legal marriage', given as 'Legally married'}; {http://hl7.org/fhir/v3/MaritalStatus code 'M' = 'Married)</span></p>
+  <p>
+    <b>multipleBirth</b>: false
+      </p>
+  <p>
+    <b>photo</b>: 
+      </p>
+  <h3>Contacts</h3>
+  <table>
+    <tr>
+      <td>-</td>
+      <td>
+        <b>Relationship</b>
+      </td>
+      <td>
+        <b>Name</b>
+      </td>
+      <td>
+        <b>Telecom</b>
+      </td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Wife 
+            <span>(Details : {SNOMED CT code '127850001' = 'Wife', given as 'Wife'}; {http://hl7.org/fhir/v2/0131 code 'N' = 'Next-of-Kin; {http://hl7.org/fhir/v3/RoleCode code 'WIFE' = 'wife)</span></td>
+      <td>Ariadne Bor-Jansma</td>
+      <td>ph: +31201234567(HOME)</td>
+    </tr>
+  </table>
+  <h3>Communications</h3>
+  <table>
+    <tr>
+      <td>-</td>
+      <td>
+        <b>Language</b>
+      </td>
+      <td>
+        <b>Preferred</b>
+      </td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Dutch 
+            <span>(Details : {urn:ietf:bcp:47 code 'nl-NL' = 'nl-NL', given as 'Dutch'})</span></td>
+      <td>true</td>
+    </tr>
+  </table>
+  <p>
+    <b>managingOrganization</b>: 
+        <a>AUMC</a></p>
+</div></text><identifier><use value="official" /><type><text value="BSN" /></type><system value="urn:oid:2.16.840.1.113883.2.4.6.3" /><value value="123456789" /></identifier><identifier><use value="official" /><type><text value="BSN" /></type><system value="urn:oid:2.16.840.1.113883.2.4.6.3" /><value value="123456789" /></identifier><active value="true" /><name><use value="official" /><text value="Roel" /><family value="Bor" /><given value="Roelof Olaf" /><prefix value="Drs." /><suffix value="PDEng." /></name><telecom><system value="phone" /><value value="+31612345678" /><use value="mobile" /></telecom><telecom><system value="phone" /><value value="+31201234567" /><use value="home" /></telecom><gender value="male" /><birthDate value="1960-03-13" /><deceasedBoolean value="false" /><address><use value="home" /><line value="Bos en Lommerplein 280" /><city value="Amsterdam" /><postalCode value="1055RW" /><country value="NLD" /></address><maritalStatus><coding><system value="http://snomed.info/sct" /><code value="36629006" /><display value="Legally married" /></coding><coding><system value="http://hl7.org/fhir/v3/MaritalStatus" /><code value="M" /></coding></maritalStatus><multipleBirthBoolean value="false" /><photo><contentType value="image/jpeg" /><url value="Binary/f006" /></photo><contact><relationship><coding><system value="http://snomed.info/sct" /><code value="127850001" /><display value="Wife" /></coding><coding><system value="http://hl7.org/fhir/v2/0131" /><code value="N" /></coding><coding><system value="http://hl7.org/fhir/v3/RoleCode" /><code value="WIFE" /></coding></relationship><name><use value="usual" /><text value="Ariadne Bor-Jansma" /></name><telecom><system value="phone" /><value value="+31201234567" /><use value="home" /></telecom></contact><communication><language><coding><system value="urn:ietf:bcp:47" /><code value="nl-NL" /><display value="Dutch" /></coding></language><preferred value="true" /></communication><managingOrganization><reference value="Organization/f201" /><display value="AUMC" /></managingOrganization></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/f5e1264c-5e8c-45ab-9a95-338dea393863/_history/1" /><resource><Patient><id value="f5e1264c-5e8c-45ab-9a95-338dea393863" /><meta><versionId value="1" /><profile value="http://fhir.de/StructureDefinition/patient-de-basis" /></meta><text><status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <p>Patient: Martha Mustermann, geb. Testinghausen, gesch. Beispühl</p>
+</div></text><name><use value="official" /><text value="Martha Mustermann" /><family value="Mustermann" /><given value="Martha" /></name><name><use value="maiden" /><family value="Testinghausen" /></name><name><use value="old" /><family value="Beispühl" /></name></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/8a8ce74d-7c25-47cf-b745-a0a6819afc7a/_history/1" /><resource><Patient><id value="8a8ce74d-7c25-47cf-b745-a0a6819afc7a" /><meta><versionId value="1" /><profile value="http://fhir.de/StructureDefinition/patient-de-basis" /></meta><text><status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <p>Patient: Prof. Dr. med. Dr. rer. nat. Fritz Julius Karl Freiherr von und zu Rathenburg vor der Isar, MdB</p>
+</div></text><name><use value="official" /><text value="Prof. Dr. med. Dr. rer. nat. Fritz Julius Karl Freiherr von und zu Rathenburg vor der Isar, MdB" /><family value="Freiherr von und zu Rathenburg vor der Isar"><extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz"><valueString value="Freiherr" /></extension><extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"><valueString value="von und zu" /></extension><extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name"><valueString value="Rathenburg vor der Isar" /></extension></family><given value="Fritz" /><given value="Julius" /><given value="Karl" /><prefix value="Prof. Dr. med. Dr. rer. nat."><extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"><valueCode value="AC" /></extension></prefix><suffix value="MdB" /></name></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/8fe4018b-ba06-4433-82c6-4fa8d023b409/_history/1" /><resource><Patient><id value="8fe4018b-ba06-4433-82c6-4fa8d023b409" /><meta><versionId value="1" /><profile value="http://fhir.de/StructureDefinition/patient-de-basis" /></meta><text><status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <p>Patient: Dr. Otto Graf Lambsdorff</p>
+</div></text><name><use value="official" /><text value="Dr. Otto Graf Lambsdorff" /><family value="Graf Lambsdorff"><extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz"><valueString value="Graf" /></extension><extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name"><valueString value="Lambsdorff" /></extension></family><given value="Otto" /><prefix value="Dr."><extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"><valueCode value="AC" /></extension></prefix></name></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/33375345-d0c6-493c-85ef-c186a5336ba1/_history/1" /><resource><Patient><id value="33375345-d0c6-493c-85ef-c186a5336ba1" /><meta><versionId value="1" /><profile value="http://fhir.de/StructureDefinition/patient-de-basis" /></meta><name><use value="official" /><text value="Ludwig van Beethoven" /><family value="van Beethoven"><extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"><valueString value="van" /></extension><extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name"><valueString value="Beethoven" /></extension></family><given value="Ludwig" /></name></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/c3af1f8f-b180-4b85-818c-c5aba04d6299/_history/2" /><resource><Patient><id value="c3af1f8f-b180-4b85-818c-c5aba04d6299" /><meta><versionId value="2" /><profile value="http://fhir.de/StructureDefinition/patient-de-basis" /></meta><identifier><type><coding><system value="http://hl7.org/fhir/v2/0203" /><code value="HC" /></coding></type><system value="http://fhir.de/NamingSystem/gkv/kvnr" /><value value="G995030567" /></identifier><name><family value="Mustermann" /><given value="Max" /></name></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/30fd673b-e4e0-4b90-87d1-842ac8ae2fd3/_history/2" /><resource><Patient><id value="30fd673b-e4e0-4b90-87d1-842ac8ae2fd3" /><meta><versionId value="2" /><profile value="http://nictiz.nl/fhir/StructureDefinition/zib-PayerPerson" /></meta><text><status value="additional" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <table>
+    <caption>Patient with id example</caption>
+    <thead>
+      <tr>
+        <th>PayeNname</th>
+        <th>BankName</th>
+        <th>BankCode</th>
+        <td>AccountNumber</td>
+        <td>Street</td>
+        <td>HouseNumber</td>
+        <td>Postcode</td>
+        <td>Place of residence</td>
+        <td>TelephoneNumber</td>
+        <td>NumberType</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Irma Jongeneel-de Haas</th>
+        <th>ING</th>
+        <th>INGBNL2A</th>
+        <td>NL85INGB0001234567</td>
+        <td>Straatweg</td>
+        <td>12bII</td>
+        <td>1000AA</td>
+        <td>Amsterdam</td>
+        <td>030-2345456</td>
+        <td>home</td>
+      </tr>
+    </tbody>
+  </table>
+</div></text><extension url="http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation"><extension url="BankName"><valueString value="ING" /></extension><extension url="AccountNumber"><valueString value="NL85INGB0001234567" /></extension><extension url="Bankcode"><valueString value="INGBNL2A" /></extension></extension><identifier><use value="official" /><system value="http://fhir.nl/fhir/NamingSystem/bsn" /><value value="123456782" /></identifier><active value="true" /><name><extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"><valueCode value="NL4" /></extension><use value="official" /><family value="Jongeneel-de Haas"><extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name"><valueString value="Jongeneel" /></extension><extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"><valueString value="de" /></extension><extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-name"><valueString value="Haas" /></extension></family><given value="Irma"><extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"><valueCode value="CL" /></extension></given><given value="I."><extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"><valueCode value="IN" /></extension></given></name><telecom><system value="phone" /><value value="030-23454567" /><use value="home" /></telecom><telecom><system value="email" /><value value="user@home.nl" /><use value="home" /></telecom><gender value="female" /><birthDate value="1970-03-04" /><deceasedBoolean value="false" /><address><extension url="http://fhir.nl/fhir/StructureDefinition/nl-core-address-official"><valueBoolean value="true" /></extension><use value="home" /><type value="both" /><line value="Straatweg 12bII"><extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"><valueString value="Straatweg" /></extension><extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"><valueString value="12" /></extension><extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"><valueString value="bII" /></extension></line><city value="Amsterdam" /><district value="Amsterdam" /><postalCode value="1200AA" /><country value="NLD" /></address><maritalStatus><coding><system value="http://hl7.org/fhir/v3/MaritalStatus" /><code value="M" /><display value="Married" /></coding></maritalStatus><multipleBirthBoolean value="false" /><contact><relationship><coding><system value="urn:oid:2.16.840.1.113883.2.4.3.11.22.472" /><code value="1" /><display value="Eerste relatie/contactpersoon" /></coding></relationship><relationship><coding><system value="http://hl7.org/fhir/v3/RoleCode" /><code value="HUSB" /><display value="Husband" /></coding></relationship><name><use value="official" /><family value="Eckdom" /><given value="Gerard" /></name><telecom><system value="phone" /><value value="015-23456789" /><use value="home" /></telecom></contact><generalPractitioner><reference value="Organization/1" /><display value="Huisartsenpraktijk Van Eijk" /></generalPractitioner></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/b8c88137-7729-4a03-aba4-daf68b76c1a2/_history/2" /><resource><Patient><id value="b8c88137-7729-4a03-aba4-daf68b76c1a2" /><meta><versionId value="2" /><profile value="http://example.org/fhir/StructureDefinition/MadridDemoPatient" /></meta><identifier><type><coding><system value="http://hl7.org/fhir/v2/0203" /><code value="HC" /></coding></type><system value="http://fhir.de/NamingSystem/gkv/kvnr" /><value value="G995030567" /></identifier><name><family value="Mustermann" /><given value="Max" /></name></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/b255b330-30b9-4500-b656-da557f8d4d7c/_history/2" /><resource><Patient><id value="b255b330-30b9-4500-b656-da557f8d4d7c" /><meta><versionId value="2" /><lastUpdated value="2017-05-09T10:37:10.269+00:00" /></meta><text><status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <table>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td>Peter James 
+              <b>Chalmers</b> ("Jim")
+            </td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td>534 Erewhon, Pleasantville, Vic, 3999</td>
+      </tr>
+      <tr>
+        <td>Contacts</td>
+        <td>Home: unknown. Work: (03) 5555 6473</td>
+      </tr>
+      <tr>
+        <td>Id</td>
+        <td>MRN: 12345 (Acme Healthcare)</td>
+      </tr>
+    </tbody>
+  </table>
+</div></text><identifier><use value="usual" /><type><coding><system value="http://hl7.org/fhir/v2/0203" /><code value="MR" /></coding></type><system value="urn:oid:1.2.36.146.595.217.0.1" /><value value="12345" /><period><start value="2001-05-06" /></period><assigner><display value="Acme Healthcare" /></assigner></identifier><active value="true" /><name><use value="official" /><family value="Crawford" /><given value="Peter" /><given value="James" /></name><name><use value="usual" /><given value="Jim" /></name><name><use value="maiden" /><family value="Windsor" /><given value="Peter" /><given value="James" /><period><end value="2002" /></period></name><telecom><use value="home" /></telecom><telecom><system value="phone" /><value value="(03) 5555 6473" /><use value="work" /><rank value="1" /></telecom><telecom><system value="phone" /><value value="(03) 3410 5613" /><use value="mobile" /><rank value="2" /></telecom><telecom><system value="phone" /><value value="(03) 5555 8834" /><use value="old" /><period><end value="2014" /></period></telecom><gender value="male" /><birthDate value="1974-12-25"><extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime"><valueDateTime value="1974-12-25T14:35:45-05:00" /></extension></birthDate><deceasedBoolean value="false" /><address><use value="home" /><type value="both" /><text value="534 Erewhon St PeasantVille, Rainbow, Vic  3999" /><line value="534 Erewhon St" /><city value="PleasantVille" /><district value="Rainbow" /><state value="Vic" /><postalCode value="3999" /><period><start value="1974-12-25" /></period></address><contact><relationship><coding><system value="http://hl7.org/fhir/v2/0131" /><code value="N" /></coding></relationship><name><family value="du MarchÃ©"><extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"><valueString value="VV" /></extension></family><given value="BÃ©nÃ©dicte" /></name><telecom><system value="phone" /><value value="+33 (237) 998327" /></telecom><address><use value="home" /><type value="both" /><line value="534 Erewhon St" /><city value="PleasantVille" /><district value="Rainbow" /><state value="Vic" /><postalCode value="3999" /><period><start value="1974-12-25" /></period></address><gender value="female" /><period><start value="2012" /></period></contact><managingOrganization><reference value="http://vonk.furore.com/Organization/1" /></managingOrganization></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/5f50ee22-45b2-4e45-b1f4-3903c3811ed7/_history/2" /><resource><Patient><id value="5f50ee22-45b2-4e45-b1f4-3903c3811ed7" /><meta><versionId value="2" /><lastUpdated value="2017-01-23T13:51:41.677+00:00" /><profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient" /></meta><text><status value="additional" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <p>Voorbeeld van een 'Patient' zoals verder samengesteld tijdens de HL7 WGM NL 15-04-2016 jl. Deze discussie heeft diverse uitzoekpunten opgeleverd
+                zoals hier gedocumenteerd.</p>
+  <div>
+    <p>BSN: 123456782</p>
+    <p>Naam: Irma Jongeneel-de Haas</p>
+    <p>Geslacht: Vrouw</p>
+    <p>Geboortedatum: 1970-03-04</p>
+    <p>Telefoon: 030-2345456</p>
+    <p>E-mail: user@home.nl</p>
+    <p>Adres: Straatweg 12bII, 1000AA Amsterdam</p>
+    <p>Burgerlijke staat: gehuwd</p>
+    <p>Eerste relatie/contactpersoon is haar man Gerard Eckdom via telefoonnummer 015-23456789</p>
+    <p>Huisarts: Huisartsenpraktijk Van Eijk</p>
+  </div>
+  <p style="font-weight: bold;">Bron-materialen</p>
+  <ol>
+    <li>
+      <a href="http://www.hl7.nl/wiki/index.php?title=Implementatiehandleiding_HL7v3_basiscomponenten_v2.2_Part3#R_PatientNL_.28pati.C3.ABnt.29">Implementatiehandleiding Basiscomponenten</a> (v3) versie 2.3</li>
+    <li>Zorginformatie Bouwsteen (ZIB) <a href="https://www.nictiz.nl/Paginas/zorginformatiebouwstenen-downloads.aspx">Patient</a> versie 2.0</li>
+  </ol>
+  <p style="font-weight: bold;">Open punten</p>
+  <ol>
+    <li>Patient.extension.patientImportance is een internationaal gedefinieerde extensie voor het doorgeven van een VIP-status van iemand (bron:
+                    HL7v3 Basiscomponenten). FHIR kent echter ook nog security-tags voor bepaalde privacy vlaggetjes. Het lijkt goed in de uitwerking van het
+                    profiel hier wat extra duiding aan te besteden zodat die twee mogelijkheden goed kunnen worden gebruikt.<br />NB: de in de versiegegevens van
+                    ZIB Patient v2.0 is te lezen dat de VIP-indicator hier bewust is weggehaald. <a href="https://bits.nictiz.nl/browse/ZIB-349">BITS issue
+                        #349</a> zegt echter niet waarom. Die vraag is uitgezet.</li>
+    <li>Patient.active. Dit veld geeft aan of het record van de patiënt nog actief is in de context van de betreffende organisatie.
+                    Patient.active='false' kun je gebruiken om aan te geven dat het record beter niet kan worden gebruikt, maar het record kan paraat worden
+                    gehouden omdat er allerlei gerelateerde gegevens aan hangen. Een andere use case is een patiënt die van huisarts is veranderd.
+                    Patient.active staat dan naar verwachting op 'false' in de registratie van de oude huisarts.</li>
+    <li>Patient.photo</li>
+  </ol>
+</div></text><identifier><use value="official" /><system value="http://fhir.nl/fhir/NamingSystem/bsn" /><value value="123456782" /></identifier><active value="true" /><name><extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"><valueCode value="NL4" /></extension><use value="official" /><family value="Jongeneel-de Haas"><extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name"><valueString value="Jongeneel" /></extension><extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"><valueString value="de" /></extension><extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-name"><valueString value="Haas" /></extension></family><given value="Irma"><extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"><valueCode value="CL" /></extension></given><given value="I."><extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"><valueCode value="IN" /></extension></given></name><telecom><system value="phone" /><value value="030-23454567" /><use value="home" /></telecom><telecom><system value="email" /><value value="user@home.nl" /><use value="home" /></telecom><gender value="female" /><birthDate value="1970-03-04" /><deceasedBoolean value="false" /><address><extension url="http://fhir.nl/fhir/StructureDefinition/nl-core-address-official"><valueBoolean value="true" /></extension><use value="home" /><type value="both" /><line value="Straatweg 12bII"><extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"><valueString value="Straatweg" /></extension><extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"><valueString value="12" /></extension><extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"><valueString value="bII" /></extension></line><city value="Amsterdam" /><district value="Amsterdam" /><postalCode value="1200AA" /><country value="NLD" /></address><maritalStatus><coding><system value="http://hl7.org/fhir/v3/MaritalStatus" /><code value="M" /><display value="Married" /></coding></maritalStatus><multipleBirthBoolean value="false" /><contact><relationship><coding><system value="urn:oid:2.16.840.1.113883.2.4.3.11.22.472" /><code value="1" /><display value="Eerste relatie/contactpersoon" /></coding></relationship><relationship><coding><system value="http://hl7.org/fhir/v3/RoleCode" /><code value="HUSB" /><display value="Husband" /></coding></relationship><name><use value="official" /><family value="Eckdom" /><given value="Gerard" /></name><telecom><system value="phone" /><value value="015-23456789" /><use value="home" /></telecom></contact><generalPractitioner><reference value="Organization/1" /><display value="Huisartsenpraktijk Van Eijk" /></generalPractitioner></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/f7a5e587-a426-4074-9301-d569af7e294b/_history/1" /><resource><Patient><id value="f7a5e587-a426-4074-9301-d569af7e294b" /><meta><versionId value="1" /></meta><text><status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">
+  <div class="hapiHeaderText">Jane <b>DOE </b></div>
+  <table class="hapiPropertyTable">
+    <tbody>
+      <tr>
+        <td>Identifier</td>
+        <td>130</td>
+      </tr>
+      <tr>
+        <td>Date of birth</td>
+        <td>
+          <span>15 May 2017</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></text><extension url="http://hl7.org/fhir/StructureDefinition/patient-birthTime"><valueDateTime value="2017-05-15T09:29:25+02:00" /></extension><identifier><system value="cora.patient.id" /><value value="130" /></identifier><identifier><system value="cora.case.id" /><value value="130" /></identifier><identifier><system value="com.cognitivemedicine" /><value value="130" /></identifier><identifier><system value="cora.mock.patient.id" /><value value="Y" /></identifier><active value="true" /><name><family value="Doe" /><given value="Jane" /></name><gender value="female" /><birthDate value="2017-05-15" /></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="https://stu3.simplifier.net/Patient/5eb32375-109d-4e8a-b496-1b45093cf203/_history/1" /><resource><Patient><id value="5eb32375-109d-4e8a-b496-1b45093cf203" /><meta><versionId value="1" /><profile value="http://mirjams.example.org/StructureDefinition/gender-patient" /></meta><name><family value="Baltus" /><given value="Mirjam" /></name></Patient></resource><search><mode value="match" /></search></entry><entry><fullUrl value="OperationOutcome/98764274-859a-489b-99a6-c516b25b85cd/_history/4faee325-0faa-45b8-9083-dcf019739856" /><resource><OperationOutcome><id value="98764274-859a-489b-99a6-c516b25b85cd" /><meta><versionId value="4faee325-0faa-45b8-9083-dcf019739856" /></meta><issue><code value="not-supported" /><details><coding><code value="not handled" /></coding><text value="default-count" /></details><diagnostics value="" /></issue></OperationOutcome></resource></entry></Bundle>
