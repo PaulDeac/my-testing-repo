@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "meta": {
+    "lastUpdated": "2017-09-26T15:45:42.177+02:00"
+  },
+  "url": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-Author",
+  "version": "1.0",
+  "name": "ZIB-Medication-Use-Author",
+  "title": "HCIM Medication-Use-Author",
+  "status": "draft",
+  "date": "2017-09-26T14:14:36.639+02:00",
+  "publisher": "Nictiz",
+  "contact": [
+    {
+      "name": "Nictiz",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@nictiz.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Extension to provide information on who the author is of the MedicationStatement. ",
+  "fhirVersion": "3.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "contextType": "resource",
+  "context": [
+    "MedicationStatement"
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse-Author"
+      },
+      {
+        "id": "Extension.value[x]:valueReference",
+        "path": "Extension.valueReference",
+        "sliceName": "valueReference",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      }
+    ]
+  }
+}
