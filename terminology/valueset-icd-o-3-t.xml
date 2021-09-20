@@ -1,0 +1,2152 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/icdo-o-3-t" />
+  <version value="0.1" />
+  <name value="icdo-o-3-t" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="ICD-O-3 Topografie" />
+  <compose>
+    <include>
+      <!-- FIXME: canonical URL -->
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <filter>
+        <property value="code" />
+        <op value="descendent-of" />
+        <value value="T" />
+      </filter>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-icd-o-3-t-1" />
+    <timestamp value="2018-10-31" />
+    <total value="416" />
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C00-C14" />
+      <display value="Lippe, Mundhöhle und Pharynx" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C00" />
+        <display value="Lippe" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C00.0" />
+          <display value="Äußere Oberlippe" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C00.1" />
+          <display value="Äußere Unterlippe" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C00.2" />
+          <display value="Äußere Lippe o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C00.3" />
+          <display value="Schleimhaut der Oberlippe" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C00.4" />
+          <display value="Schleimhaut der Unterlippe" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C00.5" />
+          <display value="Lippenschleimhaut o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C00.6" />
+          <display value="Lippenkommissur" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C00.8" />
+          <display value="Lippe, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C00.9" />
+          <display value="Lippe o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C01" />
+        <display value="Zungengrund" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C01.9" />
+          <display value="Zungengrund o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C02" />
+        <display value="Sonstige und nicht näher bezeichnete Teile der Zunge" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C02.0" />
+          <display value="Dorsale Oberfläche der Zunge" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C02.1" />
+          <display value="Zungenrand" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C02.2" />
+          <display value="Ventrale Oberfläche der Zunge o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C02.3" />
+          <display value="Vordere 2/3 der Zunge" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C02.4" />
+          <display value="Zungentonsille" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C02.8" />
+          <display value="Zunge, mehrere Bereiche überlappend" />
+          <definition value="siehe  Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C02.9" />
+          <display value="Zunge o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C03" />
+        <display value="Zahnfleisch" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C03.0" />
+          <display value="Oberkieferzahnfleisch" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C03.1" />
+          <display value="Unterkieferzahnfleisch" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C03.9" />
+          <display value="Zahnfleisch o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C04" />
+        <display value="Mundboden" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C04.0" />
+          <display value="Vorderer Teil des Mundbodens" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C04.1" />
+          <display value="Seitlicher Teil des Mundbodens" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C04.8" />
+          <display value="Mundboden, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C04.9" />
+          <display value="Mundboden o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C05" />
+        <display value="Gaumen" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C05.0" />
+          <display value="Harter Gaumen" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C05.1" />
+          <display value="Weicher Gaumen o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C05.2" />
+          <display value="Uvula" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C05.8" />
+          <display value="Gaumen, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C05.9" />
+          <display value="Gaumen o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C06" />
+        <display value="Sonstige und nicht näher bezeichnete Teile des Mundes" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C06.0" />
+          <display value="Wangenschleimhaut" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C06.1" />
+          <display value="Vestibulum oris" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C06.2" />
+          <display value="Retromolarregion" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C06.8" />
+          <display value="Sonstige und nicht näher bezeichnete Teile des Mundes, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C06.9" />
+          <display value="Mund o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C07" />
+        <display value="Parotis" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C07.9" />
+          <display value="Parotis" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C08" />
+        <display value="Sonstige und nicht näher bezeichnete große Speicheldrüsen" />
+        <definition value="   " />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C08.0" />
+          <display value="Glandula submandibularis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C08.1" />
+          <display value="Glandula sublingualis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C08.8" />
+          <display value="Große Speicheldrüsen, mehrere Bereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C08.9" />
+          <display value="Große Speicheldrüsen o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C09" />
+        <display value="Tonsille" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C09.0" />
+          <display value="Fossa tonsillaris" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C09.1" />
+          <display value="Gaumenbogen" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C09.8" />
+          <display value="Tonsille, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C09.9" />
+          <display value="Tonsille o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C10" />
+        <display value="Oropharynx" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C10.0" />
+          <display value="Vallecula epiglottica" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C10.1" />
+          <display value="Vorderfläche der Epiglottis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C10.2" />
+          <display value="Seitenwand des Oropharynx" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C10.3" />
+          <display value="Hinterwand des Oropharynx" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C10.4" />
+          <display value="Kiemengang" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C10.8" />
+          <display value="Oropharynx, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C10.9" />
+          <display value="Oropharynx o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C11" />
+        <display value="Nasopharynx [Nasenrachenraum]" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C11.0" />
+          <display value="Obere Wand des Nasopharynx" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C11.1" />
+          <display value="Hinterwand des Nasopharynx" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C11.2" />
+          <display value="Seitenwand des Nasopharynx" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C11.3" />
+          <display value="Vorderwand des Nasopharynx" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C11.8" />
+          <display value="Nasopharynx, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C11.9" />
+          <display value="Nasopharynx o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C12" />
+        <display value="Sinus piriformis" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C12.9" />
+          <display value="Sinus piriformis" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C13" />
+        <display value="Hypopharynx" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C13.0" />
+          <display value="Regio postcricoidea" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C13.1" />
+          <display value="Plica aryepiglottica, hypopharyngeale Seite" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C13.2" />
+          <display value="Hinterwand des Hypopharynx" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C13.8" />
+          <display value="Hypopharynx, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C13.9" />
+          <display value="Hypopharynx o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C14" />
+        <display value="Sonstiger oder mangelhaft bezeichneter Sitz an Lippe, Mundhöhle und Pharynx" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C14.0" />
+          <display value="Pharynx o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C14.2" />
+          <display value="Waldeyer-Ring" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C14.8" />
+          <display value="Lippe, Mundhöhle und Pharynx, mehrere Bereiche überlappend" />
+          <definition value="   " />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C15-C26" />
+      <display value="Verdauungsorgane" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C15" />
+        <display value="Ösophagus" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C15.0" />
+          <display value="Ösophagus, Pars cervicalis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C15.1" />
+          <display value="Ösophagus, Pars thoracalis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C15.2" />
+          <display value="Ösophagus, Pars abdominalis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C15.3" />
+          <display value="Ösophagus, oberes Drittel" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C15.4" />
+          <display value="Ösophagus, mittleres Drittel" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C15.5" />
+          <display value="Ösophagus, unteres intrathorakales Drittel" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C15.8" />
+          <display value="Ösophagus, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C15.9" />
+          <display value="Ösophagus o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C16" />
+        <display value="Magen" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C16.0" />
+          <display value="Kardia o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C16.1" />
+          <display value="Fundus ventriculi" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C16.2" />
+          <display value="Corpus ventriculi" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C16.3" />
+          <display value="Antrum ventriculi" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C16.4" />
+          <display value="Pylorus" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C16.5" />
+          <display value="Kleine Kurvatur o.n.A" />
+          <definition value="   " />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C16.6" />
+          <display value="Große Kurvatur o.n.A" />
+          <definition value="   " />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C16.8" />
+          <display value="Magen, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C16.9" />
+          <display value="Magen o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C17" />
+        <display value="Dünndarm" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C17.0" />
+          <display value="Duodenum" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C17.1" />
+          <display value="Jejunum" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C17.2" />
+          <display value="Ileum" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C17.3" />
+          <display value="Meckel-Divertikel" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C17.8" />
+          <display value="Dünndarm, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C17.9" />
+          <display value="Dünndarm o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C18" />
+        <display value="Kolon" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C18.0" />
+          <display value="Zökum" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C18.1" />
+          <display value="Appendix vermiformis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C18.2" />
+          <display value="Colon ascendens" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C18.3" />
+          <display value="Flexura hepatica" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C18.4" />
+          <display value="Colon transversum" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C18.5" />
+          <display value="Flexura lienalis coli" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C18.6" />
+          <display value="Colon descendens" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C18.7" />
+          <display value="Colon sigmoideum" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C18.8" />
+          <display value="Kolon, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C18.9" />
+          <display value="Colon" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C19" />
+        <display value="Rektosigmoidaler Übergang" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C19.9" />
+          <display value="Rektosigmoidaler Übergang" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C20" />
+        <display value="Rektum" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C20.9" />
+          <display value="Rektum o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C21" />
+        <display value="Analkanal und Anus" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C21.0" />
+          <display value="Anus o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C21.1" />
+          <display value="Analkanal" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C21.2" />
+          <display value="Kloakenregion" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C21.8" />
+          <display value="Rektum, Anus und Analkanal, mehrere Bereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C22" />
+        <display value="Leber und intrahepatische Gallengänge" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C22.0" />
+          <display value="Leber" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C22.1" />
+          <display value="Intrahepatische Gallengänge" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C23" />
+        <display value="Gallenblase" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C23.9" />
+          <display value="Gallenblase" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C24" />
+        <display value="Sonstige und nicht näher bezeichnete Teile der Gallenwege" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C24.0" />
+          <display value="Extrahepatischer Gallengang" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C24.1" />
+          <display value="Ampulla Vateri" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C24.8" />
+          <display value="Gallenwege, mehrere Bereiche überlappend" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C24.9" />
+          <display value="Gallenwege o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C25" />
+        <display value="Pankreas" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C25.0" />
+          <display value="Pankreaskopf" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C25.1" />
+          <display value="Pankreaskörper" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C25.2" />
+          <display value="Pankreasschwanz" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C25.3" />
+          <display value="Ductus pancreaticus" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C25.4" />
+          <display value="Pankreas-Inselzellen" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C25.7" />
+          <display value="Sonstige näher bezeichnete Teile des Pankreas" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C25.8" />
+          <display value="Pankreas, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C25.9" />
+          <display value="Pankreas o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C26" />
+        <display value="Sonstiger oder mangelhaft bezeichneter Sitz innerhalb der Verdauungsorgane" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C26.0" />
+          <display value="Intestinaltrakt o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C26.8" />
+          <display value="Verdauungssystem, mehrere Bereiche überlappend" />
+          <definition value="   " />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C26.9" />
+          <display value="Gastrointestinaltrakt o.n.A." />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C30-C39" />
+      <display value="Atemwege [Respirationstrakt] und intrathorakale Organe" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C30" />
+        <display value="Nasenhöhle und Mittelohr" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C30.0" />
+          <display value="Nasenhöhle" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C30.1" />
+          <display value="Mittelohr" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C31" />
+        <display value="Nasennebenhöhlen" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C31.0" />
+          <display value="Sinus maxillaris" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C31.1" />
+          <display value="Sinus ethmoidalis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C31.2" />
+          <display value="Sinus frontalis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C31.3" />
+          <display value="Sinus sphenoidalis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C31.8" />
+          <display value="Nasennebenhöhlen, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C31.9" />
+          <display value="Nasennebenhöhlen o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C32" />
+        <display value="Larynx" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C32.0" />
+          <display value="Glottis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C32.1" />
+          <display value="Supraglottis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C32.2" />
+          <display value="Subglottis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C32.3" />
+          <display value="Larynxknorpel" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C32.8" />
+          <display value="Larynx, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C32.9" />
+          <display value="Kehlkopf o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C33" />
+        <display value="Trachea" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C33.9" />
+          <display value="Trachea" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C34" />
+        <display value="Bronchus und Lunge" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C34.0" />
+          <display value="Hauptbronchus" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C34.1" />
+          <display value="Lungenoberlappen" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C34.2" />
+          <display value="Lungenmittellappen" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C34.3" />
+          <display value="Lungenunterlappen" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C34.8" />
+          <display value="Lunge, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C34.9" />
+          <display value="Lunge o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C37" />
+        <display value="Thymus" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C37.9" />
+          <display value="Thymus" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C38" />
+        <display value="Herz, Mediastinum und Pleura" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C38.0" />
+          <display value="Herz" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C38.1" />
+          <display value="Vorderes Mediastinum" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C38.2" />
+          <display value="Hinteres Mediastinum" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C38.3" />
+          <display value="Mediastinum o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C38.4" />
+          <display value="Pleura o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C38.8" />
+          <display value="Herz, Mediastinum und Pleura, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C39" />
+        <display value="Sonstiger oder mangelhaft bezeichneter Sitz innerhalb der Atemwege [Respirationstrakt] und intrathorakaler Organe" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C39.0" />
+          <display value="Obere Atemwege o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C39.8" />
+          <display value="Atemwege [Respirationstrakt] und intrathorakale Organe, mehrere Bereiche überlappend" />
+          <definition value="   " />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C39.9" />
+          <display value="Mangelhaft bezeichneter Sitz innerhalb der Atmungsorgane" />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C40-C41" />
+      <display value="Knochen, Gelenke und Gelenkknorpel" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C40" />
+        <display value="Knochen, Gelenke und Gelenkknorpel der Extremitäten" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C40.0" />
+          <display value="Lange Knochen von Arm und Schulter und zugehörige Gelenke" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C40.1" />
+          <display value="Kurze Knochen der oberen Extremitäten und zugehörige Gelenke" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C40.2" />
+          <display value="Lange Knochen der unteren Extremitäten und zugehörige Gelenke" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C40.3" />
+          <display value="Kurze Knochen der unteren Extremitäten und zugehörige Gelenke" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C40.8" />
+          <display value="Knochen, Gelenke und Gelenkknorpel der Extremitäten, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C40.9" />
+          <display value="Knochen einer Extremität o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C41" />
+        <display value="Knochen, Gelenke und Gelenkknorpel sonstiger und nicht näher bezeichneter Lokalisationen" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C41.0" />
+          <display value="Knochen des Hirn- und Gesichtsschädels und zugehörige Gelenke" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C41.1" />
+          <display value="Mandibula" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C41.2" />
+          <display value="Wirbelsäule" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C41.3" />
+          <display value="Rippen, Sternum, Klavikula und zugehörige Gelenke" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C41.4" />
+          <display value="Beckenknochen, Kreuzbein, Steißbein und zugehörige Gelenke" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C41.8" />
+          <display value="Knochen, Gelenke und Gelenkknorpel, mehrere Bereiche überlappend" />
+          <definition value="   " />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C41.9" />
+          <display value="Knochen o.n.A." />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C42-C42" />
+      <display value="Hämatopoetisches und retikuloendotheliales System" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C42" />
+        <display value="Hämatopoetisches und retikuloendotheliales System" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C42.0" />
+          <display value="Blut" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C42.1" />
+          <display value="Knochenmark" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C42.2" />
+          <display value="Milz" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C42.3" />
+          <display value="Retikuloendotheliales System o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C42.4" />
+          <display value="Hämatopoetisches System o.n.A." />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C44-C44" />
+      <display value="Haut" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C44" />
+        <display value="Haut" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C44.0" />
+          <display value="Lippenhaut o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C44.1" />
+          <display value="Augenlid" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C44.2" />
+          <display value="Äußeres Ohr" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C44.3" />
+          <display value="Haut sonstiger und nicht näher bezeichneter Teile des Gesichtes" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C44.4" />
+          <display value="Behaarte Kopfhaut und Haut am Hals" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C44.5" />
+          <display value="Haut am Stamm" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C44.6" />
+          <display value="Haut der oberen Extremitäten und der Schulter" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C44.7" />
+          <display value="Haut der unteren Extremität und der Hüfte" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C44.8" />
+          <display value="Haut, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C44.9" />
+          <display value="Haut o.n.A." />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C47-C47" />
+      <display value="Periphere Nerven und autonomes Nervensystem" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C47" />
+        <display value="Periphere Nerven und autonomes Nervensystem" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C47.0" />
+          <display value="Periphere Nerven und autonomes Nervensystem des Kopfes, des Gesichtes und des Halses" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C47.1" />
+          <display value="Periphere Nerven und autonomes Nervensystem der oberen Extremität und der Schulter" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C47.2" />
+          <display value="Periphere Nerven und autonomes Nervensystem der unteren Extremität und der Hüfte" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C47.3" />
+          <display value="Periphere Nerven und autonomes Nervensystem des Thorax" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C47.4" />
+          <display value="Periphere Nerven und autonomes Nervensystem des Abdomens" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C47.5" />
+          <display value="Periphere Nerven und autonomes Nervensystem des Beckens" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C47.6" />
+          <display value="Periphere Nerven und autonomes Nervensystem des Stammes" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C47.8" />
+          <display value="Periphere Nerven und autonomes Nervensystem, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C47.9" />
+          <display value="Autonomes Nervensystem o.n.A." />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C48-C48" />
+      <display value="Retroperitoneum und Peritoneum" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C48" />
+        <display value="Retroperitoneum und Peritoneum" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C48.0" />
+          <display value="Retroperitoneum" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C48.1" />
+          <display value="Näher bezeichnete Teile des Peritoneums" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C48.2" />
+          <display value="Peritoneum o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C48.8" />
+          <display value="Retroperitoneum und Peritoneum, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C49-C49" />
+      <display value="Bindegewebe, Subkutangewebe und sonstige Weichteile" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C49" />
+        <display value="Bindegewebe, Subkutangewebe und sonstige Weichteile" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C49.0" />
+          <display value="Bindegewebe, Subkutangewebe und sonstige Weichteile des Kopfes, des Gesichtes und des Halses" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C49.1" />
+          <display value="Bindegewebe, Subkutangewebe und sonstige Weichteile der oberen Extremität und der Schulter" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C49.2" />
+          <display value="Bindegewebe, Subkutangewebe und sonstige Weichteile der unteren Extremität und der Hüfte" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C49.3" />
+          <display value="Bindegewebe, Subkutangewebe und sonstige Weichteile des Thorax" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C49.4" />
+          <display value="Bindegewebe, Subkutangewebe und sonstige Weichteilgewebe des Abdomen" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C49.5" />
+          <display value="Bindegewebe, Subkutangewebe und sonstige Weichteile des Beckens" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C49.6" />
+          <display value="Bindegewebe, Subkutangewebe und sonstige Weichteile des Stammes o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C49.8" />
+          <display value="Bindegewebe, Subkutangewebe und sonstige Weichteile, mehrere Bereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C49.9" />
+          <display value="Bindegewebe, Subkutangewebe und sonstige Weichteile o.n.A." />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C50-C50" />
+      <display value="Brust [Mamma]" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C50" />
+        <display value="Brust [Mamma]" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C50.0" />
+          <display value="Mamille" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C50.1" />
+          <display value="Zentraler Drüsenkörper der Brust" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C50.2" />
+          <display value="Oberer innerer Quadrant der Brust" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C50.3" />
+          <display value="Unterer innerer Quadrant der Brust" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C50.4" />
+          <display value="Oberer äußerer Quadrant der Brust" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C50.5" />
+          <display value="Unterer äußerer Quadrant der Brust" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C50.6" />
+          <display value="Recessus axillaris der Brust" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C50.8" />
+          <display value="Brust, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C50.9" />
+          <display value="Brust o.n.A." />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C51-C58" />
+      <display value="Weibliche Geschlechtsorgane" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C51" />
+        <display value="Vulva" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C51.0" />
+          <display value="Labium majus" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C51.1" />
+          <display value="Labium minus" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C51.2" />
+          <display value="Klitoris" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C51.8" />
+          <display value="Vulva, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C51.9" />
+          <display value="Vulva o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C52" />
+        <display value="Vagina" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C52.9" />
+          <display value="Vagina o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C53" />
+        <display value="Cervix uteri" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C53.0" />
+          <display value="Endozervix" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C53.1" />
+          <display value="Ektozervix" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C53.8" />
+          <display value="Cervix uteri, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C53.9" />
+          <display value="Cervix uteri" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C54" />
+        <display value="Corpus uteri" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C54.0" />
+          <display value="Isthmus uteri" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C54.1" />
+          <display value="Endometrium" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C54.2" />
+          <display value="Myometrium" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C54.3" />
+          <display value="Fundus uteri" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C54.8" />
+          <display value="Corpus uteri, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C54.9" />
+          <display value="Corpus uteri" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C55" />
+        <display value="Uterus o.n.A." />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C55.9" />
+          <display value="Uterus o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C56" />
+        <display value="Ovar" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C56.9" />
+          <display value="Ovar" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C57" />
+        <display value="Sonstige und nicht näher bezeichnete Teile der weiblichen Geschlechtsorgane" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C57.0" />
+          <display value="Eileiter" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C57.1" />
+          <display value="Ligamentum latum uteri" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C57.2" />
+          <display value="Ligamentum rotundum" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C57.3" />
+          <display value="Parametrium" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C57.4" />
+          <display value="Weibliche Adnexe" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C57.7" />
+          <display value="Sonstige näher bezeichnete Teile der weiblichen Geschlechtsorgane" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C57.8" />
+          <display value="Weibliche Geschlechtsorgane, mehrere Bereiche überlappend" />
+          <definition value="   " />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C57.9" />
+          <display value="Weibliche Geschlechtsorgane o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C58" />
+        <display value="Plazenta" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C58.9" />
+          <display value="Plazenta" />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C60-C63" />
+      <display value="Männliche Geschlechtsorgane" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C60" />
+        <display value="Penis" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C60.0" />
+          <display value="Präputium" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C60.1" />
+          <display value="Glans penis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C60.2" />
+          <display value="Penisschaft" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C60.8" />
+          <display value="Penis, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C60.9" />
+          <display value="Penis o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C61" />
+        <display value="Prostata" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C61.9" />
+          <display value="Prostata" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C62" />
+        <display value="Testis" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C62.0" />
+          <display value="Kryptorchider Hoden" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C62.1" />
+          <display value="Deszendierter Hoden" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C62.9" />
+          <display value="Testis o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C63" />
+        <display value="Sonstige und nicht näher bezeichnete Teile der männlichen Geschlechtsorgane" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C63.0" />
+          <display value="Nebenhoden" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C63.1" />
+          <display value="Samenstrang" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C63.2" />
+          <display value="Skrotum o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C63.7" />
+          <display value="Sonstige näher bzeichnete Teile der männlichen Geschlechtsorgane" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C63.8" />
+          <display value="Männliche Geschlechtsorgane, mehrere Bereiche überlappend" />
+          <definition value="   " />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C63.9" />
+          <display value="Männliche Geschlechtsorgane o.n.A." />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C64-C68" />
+      <display value="Harntrakt" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C64" />
+        <display value="Niere" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C64.9" />
+          <display value="Niere o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C65" />
+        <display value="Nierenbecken" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C65.9" />
+          <display value="Nierenbecken" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C66" />
+        <display value="Ureter" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C66.9" />
+          <display value="Ureter" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C67" />
+        <display value="Harnblase" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C67.0" />
+          <display value="Trigonum vesicae" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C67.1" />
+          <display value="Blasendach" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C67.2" />
+          <display value="Laterale Harnblasenwand" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C67.3" />
+          <display value="Vordere Harnblasenwand" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C67.4" />
+          <display value="Hintere Harnblasenwand" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C67.5" />
+          <display value="Harnblasenhals" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C67.6" />
+          <display value="Ostium ureteris" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C67.7" />
+          <display value="Urachus" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C67.8" />
+          <display value="Harnblase, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C67.9" />
+          <display value="Blase o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C68" />
+        <display value="Sonstige und nicht näher bezeichnete Teile des Harntraktes" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C68.0" />
+          <display value="Urethra" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C68.1" />
+          <display value="Paraurethrale Drüse" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C68.8" />
+          <display value="Harntrakt, mehrere Bereiche überlappend" />
+          <definition value="   " />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C68.9" />
+          <display value="Harntrakt o.n.A." />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C69-C72" />
+      <display value="Auge, Gehirn und sonstige Teile des Zentralnervensystems" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C69" />
+        <display value="Auge und Augenanhangsgebilde" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C69.0" />
+          <display value="Konjunktiva" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C69.1" />
+          <display value="Kornea o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C69.2" />
+          <display value="Retina" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C69.3" />
+          <display value="Chorioidea" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C69.4" />
+          <display value="Bulbus oculi" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C69.5" />
+          <display value="Tränendrüse" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C69.6" />
+          <display value="Orbita o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C69.8" />
+          <display value="Auge und Augenanhangsgebilde, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C69.9" />
+          <display value="Auge o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C70" />
+        <display value="Meningen" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C70.0" />
+          <display value="Hirnhäute" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C70.1" />
+          <display value="Rückenmarkhäute" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C70.9" />
+          <display value="Meningen o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C71" />
+        <display value="Gehirn" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C71.0" />
+          <display value="Cerebrum" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C71.1" />
+          <display value="Frontallappen" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C71.2" />
+          <display value="Temporallappen" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C71.3" />
+          <display value="Parietallappen" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C71.4" />
+          <display value="Okzipitallappen" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C71.5" />
+          <display value="Ventrikel o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C71.6" />
+          <display value="Kleinhirn o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C71.7" />
+          <display value="Hirnstamm" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C71.8" />
+          <display value="Gehirn, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C71.9" />
+          <display value="Gehirn o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C72" />
+        <display value="Rückenmark, Hirnnerven und sonstige Teile des Zentralnervensystems" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C72.0" />
+          <display value="Rückenmark" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C72.1" />
+          <display value="Cauda equina" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C72.2" />
+          <display value="N. olfactorius" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C72.3" />
+          <display value="N. opticus" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C72.4" />
+          <display value="N. acusticus" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C72.5" />
+          <display value="Hirnnerven o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C72.8" />
+          <display value="Gehirn und andere Teile des Zentralnervensystems, mehrere Teilbereiche überlappend" />
+          <definition value="   " />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C72.9" />
+          <display value="Nervensystem" />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C73-C75" />
+      <display value="Schilddrüse und sonstige endokrine Drüsen" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C73" />
+        <display value="Schilddrüse" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C73.9" />
+          <display value="Schilddrüse" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C74" />
+        <display value="Nebenniere" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C74.0" />
+          <display value="Nebennierenrinde" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C74.1" />
+          <display value="Nebennierenmark" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C74.9" />
+          <display value="Nebenniere o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C75" />
+        <display value="Sonstige endokrine Drüsen und verwandte Strukturen" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C75.0" />
+          <display value="Nebenschilddrüse" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C75.1" />
+          <display value="Hirnanhangsdrüse" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C75.2" />
+          <display value="Ductus craniopharyngealis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C75.3" />
+          <display value="Glandula pinealis" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C75.4" />
+          <display value="Glomus caroticum" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C75.5" />
+          <display value="Glomus aorticum und sonstige Paraganglien" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C75.8" />
+          <display value="Endokrine Drüsen und verwandte Strukturen, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C75.9" />
+          <display value="Endokrine Drüse o.n.A." />
+        </contains>
+      </contains>
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+      <code value="C76-C80" />
+      <display value="Anderer oder mangelhaft bezeichneter Sitz" />
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C76" />
+        <display value="Sonstiger oder mangelhaft bezeichneter Sitz" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C76.0" />
+          <display value="Kopf, Gesicht oder Hals o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C76.1" />
+          <display value="Thorax o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C76.2" />
+          <display value="Abdomen o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C76.3" />
+          <display value="Becken o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C76.4" />
+          <display value="Obere Extremität o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C76.5" />
+          <display value="Untere Extremität o.n.A." />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C76.7" />
+          <display value="Sonstiger mangelhaft bezeichneter Sitz" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C76.8" />
+          <display value="Mangelhaft bezeichneter Sitz, mehrere Teilbereiche überlappend" />
+          <definition value="siehe Anmerkung am Anfang des Abschnittes Topographie" />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C77" />
+        <display value="Lymphknoten" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C77.0" />
+          <display value="Lymphknoten des Kopfes, des Gesichtes und des Halses" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C77.1" />
+          <display value="Intrathorakaler Lymphknoten" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C77.2" />
+          <display value="Intraabdominaler Lymphknoten" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C77.3" />
+          <display value="Lymphknoten der Achseln und Arme" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C77.4" />
+          <display value="Lymphknoten der Inguinalregion und des Beines" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C77.5" />
+          <display value="Beckenlymphknoten" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C77.8" />
+          <display value="Lymphknoten mehrerer Regionen" />
+        </contains>
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C77.9" />
+          <display value="Lymphknoten o.n.A." />
+        </contains>
+      </contains>
+      <contains>
+        <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+        <code value="C80" />
+        <display value="Unbekannte Primärlokalisation" />
+        <contains>
+          <system value="urn:oid:2.16.840.1.113883.6.43.1" />
+          <code value="C80.9" />
+          <display value="Unbekannte Primärlokalisation" />
+        </contains>
+      </contains>
+    </contains>
+  </expansion>
+</ValueSet>

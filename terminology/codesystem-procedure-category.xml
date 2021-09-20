@@ -1,0 +1,45 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/procedure-category" />
+  <version value="0.1" />
+  <name value="procedure-category" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Kategorien zur Unterscheidung verschiedener Prozedurklassen." />
+  <caseSensitive value="true" />
+  <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/procedure-category" />
+  <content value="complete" />
+  <concept>
+    <code value="surgery" />
+    <display value="OP/Eingriff" />
+  </concept>
+  <concept>
+    <code value="radiotherapy" />
+    <display value="Strahlentherapie" />
+  </concept>
+  <concept>
+    <code value="bone-marrow-transplantation" />
+    <display value="Knochenmarktransplantation" />
+  </concept>
+  <concept>
+    <code value="other-therapy" />
+    <display value="sonstige Therapie" />
+  </concept>
+  <concept>
+    <code value="imaging" />
+    <display value="bildgebende Untersuchung" />
+  </concept>
+  <concept>
+    <code value="clinical" />
+    <display value="klinische Untersuchung" />
+  </concept>
+  <concept>
+    <code value="best-supportive-care" />
+    <display value="Best Supportive Care" />
+  </concept>
+  <concept>
+    <code value="watchful-waiting" />
+    <display value="Watchful Waiting" />
+  </concept>
+</CodeSystem>

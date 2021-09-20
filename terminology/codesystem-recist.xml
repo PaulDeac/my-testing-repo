@@ -1,0 +1,29 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/recist" />
+  <version value="0.1" />
+  <name value="recist" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="RECIST-Kriterien" />
+  <caseSensitive value="true" />
+  <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/recist" />
+  <content value="complete" />
+  <concept>
+    <code value="CR" />
+    <display value="Complete Remission" />
+  </concept>
+  <concept>
+    <code value="PR" />
+    <display value="Partial Remission" />
+  </concept>
+  <concept>
+    <code value="PD" />
+    <display value="Progressive Disease" />
+  </concept>
+  <concept>
+    <code value="SD" />
+    <display value="Stable Disease" />
+  </concept>
+</CodeSystem>

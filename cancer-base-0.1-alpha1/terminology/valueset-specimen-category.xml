@@ -1,0 +1,80 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uni-koeln.de/fhir/ValueSet/cancer-base/specimen-type" />
+  <version value="0.1" />
+  <name value="specimen-type" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Universität Köln" />
+  <description value="Kategorien zur Unterscheidung verschiedener Biomaterialtypen." />
+  <compose>
+    <include>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/specimen-type" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uni-koeln-work-specimen-type-1" />
+    <timestamp value="2018-10-31" />
+    <total value="15" />
+    <contains>
+      <code value="gewebe" />
+      <display value="Gewebe" />
+      <contains>
+        <code value="paraffin" />
+        <display value="Paraffin" />
+      </contains>
+      <contains>
+        <code value="kryo-frisch" />
+        <display value="kryo/frisch" />
+      </contains>
+    </contains>
+    <contains>
+      <code value="fluessig" />
+      <display value="flüssig" />
+      <contains>
+        <code value="vollblut" />
+        <display value="Vollblut" />
+      </contains>
+      <contains>
+        <code value="serum" />
+        <display value="Serum" />
+      </contains>
+      <contains>
+        <code value="plasma" />
+        <display value="Plasma" />
+      </contains>
+      <contains>
+        <code value="urin" />
+        <display value="Urin" />
+      </contains>
+      <contains>
+        <code value="liquor" />
+        <display value="Liquor" />
+      </contains>
+    </contains>
+    <contains>
+      <code value="km" />
+      <display value="Knochenmark" />
+    </contains>
+    <contains>
+      <code value="isoliert" />
+      <display value="isoliertes Material" />
+      <contains>
+        <code value="zellen" />
+        <display value="Zellen" />
+      </contains>
+      <contains>
+        <code value="dna" />
+        <display value="DNA" />
+      </contains>
+      <contains>
+        <code value="rna" />
+        <display value="RNA" />
+      </contains>
+      <contains>
+        <code value="protein" />
+        <display value="Protein" />
+      </contains>
+    </contains>
+  </expansion>
+</ValueSet>

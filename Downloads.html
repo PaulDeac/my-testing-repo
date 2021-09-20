@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Ontario Laboratories Information System HL7 FHIR® Provider Query Implementation Guide - v1.0.0 </title>
+
+        <link rel="icon" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/favicon.ico" />
+
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/jquery/jquery.min.js"></script>
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/main.min.css" />
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/rendering.min.css" />
+
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/project/OntarioLaboratoriesInformationSystemProviderQuery1.0.0-Draft/style.css?v=1d59583fe7a9f00" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-twolevelmenu">
+
+                    <div class="header">
+                        
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=".html">
+                Ontario Laboratories Information System HL7 FHIR&#xAE; Provider Query Implementation Guide - v1.0.0 
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Home <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="Home.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="Introduction.html">
+                                            Introduction
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Scope.html">
+                                            Scope
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="IntendedAudience.html">
+                                            Intended Audience
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ReferenceMaterials.html">
+                                            Reference Materials
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="IdentifierPolicy.html">
+                                            Identifier Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AcronymsandAbbreviations.html">
+                                            Acronyms and Abbreviations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="RevisionHistory.html">
+                                            Revision History
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="KnownIssues.html">
+                                            Known Issues
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Business Context <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="BusinessContext.html">
+                                            Business Context
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="BusinessModel.html">
+                                            Business Model
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="BusinessData.html">
+                                            Business Data
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="UseCases.html">
+                                            Use Cases
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="BusinessRules.html">
+                                            Business Rules
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Implementation Guidance <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuidance.html">
+                                            Implementation Guidance
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ConsumerResponsibility.html">
+                                            Consumer Responsibility
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationConsideration.html">
+                                            Implementation Consideration
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Connectivity.html">
+                                            Connectivity
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Profiles &amp; Operations <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ProfilesOperations.html">
+                                            Profiles &amp; Operations
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="DiagnosticReportSearch.html">
+                                            DiagnosticReport Search
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Capability Statement <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="CapabilityStatement.html">
+                                            Capability Statement
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ResponseHandling.html">
+                                            Response Handling
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Terminology <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="Terminology.html">
+                                            Terminology
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="TerminologyUpdates.html">
+                                            Terminology Updates
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Identifiers.html">
+                                            Identifiers
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Downloads.html">
+                                Downloads
+                            </a>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                    </div>
+
+                    <div class="content container">
+                        
+
+    <div class="row">
+
+
+        <div class="col-md-24">
+
+            <div id="preview-content">
+
+                <p id="breadcrumb">
+<p><a href="https://simplifier.net/guide/OntarioLaboratoriesInformationSystemProviderQuery/Home">Table of Contents</a> &gt; Downloads</p>
+</p>
+<h1 id="downloads">Downloads</h1>
+<h2 id="resource-profiles">Resource Profiles</h2>
+<p>Profile defining constraints on resources used in this implementation guide</p>
+<table class="regular">
+<thead>
+<tr>
+<th>Resource</th>
+<th>Description</th>
+<th>Download Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eHealth Ontario OLIS DiagnosticReport Response</td>
+<td>Defines Diagnostic Report Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/diagnosticreport-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS ProcedureRequest Response</td>
+<td>Defines Procedure Request Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/procedurerequest-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Observation Response</td>
+<td>Defines Observation Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Observation (MicrobiologyChild) Response</td>
+<td>Defines Observation for Microbiology Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observationmicrobiologychild-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Specimen Response</td>
+<td>Defines Specimen Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/specimen-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Patient Response</td>
+<td>Defines Patient Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/patient-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Practitioner (Ordering, Reporting and Performing) Response</td>
+<td>Defines Ordering, Reporting and Performing Practitioner Profile, including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/practitioner-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Practitioner (Copied to) Response</td>
+<td>Defines Coped to Practitioner Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/practitionercopied-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Practitioner (Attending) Response</td>
+<td>Defines Attending Practitioner Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/practitionerattending-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Practitioner (Admitting) Response</td>
+<td>Defines Admitting Practitioner Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/practitioneradmitting-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Organization (Performing) Response</td>
+<td>Defines Performing Organization Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organizationperforming-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Organization (Ordering Facility) Response</td>
+<td>Defines Ordering Organization Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organizationorderingfacility-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Organization (Reporting) Response</td>
+<td>Defines Reporting Organization Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organizationreporting-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Organization (Specimen Collector) Response</td>
+<td>Defines Specimen Collector Organization Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organizationspecimencollector-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Organization (Test Request Placer Response</td>
+<td>Defines Test Request Placer Organization Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organizationrequestplacer-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Organization (Destination Laboratory) Response</td>
+<td>Defines Deatination Organization Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organizationdestination-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Organization(Requesting) Response</td>
+<td>Defines Requesting Organization Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organizationrequesting-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Organization (Identifier Assigner) Response</td>
+<td>Defines Identifier Assigner Profile , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organizationassigner-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Encounter Response</td>
+<td>Defines Encounter , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/encounter-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS OperationOutcome Response</td>
+<td>Defines the capabilities of the eHealth Ontario OLIS server when dealing with OperationOutcome resources, including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/operationoutcome-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>eHealth Ontario OLIS Bundle Response</td>
+<td>Defines content that will be returned when invoking a 'search' operation on the Diagnostic Report endpoint , including extensions, cardinality constraints, etc.</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/bundle-provider" target="_blank">Download XML/JSON</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="extensions">Extensions</h2>
+<p>Extensions defined by this implementation guide</p>
+<table class="regular">
+<thead>
+<tr>
+<th>Extension</th>
+<th>Description</th>
+<th>Download Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>practitioner-copied</td>
+<td>Indicates the copied practitioner</td>
+<td><a href="https://simplifier.net/OntarioLaboratoriesI/practitioner-copied/~overview" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>organization-orderingFacility</td>
+<td>Indicates the healthcare facility where order was created</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organization-orderingfacility" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>organization-specimenCollector</td>
+<td>Indicates the healthcare facility where specimen was collected</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organization-specimencollector" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>organization-testPlacer</td>
+<td>Indicates the healthcare facility where test request was placed</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organization-testplacer" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>report-replaceAll</td>
+<td>If true, indicates that the order has been replaced</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/report-replaceall" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>organization-destinationLab</td>
+<td>Indicates destination laboratory which used for referral orders only. Reference laboratory is identified as the destination laboratory</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organization-destinationlab" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>EN-qualifier</td>
+<td>A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type, the project uses it for the middle name</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/en-qualifier" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>healthCard-versionCode</td>
+<td>Indicates the version code of the health card</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/healthcard-versioncode" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>data-subtype</td>
+<td>Indicate the subtype of data</td>
+<td><a href="https://simplifier.net/OntarioLaboratoriesI/data-subtype" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>request-eventTiming</td>
+<td>Indicates when test should be performed</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/request-eventtiming" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>specimen-numberSampleContainer</td>
+<td>Indicates the number of the sample containers</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/specimen-numbersamplecontainer" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>note</td>
+<td>Indicates notes</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/note" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>observation-sortKey</td>
+<td>Indicates the sequence of observation results within a single procedure request to simplify the display</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation-sortkey" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>observation-subID</td>
+<td>Use observation sub-id to distinguish between multiple observations with the same observation ID associated with one procedure request</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation-subid" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>request-block</td>
+<td>If true, indicates that procedure request has been blocked</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/request-block" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>request-pointOfCareTestID</td>
+<td>Indicates point-of-care test identifier</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/request-pointofcaretestid" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>request-replace</td>
+<td>If true, procedure request has been replaced</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/requets-replace" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>request-sortKey</td>
+<td>Indicates the sequence of requests when diagnostic report is displayed</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/request-sortkey" target="_blank">Download XML/JSON</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<p>Example instances for resource profiles</p>
+<table class="regular">
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+<th>Download Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DiagnosticReport Response</td>
+<td>Example of a valid Diagnostic Report response instance</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/diagnosticreport-example" target="_blank" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>DiagnosticReport with Contained Resources</td>
+<td>Example of a valid Diagnostic Report Contained response instance</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/diagnosticreport-example-contained" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>ProcedureRequest Response</td>
+<td>Example of a valid Procedure Request response instance</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/procedurerequest-example" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>Observation Response</td>
+<td>Example of a valid Observation response instance</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation-example" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>Observation MicrobiologyChild Response</td>
+<td>Example of a valid Microbiology Observation response instance</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observationmicrobiology-example" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>Specimen Response</td>
+<td>Example of a valid Specimen response instance</td>
+<td><a href="https://simplifier.net/OntarioLaboratoriesI/Specimen-example/~xml" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>Patient Response</td>
+<td>Example of a valid Patient response instance</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/patient-example" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>Ordering, Performing and Reporting Practitioner Response</td>
+<td>Example of a valid Ordering Practitioner response instance</td>
+<td><a href="https://simplifier.net/OntarioLaboratoriesI/Practitioner-example" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>Copied to, Attending and Admitting Practitioner Response</td>
+<td>Example of a valid Copied to, Attending and Admitting Practitioner response</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/practitioner-example-2/~xml" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>Performing, Reporting and Ordering Organization Response</td>
+<td>Example of a valid Performing, Reporting and Ordering Organization response</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organization-example" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>Destination, Requesting, Specimen Collector and Test Request Placer Organization Response</td>
+<td>Example of a valid Destination, Specimen Collector Center and Test Request Placer Organization response</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organization-example-2" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>Identifier Assigner Organization Response</td>
+<td>Example of a valid Identifier Assigner Organization response</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/organization-example-3" target="_blank">Download XML/JSON</a></td>
+</tr>
+<tr>
+<td>Encounter Response</td>
+<td>Example of a valid Encounter response</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/encounter-example" target="_blank">Download XML/JSON</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

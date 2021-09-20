@@ -1,0 +1,60 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uni-koeln.de/fhir/ValueSet/cancer-base/procedure-category" />
+  <version value="0.1" />
+  <name value="procedure-category" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Universität Köln" />
+  <description value="Kategorien zur Unterscheidung verschiedener Prozedurklassen." />
+  <compose>
+    <include>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/procedure-category" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uni-koeln-work-procedure-category-1" />
+    <timestamp value="2018-10-31" />
+    <total value="8" />
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/procedure-category" />
+      <code value="surgery" />
+      <display value="OP/Eingriff" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/procedure-category" />
+      <code value="radiotherapy" />
+      <display value="Strahlentherapie" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/procedure-category" />
+      <code value="bone-marrow-transplantation" />
+      <display value="Knochenmarktransplantation" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/procedure-category" />
+      <code value="other-therapy" />
+      <display value="sonstige Therapie" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/procedure-category" />
+      <code value="imaging" />
+      <display value="bildgebende Untersuchung" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/procedure-category" />
+      <code value="clinical" />
+      <display value="klinische Untersuchung" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/procedure-category" />
+      <code value="best-supportive-care" />
+      <display value="Best Supportive Care" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/procedure-category" />
+      <code value="watchful-waiting" />
+      <display value="Watchful Waiting" />
+    </contains>
+  </expansion>
+</ValueSet>

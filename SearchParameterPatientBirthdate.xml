@@ -1,0 +1,61 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2019-03-12T20:04:44.5745615+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-SearchParameter-patient-birthdate" />
+  <name value="SearchParameterPatientBirthdate" />
+  <status value="draft" />
+  <date value="2019-03-12T20:04:44.4044365+00:00" />
+  <description value="A search parameter that defines a named search item that can be used to search/filter on a resource." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="SearchParameter" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/SearchParameter" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="SearchParameter.id">
+      <path value="SearchParameter.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.url">
+      <path value="SearchParameter.url" />
+      <type>
+        <code value="uri" />
+        <profile value="http://ehealthontario.ca/fhir/SearchParameter/Patient-birthdate" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.name">
+      <path value="SearchParameter.name" />
+      <fixedString value="Patient Birthdate" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.status">
+      <path value="SearchParameter.status" />
+      <fixedCode value="active" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.code">
+      <path value="SearchParameter.code" />
+      <fixedCode value="patient.birthdate" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.base">
+      <path value="SearchParameter.base" />
+      <fixedCode value="Patient" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.type">
+      <path value="SearchParameter.type" />
+      <fixedCode value="token" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.description">
+      <path value="SearchParameter.description" />
+      <short value="Patient Birthdate" />
+      <fixedMarkdown value="Patient Birthdate" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

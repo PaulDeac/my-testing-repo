@@ -1,0 +1,65 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/ecog" />
+  <version value="0.1" />
+  <name value="ecog" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Allgemeiner Leistungszustand (ECOG)" />
+  <compose>
+    <include>
+      <system value="urn:oid:1.2.276.0.76.3.1.131.1.5.153" />
+      <concept>
+        <code value="0" />
+        <display value="ECOG 0 (Normale, uneingeschränkte Aktivität wie vor der Erkrankung)" />
+      </concept>
+      <concept>
+        <code value="1" />
+        <display value="ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)" />
+      </concept>
+      <concept>
+        <code value="2" />
+        <display value="ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)" />
+      </concept>
+      <concept>
+        <code value="3" />
+        <display value="ECOG 3: (Nur begrenzte Selbstversorgung möglich; ist 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden)" />
+      </concept>
+      <concept>
+        <code value="4" />
+        <display value="ECOG 4: (Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden)" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-ecog-1" />
+    <timestamp value="2018-08-10" />
+    <total value="5" />
+    <contains>
+      <system value="urn:oid:1.2.276.0.76.3.1.131.1.5.153" />
+      <code value="0" />
+      <display value="ECOG 0 (Normale, uneingeschränkte Aktivität wie vor der Erkrankung)" />
+    </contains>
+    <contains>
+      <system value="urn:oid:1.2.276.0.76.3.1.131.1.5.153" />
+      <code value="1" />
+      <display value="ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)" />
+    </contains>
+    <contains>
+      <system value="urn:oid:1.2.276.0.76.3.1.131.1.5.153" />
+      <code value="2" />
+      <display value="ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)" />
+    </contains>
+    <contains>
+      <system value="urn:oid:1.2.276.0.76.3.1.131.1.5.153" />
+      <code value="3" />
+      <display value="ECOG 3: (Nur begrenzte Selbstversorgung möglich; ist 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden)" />
+    </contains>
+    <contains>
+      <system value="urn:oid:1.2.276.0.76.3.1.131.1.5.153" />
+      <code value="4" />
+      <display value="ECOG 4: (Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden)" />
+    </contains>
+  </expansion>
+</ValueSet>

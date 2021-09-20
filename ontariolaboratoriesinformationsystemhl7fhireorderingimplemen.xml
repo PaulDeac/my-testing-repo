@@ -1,0 +1,12 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <url value="https://simplifier.net/guide/ontariolaboratoriesinformationsystemhl7fhireorderingimplementati" />
+  <name value="Ontario Laboratories Information System HL7 FHIR eOrdering Implementation Guide" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <page>
+    <source value="Home-duplicate-4.md" />
+    <title value="Home" />
+    <kind value="page" />
+    <format value="text/markdown" />
+  </page>
+</ImplementationGuide>

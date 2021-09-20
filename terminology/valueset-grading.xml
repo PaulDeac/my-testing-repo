@@ -1,0 +1,122 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/grading" />
+  <version value="0.1" />
+  <name value="grading" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Histopathologisches Grading" />
+  <compose>
+    <include>
+      <!-- FIXME: canonical URL -->
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <concept>
+        <code value="GX" />
+        <display value="GX" />
+      </concept>
+      <concept>
+        <code value="G0" />
+        <display value="G0" />
+      </concept>
+      <concept>
+        <code value="G1" />
+        <display value="G1" />
+      </concept>
+      <concept>
+        <code value="G2" />
+        <display value="G2" />
+      </concept>
+      <concept>
+        <code value="G3" />
+        <display value="G3" />
+      </concept>
+      <concept>
+        <code value="G4" />
+        <display value="G4" />
+      </concept>
+      <concept>
+        <code value="GL" />
+        <display value="G1-2" />
+      </concept>
+      <concept>
+        <code value="GM" />
+        <display value="G2-3" />
+      </concept>
+      <concept>
+        <code value="GH" />
+        <display value="G3-4" />
+      </concept>
+      <concept>
+        <code value="GB" />
+        <display value="GB" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-grading-1" />
+    <timestamp value="2018-10-31" />
+    <total value="10" />
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="GX" />
+      <display value="GX" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="G0" />
+      <display value="G0" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="G1" />
+      <display value="G1" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="G2" />
+      <display value="G2" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="G3" />
+      <display value="G3" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="G4" />
+      <display value="G4" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="GL" />
+      <display value="G1-2" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="GM" />
+      <display value="G2-3" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="GH" />
+      <display value="G3-4" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="GB" />
+      <display value="GB" />
+    </contains>
+  </expansion>
+</ValueSet>

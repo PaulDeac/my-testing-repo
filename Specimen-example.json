@@ -1,0 +1,66 @@
+{
+  "resourceType": "Specimen",
+  "meta": {
+    "lastUpdated": "2017-08-24T13:32:00Z"
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>%Some xhtml content%</p></div>"
+  },
+  "extension": [
+    {
+      "url": "[base-structure]/ca-on-lab-ext-scc",
+      "valueReference": {
+        "reference": "Organization#2"
+      }
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "[code-system-local-base]/lab/specimen-source",
+        "code": "SER",
+        "display": "SERUM"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient#1"
+  },
+  "receivedTime": "2017-08-24T09:32:00-04:00",
+  "request": [
+    {
+      "reference": "ProcedureRequet#1"
+    }
+  ],
+  "collection": {
+    "collectedPeriod": {
+      "start": "2017-08-24T09:32:00-04:00",
+      "end": "2017-08-24T15:32:00-04:00"
+    },
+    "quantity": {
+      "value": "5.4",
+      "unit": "mg/mL"
+    }
+  },
+  "container": {
+    "identifier": [
+      {
+        "value": "ACL235617"
+      }
+    ],
+    "extension": [
+      {
+        "url": "[base-structure]/ca-on-lab-ext-container-sample-num",
+        "valueQuantity": {
+          "value": "2"
+        }
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Patient did not fast."
+    }
+  ]
+}

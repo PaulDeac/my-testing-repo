@@ -1,0 +1,45 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/stellung-zur-op" />
+  <version value="0.1" />
+  <name value="adt-stellung-zur-op" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Stellung der Therapie zur Operation" />
+  <compose>
+    <include>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/stellung-zur-op" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-stellung-zur-op-1" />
+    <timestamp value="2018-10-31" />
+    <total value="5" />
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/stellung-zur-op" />
+      <code value="O" />
+      <display value="ohne Bezug zu einer operativen Therapie" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/stellung-zur-op" />
+      <code value="A" />
+      <display value="adjuvant/postoperativ" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/stellung-zur-op" />
+      <code value="N" />
+      <display value="neoadjuvant/präoperativ" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/stellung-zur-op" />
+      <code value="I" />
+      <display value="intraoperativ" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/stellung-zur-op" />
+      <code value="S" />
+      <display value="sonstiges" />
+    </contains>
+  </expansion>
+</ValueSet>

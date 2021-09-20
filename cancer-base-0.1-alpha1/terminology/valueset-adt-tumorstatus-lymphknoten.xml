@@ -1,0 +1,60 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uni-koeln.de/fhir/ValueSet/cancer-base/adt/tumorstatus-lymphknoten" />
+  <version value="0.1" />
+  <name value="adt-tumorstatus-lymphknoten" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Universität Köln" />
+  <description value="Tumorstatus der Lymphknoten nach ADT." />
+  <compose>
+    <include>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-lymphknoten" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uni-koeln-work-tumorstatus-lymphknoten-1" />
+    <timestamp value="2018-10-31" />
+    <total value="8" />
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-lymphknoten" />
+      <code value="K" />
+      <display value="kein Lymphknotenbefall nachweisbar" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-lymphknoten" />
+      <code value="R" />
+      <display value="neu aufgetretenes Lymphknotenrezidiv" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-lymphknoten" />
+      <code value="T" />
+      <display value="bekannter Lymphknotenbefall Residuen" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-lymphknoten" />
+      <code value="P" />
+      <display value="bekannter Lymphknotenbefall Progress" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-lymphknoten" />
+      <code value="N" />
+      <display value="bekannter Lymphknotenbefall No Change" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-lymphknoten" />
+      <display value="fraglicher Befund" />
+      <code value="F" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-lymphknoten" />
+      <code value="U" />
+      <display value="unbekannt" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-lymphknoten" />
+      <code value="X" />
+      <display value="fehlende Angabe" />
+    </contains>
+  </expansion>
+</ValueSet>

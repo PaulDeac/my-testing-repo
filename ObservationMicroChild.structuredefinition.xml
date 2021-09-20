@@ -1,0 +1,601 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="858927da-d9ed-4dfd-a1b3-f6c3c6b3b173" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2019-03-12T19:21:20.2002781+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Observation-child" />
+  <name value="ObservationMicrobiologyChild" />
+  <status value="draft" />
+  <date value="2019-03-12T19:21:19.8152444Z" />
+  <description value="Measurements and simple assertions made about a patient, device or other subject.&#xD;&#xA;This resource will represent child observation for Microbiology tests." />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="OLIS-HL7-v2" />
+    <name value="OLIS HL7 v2" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.id">
+      <path value="Observation.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.extension">
+      <path value="Observation.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.extension:observation-SubID">
+      <path value="Observation.extension" />
+      <sliceName value="observation-SubID" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-obs-sub-id" />
+      </type>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.4" />
+      </mapping>
+    </element>
+    <element id="Observation.extension:observation-SubID.id">
+      <path value="Observation.extension.id" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Observation.extension:observation-SubID.url">
+      <path value="Observation.extension.url" />
+      <fixedUri value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-obs-sub-id" />
+    </element>
+    <element id="Observation.extension:observation-SubID.value[x]">
+      <path value="Observation.extension.value[x]" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Observation.extension:observation-sortKey">
+      <path value="Observation.extension" />
+      <sliceName value="observation-sortKey" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-obs-sort-key" />
+      </type>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZBX.2" />
+      </mapping>
+    </element>
+    <element id="Observation.extension:observation-sortKey.id">
+      <path value="Observation.extension.id" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Observation.extension:observation-sortKey.url">
+      <path value="Observation.extension.url" />
+      <fixedUri value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-obs-sort-key" />
+    </element>
+    <element id="Observation.extension:note">
+      <path value="Observation.extension" />
+      <sliceName value="note" />
+      <max value="5" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-note" />
+      </type>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZNT-NTE" />
+      </mapping>
+    </element>
+    <element id="Observation.extension:note.id">
+      <path value="Observation.extension.id" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Observation.extension:note.url">
+      <path value="Observation.extension.url" />
+      <fixedUri value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-note" />
+    </element>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier.system">
+      <path value="Observation.identifier.system" />
+      <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique.&#xD;&#xA;&#xD;&#xA;OLIS URI example :  [id-system-local-base] /lab/filler-id-[type]-license-[id]" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR.3.3" />
+      </mapping>
+    </element>
+    <element id="Observation.identifier.value">
+      <path value="Observation.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR.3.1" />
+      </mapping>
+    </element>
+    <element id="Observation.identifier.assigner">
+      <path value="Observation.identifier.assigner" />
+      <definition value="Organization that issued/manages the identifier.&#xD;&#xA;&#xD;&#xA;OLIS: Only assigner name from organization resource will be populated" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Organization-assigner" />
+        <aggregation value="referenced" />
+        <aggregation value="contained" />
+      </type>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR.3.3" />
+      </mapping>
+    </element>
+    <element id="Observation.identifier.assigner.reference">
+      <path value="Observation.identifier.assigner.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.basedOn">
+      <path value="Observation.basedOn" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-ProcedureRequest" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.basedOn.reference">
+      <path value="Observation.basedOn.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="default: final" />
+      </extension>
+      <path value="Observation.status" />
+      <short value="preliminary | final | amended +" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ObservationStatus" />
+        </extension>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealthontario.ca/fhir/ValueSet/lab/observation-status" />
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.11" />
+      </mapping>
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.id">
+      <path value="Observation.category.id" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Observation.category.coding">
+      <path value="Observation.category.coding" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Observation Category" />
+        <valueSetUri value="http://ehealthontario.ca/fhir/ValueSet/lab/observation-category" />
+      </binding>
+    </element>
+    <element id="Observation.category.coding.system">
+      <path value="Observation.category.coding.system" />
+      <fixedUri value="http://hl7.org/fhir/STU3/codesystem-observation-category.html" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding.code">
+      <path value="Observation.category.coding.code" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Observation Category" />
+        <valueSetUri value="http://ehealthontario.ca/fhir/ValueSet/lab/observation-category" />
+      </binding>
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.system">
+      <path value="Observation.code.coding.system" />
+      <code>
+        <system value="http://loinc.org" />
+      </code>
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.3.3" />
+      </mapping>
+    </element>
+    <element id="Observation.code.coding.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.3.1" />
+      </mapping>
+    </element>
+    <element id="Observation.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.code.coding.display" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.3.2" />
+      </mapping>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Patient" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject.reference">
+      <path value="Observation.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime">
+      <path value="Observation.effectiveDateTime" />
+      <sliceName value="effectiveDateTime" />
+      <definition value="The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;. This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.&#xD;&#xA;&#xD;&#xA;OLIS: Date/Time of observation -use this field for ancillary order only.  This field must be empty when a laboratory reports a test result." />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.14.1" />
+      </mapping>
+    </element>
+    <element id="Observation.issued">
+      <path value="Observation.issued" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZBX.1" />
+      </mapping>
+    </element>
+    <element id="Observation.performer">
+      <path value="Observation.performer" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="resolve()" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Practitioner-ordering" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Organization-performing" />
+        <aggregation value="referenced" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.performer:performer-organization">
+      <path value="Observation.performer" />
+      <sliceName value="performer-organization" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Organization-performing" />
+      </type>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZBR.6-ZBR.7" />
+      </mapping>
+    </element>
+    <element id="Observation.performer:performer-organization.reference">
+      <path value="Observation.performer.reference" />
+      <fixedString value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Organization-performing" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.performer:performer-practitioner">
+      <path value="Observation.performer" />
+      <sliceName value="performer-practitioner" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Practitioner-ordering" />
+      </type>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZBR.6-ZBR.7" />
+      </mapping>
+    </element>
+    <element id="Observation.performer:performer-practitioner.reference">
+      <path value="Observation.performer.reference" />
+      <fixedString value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Practitioner-ordering" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <definition value="The information determined as a result of making the observation, if the information has a simple value.&#xD;&#xA;&#xD;&#xA;&lt;a href=&quot;https://simplifier.net/ontariolaboratoriesi/observation-micro-codes&quot;&gt;Click here for observation-microbiology codebale concept value set&lt;/a&gt;" />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+      <type>
+        <code value="Ratio" />
+      </type>
+      <type>
+        <code value="Attachment" />
+      </type>
+      <type>
+        <code value="time" />
+      </type>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.interpretation">
+      <path value="Observation.interpretation" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ObservationInterpretation" />
+        </extension>
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://ehealthontario.ca/fhir/ValueSet/lab/observation-interpretation" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Observation.interpretation.coding">
+      <path value="Observation.interpretation.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.interpretation.coding.system">
+      <path value="Observation.interpretation.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://hl7.org/fhir/v2/0078" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.interpretation.coding.code">
+      <path value="Observation.interpretation.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.8" />
+      </mapping>
+    </element>
+    <element id="Observation.interpretation.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.interpretation.coding.display" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.method">
+      <path value="Observation.method" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.method.coding">
+      <path value="Observation.method.coding" />
+      <max value="1" />
+    </element>
+    <element id="Observation.method.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.method.text" />
+      <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.&#xD;&#xA;&#xD;&#xA;OLIS: How the observation has been done.&#xD;&#xA;Only 2 values can be used: PCR (Polymerase Chain Reaction) or EIA (Enzyme Immunosorbent Assay)" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.17.2" />
+      </mapping>
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Specimen" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.specimen.reference">
+      <path value="Observation.specimen.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange.low">
+      <path value="Observation.referenceRange.low" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange.low.id">
+      <path value="Observation.referenceRange.low.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange.low.value">
+      <path value="Observation.referenceRange.low.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.7" />
+      </mapping>
+    </element>
+    <element id="Observation.referenceRange.low.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.referenceRange.low.unit" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.6" />
+      </mapping>
+    </element>
+    <element id="Observation.referenceRange.high">
+      <path value="Observation.referenceRange.high" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange.high.id">
+      <path value="Observation.referenceRange.high.id" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Observation.referenceRange.high.value">
+      <path value="Observation.referenceRange.high.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.7" />
+      </mapping>
+    </element>
+    <element id="Observation.referenceRange.high.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.referenceRange.high.unit" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.6" />
+      </mapping>
+    </element>
+    <element id="Observation.referenceRange.appliesTo">
+      <path value="Observation.referenceRange.appliesTo" />
+      <definition value="Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.&#xD;&#xA;&#xD;&#xA;OLIS can return maximum 3 codes." />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBX.10" />
+      </mapping>
+    </element>
+    <element id="Observation.referenceRange.appliesTo.coding">
+      <path value="Observation.referenceRange.appliesTo.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange.appliesTo.coding.system">
+      <path value="Observation.referenceRange.appliesTo.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://hl7.org/fhir/v2/0080" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange.appliesTo.coding.code">
+      <path value="Observation.referenceRange.appliesTo.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange.appliesTo.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.referenceRange.appliesTo.coding.display" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.related">
+      <path value="Observation.related" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.related.type">
+      <path value="Observation.related.type" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.related.target">
+      <path value="Observation.related.target" />
+      <definition value="A reference to the observation or [QuestionnaireResponse](questionnaireresponse.html#) resource that is related to this observation.&#xD;&#xA;&#xD;&#xA;OLIS: Reference to the parent observation resource for microbiology" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Observation" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+      </type>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR.26" />
+      </mapping>
+    </element>
+    <element id="Observation.related.target.reference">
+      <path value="Observation.related.target.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

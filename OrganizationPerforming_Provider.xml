@@ -1,0 +1,125 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="6ec58e35-cdde-4f07-95e3-97d539e71e24r" />
+  <meta>
+    <lastUpdated value="2019-03-11T18:59:59.9491981+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-provider-profile-Organization-performing" />
+  <name value="OrganizationPerforming" />
+  <status value="draft" />
+  <date value="2019-03-11T18:59:59.7784343+00:00" />
+  <description value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc.&#xD;&#xA;This resource will represent performing laboratory which is reference from Observation resource." />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="OLIS-HL7-v2" />
+    <name value="OLIS HL7 v2" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization">
+      <path value="Organization" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.id">
+      <path value="Organization.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Organization.identifier.system">
+      <path value="Organization.identifier.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZBR.6.6" />
+      </mapping>
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZBR.6.1" />
+      </mapping>
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.type">
+      <path value="Organization.address.type" />
+      <short value="both" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="AddressType" />
+        </extension>
+        <strength value="required" />
+        <valueSetUri value="http://ehealthontario.ca/fhir/ValueSet/lab/address-type" />
+      </binding>
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZBR.7.7" />
+      </mapping>
+    </element>
+    <element id="Organization.address.line">
+      <path value="Organization.address.line" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZBR.7.1" />
+      </mapping>
+    </element>
+    <element id="Organization.address.city">
+      <path value="Organization.address.city" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZBR.7.3" />
+      </mapping>
+    </element>
+    <element id="Organization.address.state">
+      <path value="Organization.address.state" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZBR.7.4" />
+      </mapping>
+    </element>
+    <element id="Organization.address.postalCode">
+      <path value="Organization.address.postalCode" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZBR.7.5" />
+      </mapping>
+    </element>
+    <element id="Organization.address.country">
+      <path value="Organization.address.country" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="ZBR.7.6" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

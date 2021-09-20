@@ -1,0 +1,99 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="c76aa77c-e164-4f30-82ea-e0d281986198" />
+  <meta>
+    <lastUpdated value="2019-03-11T15:27:15.598479+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-provider-profile-Encounter" />
+  <name value="Encounter" />
+  <status value="draft" />
+  <date value="2019-03-11T15:27:15.4238717+00:00" />
+  <description value="An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. OLIS uses the resource to identify attending and admitting practitioners." />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="OLIS-HL7-v2" />
+    <name value="OLIS HL7 v2" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Encounter" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Encounter">
+      <path value="Encounter" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.id">
+      <path value="Encounter.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.status">
+      <path value="Encounter.status" />
+      <fixedCode value="unknown" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.participant">
+      <path value="Encounter.participant" />
+      <definition value="The list of people responsible for providing the service.&#xD;&#xA;OLIS: attending, admitting practitioners" />
+      <max value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.participant.type">
+      <path value="Encounter.participant.type" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ParticipantType" />
+        </extension>
+        <strength value="extensible" />
+        <valueSetUri value="http://ehealthontario.ca/fhir/ValueSet/lab/encounter-participant-type" />
+      </binding>
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="PV1.17/PV1.7" />
+      </mapping>
+    </element>
+    <element id="Encounter.participant.type.coding">
+      <path value="Encounter.participant.type.coding" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.participant.type.coding.system">
+      <path value="Encounter.participant.type.coding.system" />
+      <fixedUri value="http://hl7.org/fhir/v3/ParticipationType" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.participant.type.coding.code">
+      <path value="Encounter.participant.type.coding.code" />
+      <comment value="Use  ADM for admitting physician and  ATND for attending physician." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.participant.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Encounter.participant.type.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.participant.individual">
+      <path value="Encounter.participant.individual" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-provider-profile-Practitioner-admitting" />
+        <aggregation value="contained" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-provider-profile-Practitioner-attending" />
+        <aggregation value="contained" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.participant.individual.reference">
+      <path value="Encounter.participant.individual.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,12 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <url value="https://simplifier.net/guide/cancercarerecord" />
+  <name value="Cancer Care Record" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <page>
+    <source value="Home.md" />
+    <title value="Home" />
+    <kind value="page" />
+    <format value="text/markdown" />
+  </page>
+</ImplementationGuide>

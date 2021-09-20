@@ -1,0 +1,41 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/medication-category" />
+  <version value="0.1" />
+  <name value="medication-category" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Kategorien zur Unterscheidung verschiedener Medikationsklassen." />
+  <caseSensitive value="true" />
+  <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/medication-category" />
+  <content value="complete" />
+  <concept>
+    <code value="C" />
+    <display value="Chemotherapie" />
+  </concept>
+  <concept>
+    <code value="I" />
+    <display value="Immuntherapie/Antikörpertherapie" />
+  </concept>
+  <concept>
+    <code value="H" />
+    <display value="Hormontherapie/antihormonelle Therapie" />
+  </concept>
+  <concept>
+    <code value="KM" />
+    <display value="Konditionierung für Knochenmarktransplantation" />
+  </concept>
+  <concept>
+    <code value="BP" />
+    <display value="Biphosphonate" />
+  </concept>
+  <concept>
+    <code value="B" />
+    <display value="Begleitmedikation" />
+  </concept>
+  <concept>
+    <code value="SO" />
+    <display value="sonstige medikamentöse Therapie" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Ontario Laboratories Information System HL7 FHIR® Provider Query Implementation Guide - v1.0.0 </title>
+
+        <link rel="icon" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/favicon.ico" />
+
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/jquery/jquery.min.js"></script>
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/main.min.css" />
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/rendering.min.css" />
+
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/project/OntarioLaboratoriesInformationSystemProviderQuery1.0.0-Draft/style.css?v=1d59583fe7a9f00" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-twolevelmenu">
+
+                    <div class="header">
+                        
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=".html">
+                Ontario Laboratories Information System HL7 FHIR&#xAE; Provider Query Implementation Guide - v1.0.0 
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Home <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="Home.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="Introduction.html">
+                                            Introduction
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Scope.html">
+                                            Scope
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="IntendedAudience.html">
+                                            Intended Audience
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ReferenceMaterials.html">
+                                            Reference Materials
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="IdentifierPolicy.html">
+                                            Identifier Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AcronymsandAbbreviations.html">
+                                            Acronyms and Abbreviations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="RevisionHistory.html">
+                                            Revision History
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="KnownIssues.html">
+                                            Known Issues
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Business Context <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="BusinessContext.html">
+                                            Business Context
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="BusinessModel.html">
+                                            Business Model
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="BusinessData.html">
+                                            Business Data
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="UseCases.html">
+                                            Use Cases
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="BusinessRules.html">
+                                            Business Rules
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Implementation Guidance <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuidance.html">
+                                            Implementation Guidance
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ConsumerResponsibility.html">
+                                            Consumer Responsibility
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationConsideration.html">
+                                            Implementation Consideration
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Connectivity.html">
+                                            Connectivity
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Profiles &amp; Operations <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ProfilesOperations.html">
+                                            Profiles &amp; Operations
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="DiagnosticReportSearch.html">
+                                            DiagnosticReport Search
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Capability Statement <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="CapabilityStatement.html">
+                                            Capability Statement
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ResponseHandling.html">
+                                            Response Handling
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Terminology <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="Terminology.html">
+                                            Terminology
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="TerminologyUpdates.html">
+                                            Terminology Updates
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Identifiers.html">
+                                            Identifiers
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Downloads.html">
+                                Downloads
+                            </a>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                    </div>
+
+                    <div class="content container">
+                        
+
+    <div class="row">
+
+
+        <div class="col-md-24">
+
+            <div id="preview-content">
+
+                <p id="breadcrumb">
+<p><a href="https://simplifier.net/guide/ontariolaboratoriesinformationsystemconsumerquery/home">Table of Contents</a> &gt; Terminology</p>
+</p>
+<h1 id="terminology">Terminology</h1>
+<p>Various coded values which are used to describe clinical concepts within health records as well as codes used within messages to meet the structural requirements of interfaces.</p>
+<p><strong>Value Sets defined by this implementation guide:</strong></p>
+<table class="regular">
+<thead>
+<tr>
+<th>Value Set</th>
+<th>Description</th>
+<th>Profiles</th>
+<th>Binding Strength</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/address-type" target="_blank">AddressType</a></td>
+<td>Codes supported by eHealth Ontario differentiating mailing from physical addresses</td>
+<td><a href="https://simplifier.net/OntarioLaboratoriesI/Patient/%7Eoverview">Patient: Patient.address.type</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/address-use" target="_blank">AddressUse</a></td>
+<td>Codes supported by eHealth Ontario indicating how the patient and provider address is used</td>
+<td><a href="https://simplifier.net/OntarioLaboratoriesI/Patient/%7Eoverview">Patient: Patient.address.use</a>, <br> <a href="https://simplifier.net/ontariolaboratoriesi/practitioner">Practitioner: Practitioner.address.use</a>, <br><a href="https://simplifier.net/ontariolaboratoriesi/organizationorderingfacility">OrganizationOrderingFacility: Organization.address.use</a>, <br><a href="https://simplifier.net/ontariolaboratoriesi/organizationperforming">OrganizationPerforming: Organization.address.use</a>,  <br><a href="https://simplifier.net/ontariolaboratoriesi/organizationreporting">OrganizationReporting: Organization.address.use</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/administrative-gender" target="_blank">AdministrativeGender</a></td>
+<td>Administrative gender for patients and practitioners supported by eHealth Ontario</td>
+<td><a href="https://simplifier.net/OntarioLaboratoriesI/Patient/%7Eoverview">Patient: Patient.gender</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/contact-point-system" target="_blank">ContactPointSystem</a></td>
+<td>Codes supported by eHealth Ontario differentiating types of contact point systems</td>
+<td><a href="https://simplifier.net/OntarioLaboratoriesI/Patient/%7Eoverview">Patient: Patient.contact.telecom.system</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/contact-point-use" target="_blank">ContactPointUse</a></td>
+<td>Codes supported by eHealth Ontario differentiating uses of contact points</td>
+<td><a href="https://simplifier.net/OntarioLaboratoriesI/Patient/%7Eoverview">Patient: Patient.contact.telecom.use</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/diagnostic-report-status" target="_blank">DiagnosticReportStatus</a></td>
+<td>Codes supported by eHealth Ontario differentiating uses of diagnostic report status</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/diagnosticreport">DiagnosticReport: DiagnosticReport.status</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation-datasubtype" target="_blank">DataSubtype</a></td>
+<td>Attachment subtype of referenced data supported by eHealth Ontario</td>
+<td><a href="https://simplifier.net/OntarioLaboratoriesi/Attachment">Observation: Observation.value.valueAttachment.extension.data-subtype</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation-interpretation" target="_blank">Interpretation</a></td>
+<td>Abnormal observation flags supported by eHealth Ontario</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation">Observation: Observation.interpretation</a>, <br><a href="https://simplifier.net/ontariolaboratoriesi/observationmicrochild">ObservationMicrobiologChild: Observation.interpretation</a></td>
+<td>Extensible</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation-natureabnormaltest" target="_blank">NatureOfAbnormalTest</a></td>
+<td>Codes supported by eHealth Ontario differentiating types nature of abnormal tests</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/Observation">Observation: Observation.referenceRange.appliesTo</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation-status" target="_blank">ObservationStatus</a></td>
+<td>Codes supported by eHealth Ontario differentiating uses of observation status</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation">Observation: Observation.status</a>, <br> <a href="https://simplifier.net/ontariolaboratoriesi/observationmicrobiologychild">ObservationMicrobiologyChild: Observation.status</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation-codes" target="_blank">ObservationCodes</a></td>
+<td>Observation codes supported by eHealth Ontario</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation">Observation: Observation.code</a>, <a href="https://simplifier.net/ontariolaboratoriesi/observationmicrobiologychild">ObservationMicrobiologyChild: Observation.code</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation-micro-codes" target="_blank">ObservationMicrobiologyCodes</a></td>
+<td>Microbiology codes supported by eHealth Ontario</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observationmicrobiologychild">ObservationMicrobiologyChild: Observation.value</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation-category" target="_blank">ObservationCategory</a></td>
+<td>Observation category codes supported by eHealth Ontario</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation">Observation: Observation.category</a>, <br> <a href="https://simplifier.net/ontariolaboratoriesi/observationmicrochild">ObservationMicrobiologyChild: Observation.category</a></td>
+<td>Preferred</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation-relationship-type" target="_blank">ObservationRelationshipType</a></td>
+<td>Codes specifying how two observations are related supported by eHealth Ontario</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/observation">Observation: Observation.related.type</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/encounter-participant-type" target="_blank">ParticipantType</a></td>
+<td>Participant type for physicians supported by eHealth Ontario</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/encounter">Encounter: Encounter.partcipant.type</a></td>
+<td>Extensible</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/procedure-request-codes" target="_blank">ProcedureRequestCodes</a></td>
+<td>Procedure request codes supported by eHealth Ontario</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/procedurerequest">ProcedureRequest: ProcedureRequest.code</a></td>
+<td>Extensible</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/request-priority" target="_blank">RequestPriority</a></td>
+<td>Codes providing request priority supported by eHealth Ontario</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/procedurerequest">ProcedureRequest: ProcedureRequest.requisition.priority</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/request-status" target="_blank">RequestStatus</a></td>
+<td>Codes supported by eHealth Ontario differentiating uses of request status</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/procedurerequest">ProcedureRequest: ProcedureRequest.requisition.status</a></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/sourceofcomment" target="_blank">SourceOfComment</a></td>
+<td>Codes supported by eHealth Ontario differentiating source of comments types</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/diagnosticreport">DiagnosticReport: DiagnosticReport.extension.note</a>, <br> <a href="https://simplifier.net/ontariolaboratoriesi/procedurerequest">ProcedureRequest: ProcedureRequest.extension.note</a>, <br> <a href="https://simplifier.net/ontariolaboratoriesi/observation">Observation: Observation.extension.note</a></td>
+<td>Optional</td>
+</tr>
+<tr>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/specimen-specimensource" target="_blank">SpecimenSourceCodes</a></td>
+<td>Specimen source codes supported by eHealth Ontario</td>
+<td><a href="https://simplifier.net/ontariolaboratoriesi/specimen">Specimen: Specimen.collection.bodySite.code</a></td>
+<td>Required</td>
+</tr>
+</tbody>
+</table>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

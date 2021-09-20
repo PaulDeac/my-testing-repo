@@ -1,0 +1,41 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/vitalstatus" />
+  <version value="0.1" />
+  <name value="vitalstatus" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Vitalstatus des Patienten" />
+  <caseSensitive value="true" />
+  <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/vitalstatus" />
+  <content value="complete" />
+  <concept>
+    <code value="L" />
+    <display value="Patient lebt" />
+  </concept>
+  <concept>
+    <code value="T" />
+    <display value="Patient verstorben" />
+  </concept>
+  <concept>
+    <code value="A" />
+    <display value="unbekannt, Patient nicht mehr auffindbar (lost to follow-up)" />
+  </concept>
+  <concept>
+    <code value="N" />
+    <display value="unbekannt, Betreuung/Nachsorge nicht mehr nötig" />
+  </concept>
+  <concept>
+    <code value="B" />
+    <display value="unbekannt, Patient ist anderenorts in Betreuung" />
+  </concept>
+  <concept>
+    <code value="V" />
+    <display value="unbekannt, Patient verweigert weitere Betreuung" />
+  </concept>
+  <concept>
+    <code value="X" />
+    <display value="unbekannt" />
+  </concept>
+</CodeSystem>

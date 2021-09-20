@@ -1,0 +1,38 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/documentreference-type" />
+  <version value="0.1" />
+  <name value="documentreference-type" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Dokumenttypen" />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <concept>
+        <code value="51852-2" />
+        <display value="Letter" />
+      </concept>
+      <concept>
+        <code value="59776-5" />
+        <display value="Procedure findings Narrative" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="documentreference-type" />
+    <timestamp value="2018-10-31" />
+    <total value="2" />
+    <concept>
+      <system value="http://loinc.org" />
+      <code value="51852-2" />
+      <display value="Letter" />
+    </concept>
+    <concept>
+      <system value="http://loinc.org" />
+      <code value="59776-5" />
+      <display value="Procedure findings Narrative" />
+    </concept>
+  </expansion>
+</ValueSet>

@@ -1,0 +1,132 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uni-koeln.de/fhir/ValueSet/cancer-base/metastasenlokalisation" />
+  <version value="0.1" />
+  <name value="metastasenlokalisation" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Universität Köln" />
+  <description value="Metastasenlokalisation" />
+  <compose>
+    <include>
+      <!-- FIXME: canonical URL -->
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <concept>
+        <code value="PUL" />
+        <display value="PUL" />
+      </concept>
+      <concept>
+        <code value="MAR" />
+        <display value="MAR" />
+      </concept>
+      <concept>
+        <code value="OSS" />
+        <display value="OSS" />
+      </concept>
+      <concept>
+        <code value="PLE" />
+        <display value="PLE" />
+      </concept>
+      <concept>
+        <code value="HEP" />
+        <display value="HEP" />
+      </concept>
+      <concept>
+        <code value="PER" />
+        <display value="PER" />
+      </concept>
+      <concept>
+        <code value="BRA" />
+        <display value="BRA" />
+      </concept>
+      <concept>
+        <code value="ADR" />
+        <display value="ADR" />
+      </concept>
+      <concept>
+        <code value="LYM" />
+        <display value="LYM" />
+      </concept>
+      <concept>
+        <code value="SKI" />
+        <display value="SKI" />
+      </concept>
+      <concept>
+        <code value="OTH" />
+        <display value="OTH" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uni-koeln-work-metastasenlokalisation-1" />
+    <timestamp value="2018-10-31" />
+    <total value="11" />
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="PUL" />
+      <display value="PUL" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="MAR" />
+      <display value="MAR" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="OSS" />
+      <display value="OSS" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="PLE" />
+      <display value="PLE" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="HEP" />
+      <display value="HEP" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="PER" />
+      <display value="PER" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="BRA" />
+      <display value="BRA" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="ADR" />
+      <display value="ADR" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="LYM" />
+      <display value="LYM" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="SKI" />
+      <display value="SKI" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="OTH" />
+      <display value="OTH" />
+    </contains>
+  </expansion>
+</ValueSet>

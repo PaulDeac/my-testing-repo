@@ -1,0 +1,56 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uni-koeln.de/fhir/ValueSet/cancer-base/adt/tumorstatus-gesamtbeurteilung" />
+  <version value="0.1" />
+  <name value="adt-tumorstatus-gesamtbeurteilung" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Universität Köln" />
+  <description value="Tumorstatus Gesamtbeurteilung nach ADT." />
+  <compose>
+    <include>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-gesamtbeurteilung" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uni-koeln-work-tumorstatus-gesamtbeurteilung-1" />
+    <timestamp value="2018-10-31" />
+    <total value="9" />
+    <contains>
+      <code value="V" />
+      <display value="Vollremission (complete remission, CR)" />
+    </contains>
+    <contains>
+      <code value="T" />
+      <display value="Teilremission / mindestens 50% Rückgang des Tumors (partial remission, PR)" />
+    </contains>
+    <contains>
+      <code value="K" />
+      <display value="keine Änderung (no change, NC) = stable disease" />
+    </contains>
+    <contains>
+      <code value="P" />
+      <display value="Progression" />
+    </contains>
+    <contains>
+      <code value="D" />
+      <display value="divergentes Geschehen" />
+    </contains>
+    <contains>
+      <code value="B" />
+      <display value="klinische Besserung des Zustandes, Kriterien für Teilremission jedoch nicht erfüllt (minimal response, MR)" />
+    </contains>
+    <contains>
+      <code value="R" />
+      <display value="Vollremission mit residualen Auffälligkeiten (CRr)" />
+    </contains>
+    <contains>
+      <code value="U" />
+      <display value="Beurteilung unmöglich" />
+    </contains>
+    <contains>
+      <code value="X" />
+      <display value="fehlende Angabe" />
+    </contains>
+  </expansion>
+</ValueSet>

@@ -1,0 +1,38 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uni-koeln.de/fhir/ValueSet/cancer-base/tnm-art" />
+  <version value="0.1" />
+  <name value="tnm-art" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Universität Köln" />
+  <description value="Art des TNM (klinische oder pathologische Sicherung)" />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+      <concept>
+        <code value="75620-5" />
+        <display value="TNM clinical staging before treatment panel" />
+      </concept>
+      <concept>
+        <code value="75621-3" />
+        <display value="TNM pathologic staging after surgery panel" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uni-koeln-work-tnm-art-1" />
+    <timestamp value="2018-10-31" />
+    <total value="2" />
+    <contains>
+      <system value="http://loinc.org" />
+      <code value="75620-5" />
+      <display value="TNM clinical staging before treatment panel" />
+    </contains>
+    <contains>
+      <system value="http://loinc.org" />
+      <code value="75621-3" />
+      <display value="TNM pathologic staging after surgery panel" />
+    </contains>
+  </expansion>
+</ValueSet>

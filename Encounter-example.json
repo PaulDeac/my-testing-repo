@@ -1,0 +1,29 @@
+{
+  "resourceType": "Encounter",
+  "meta": {
+    "lastUpdated": "2017-08-30T15:50:36Z"
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>%Some xhtml content%</p></div>"
+  },
+  "status": "unknown",
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": " http://hl7.org/fhir/v3/ParticipationType",
+              "code": "ADM",
+              "display": "Admitting"
+            }
+          ]
+        }
+      ],
+      "individual": {
+        "reference": "Practitioner#1"
+      }
+    }
+  ]
+}

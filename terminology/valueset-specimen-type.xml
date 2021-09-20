@@ -1,0 +1,28 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/specimen-category" />
+  <version value="0.1" />
+  <name value="specimen-category" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Kategorien zur Unterscheidung verschiedener Biomaterialklassen." />
+  <compose>
+    <include>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/specimen-category" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-specimen-category-1" />
+    <timestamp value="2018-10-31" />
+    <total value="2" />
+    <contains>
+      <code value="tumor" />
+      <display value="Tumormaterial" />
+    </contains>
+    <contains>
+      <code value="comparison" />
+      <display value="Vergleichsmaterial" />
+    </contains>
+  </expansion>
+</ValueSet>

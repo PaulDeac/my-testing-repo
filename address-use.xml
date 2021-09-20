@@ -1,0 +1,22 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <id value="olis-AddressUse" />
+  <url value="http://ehealthontario.ca/fhir/ValueSet/lab/address-use" />
+  <version value="1.0.0" />
+  <name value="AddressUse" />
+  <status value="active" />
+  <publisher value="eHealth Ontario" />
+  <description value="Codes supported by eHealth Ontario indicating how the patient address is used. This is strict sub-set of the core FHIR value set." />
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/address-use" />
+      <concept>
+        <code value="home" />
+        <display value="Home" />
+      </concept>
+      <concept>
+        <code value="work" />
+        <display value="Work" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Ontario Laboratories Information System HL7 FHIR® Provider Query Implementation Guide - v1.0.0 </title>
+
+        <link rel="icon" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/favicon.ico" />
+
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/jquery/jquery.min.js"></script>
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/main.min.css" />
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/rendering.min.css" />
+
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/project/OntarioLaboratoriesInformationSystemProviderQuery1.0.0-Draft/style.css?v=1d59583fe7a9f00" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-twolevelmenu">
+
+                    <div class="header">
+                        
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=".html">
+                Ontario Laboratories Information System HL7 FHIR&#xAE; Provider Query Implementation Guide - v1.0.0 
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Home <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="Home.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="Introduction.html">
+                                            Introduction
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Scope.html">
+                                            Scope
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="IntendedAudience.html">
+                                            Intended Audience
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ReferenceMaterials.html">
+                                            Reference Materials
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="IdentifierPolicy.html">
+                                            Identifier Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AcronymsandAbbreviations.html">
+                                            Acronyms and Abbreviations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="RevisionHistory.html">
+                                            Revision History
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="KnownIssues.html">
+                                            Known Issues
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Business Context <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="BusinessContext.html">
+                                            Business Context
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="BusinessModel.html">
+                                            Business Model
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="BusinessData.html">
+                                            Business Data
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="UseCases.html">
+                                            Use Cases
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="BusinessRules.html">
+                                            Business Rules
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Implementation Guidance <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuidance.html">
+                                            Implementation Guidance
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ConsumerResponsibility.html">
+                                            Consumer Responsibility
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationConsideration.html">
+                                            Implementation Consideration
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Connectivity.html">
+                                            Connectivity
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Profiles &amp; Operations <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ProfilesOperations.html">
+                                            Profiles &amp; Operations
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="DiagnosticReportSearch.html">
+                                            DiagnosticReport Search
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Capability Statement <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="CapabilityStatement.html">
+                                            Capability Statement
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ResponseHandling.html">
+                                            Response Handling
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Terminology <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="Terminology.html">
+                                            Terminology
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="TerminologyUpdates.html">
+                                            Terminology Updates
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Identifiers.html">
+                                            Identifiers
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Downloads.html">
+                                Downloads
+                            </a>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                    </div>
+
+                    <div class="content container">
+                        
+
+    <div class="row">
+
+
+        <div class="col-md-24">
+
+            <div id="preview-content">
+
+                <p id="breadcrumb">
+<p><a href="https://simplifier.net/guide/OntarioLaboratoriesInformationSystemProviderQuery/Home">Home</a> &gt; Acronyms and Abbreviations</p>
+</p>
+<h1 id="acronyms-and-abbreviations">Acronyms and Abbreviations</h1>
+<p>Acronyms and abbreviations are commonly used within this specification.</p>
+<p><strong>Table: Acronyms and Abbreviations</strong></p>
+<table class="regular">
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Term</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DOB</td>
+<td>Date of Birth</td>
+</tr>
+<tr>
+<td>EHR</td>
+<td>Electronic Health Record</td>
+</tr>
+<tr>
+<td>FHIR®</td>
+<td>HL7 Fast Healthcare Interoperability Resources Standard</td>
+</tr>
+<tr>
+<td>HCN</td>
+<td>Provincial Health Card Number</td>
+</tr>
+<tr>
+<td>HIC</td>
+<td>Health Information Custodian</td>
+</tr>
+<tr>
+<td>HL7</td>
+<td>Health Level Seven</td>
+</tr>
+<tr>
+<td>HTTP</td>
+<td>Hypertext Transfer Protocol</td>
+</tr>
+<tr>
+<td>HTTPs</td>
+<td>HTTP connection encrypted by Transport Layer Security</td>
+</tr>
+<tr>
+<td>JWT</td>
+<td>JSON Web Token</td>
+</tr>
+<tr>
+<td>MOH</td>
+<td>Ministry of Health and Long-Term Care</td>
+</tr>
+<tr>
+<td>MOHLTC</td>
+<td>Ministry of Health and Long-Term Care</td>
+</tr>
+<tr>
+<td>MRN</td>
+<td>Medical Record Number</td>
+</tr>
+<tr>
+<td>OHIP</td>
+<td>Ontario Health Insurance Plan</td>
+</tr>
+<tr>
+<td>OID</td>
+<td>Object Identifier</td>
+</tr>
+<tr>
+<td>OLIS</td>
+<td>Ontario Laboratories Information System</td>
+</tr>
+<tr>
+<td>ONE ID</td>
+<td>An identity and access management system and processes</td>
+</tr>
+<tr>
+<td>PHI</td>
+<td>Personal Health Information</td>
+</tr>
+<tr>
+<td>PI</td>
+<td>Personal Information</td>
+</tr>
+<tr>
+<td>PKI</td>
+<td>Public Key Infrastructure</td>
+</tr>
+<tr>
+<td>PoS</td>
+<td>Point of Service Application or System</td>
+</tr>
+<tr>
+<td>REST</td>
+<td>Representational State Transfer</td>
+</tr>
+<tr>
+<td>SAML</td>
+<td>Security Assertion Markup Language</td>
+</tr>
+<tr>
+<td>SCC</td>
+<td>Specimen Collector Center</td>
+</tr>
+<tr>
+<td>SOAP</td>
+<td>Simple Object Access Protocol</td>
+</tr>
+<tr>
+<td>STU</td>
+<td>Standard for Trial Use</td>
+</tr>
+<tr>
+<td>TLS</td>
+<td>Transport Layer Security</td>
+</tr>
+<tr>
+<td>UAO</td>
+<td>Under Authority Of</td>
+</tr>
+<tr>
+<td>URI</td>
+<td>Uniform Resource Identifier</td>
+</tr>
+<tr>
+<td>UTC</td>
+<td>Coordinated Universal Time</td>
+</tr>
+</tbody>
+</table>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

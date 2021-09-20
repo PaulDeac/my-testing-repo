@@ -1,0 +1,422 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uni-koeln.de/fhir/ValueSet/cancer-base/tnm-t" />
+  <version value="0.1" />
+  <name value="tnm-t" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Universität Köln" />
+  <description value="TNM: T-Klassifikation" />
+  <compose>
+    <include>
+      <!-- FIXME: canonical URL -->
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <concept>
+        <code value="TX" />
+        <display value="TX" />
+      </concept>
+      <concept>
+        <code value="T0" />
+        <display value="T0" />
+      </concept>
+      <concept>
+        <code value="Tis" />
+        <display value="Tis" />
+      </concept>
+      <concept>
+        <code value="Tis(LAMN)" />
+        <display value="Tis (LAMN)" />
+      </concept>
+      <concept>
+        <code value="Tis(DCIS)" />
+        <display value="Tis (DCIS)" />
+      </concept>
+      <concept>
+        <code value="Tis(LCIS)" />
+        <display value="Tis (LCIS)" />
+      </concept>
+      <concept>
+        <code value="Tis(Paget)" />
+        <display value="Tis (Paget)" />
+      </concept>
+      <concept>
+        <code value="Ta" />
+        <display value="Ta" />
+      </concept>
+      <concept>
+        <code value="T1" />
+        <display value="T1" />
+      </concept>
+      <concept>
+        <code value="T1mi" />
+        <display value="T1mi" />
+      </concept>
+      <concept>
+        <code value="T1a" />
+        <display value="T1a" />
+      </concept>
+      <concept>
+        <code value="T1a1" />
+        <display value="T1a1" />
+      </concept>
+      <concept>
+        <code value="T1a2" />
+        <display value="T1a2" />
+      </concept>
+      <concept>
+        <code value="T1b" />
+        <display value="T1b" />
+      </concept>
+      <concept>
+        <code value="T1b1" />
+        <display value="T1b1" />
+      </concept>
+      <concept>
+        <code value="T1b2" />
+        <display value="T1b2" />
+      </concept>
+      <concept>
+        <code value="T1c" />
+        <display value="T1c" />
+      </concept>
+      <concept>
+        <code value="T1c1" />
+        <display value="T1c1" />
+      </concept>
+      <concept>
+        <code value="T1c2" />
+        <display value="T1c2" />
+      </concept>
+      <concept>
+        <code value="T1c3" />
+        <display value="T1c3" />
+      </concept>
+      <concept>
+        <code value="T1d" />
+        <display value="T1d" />
+      </concept>
+      <concept>
+        <code value="T2" />
+        <display value="T2" />
+      </concept>
+      <concept>
+        <code value="T2a" />
+        <display value="T2a" />
+      </concept>
+      <concept>
+        <code value="T2a1" />
+        <display value="T2a1" />
+      </concept>
+      <concept>
+        <code value="T2a2" />
+        <display value="T2a2" />
+      </concept>
+      <concept>
+        <code value="T2b" />
+        <display value="T2b" />
+      </concept>
+      <concept>
+        <code value="T2c" />
+        <display value="T2c" />
+      </concept>
+      <concept>
+        <code value="T2d" />
+        <display value="T2d" />
+      </concept>
+      <concept>
+        <code value="T3" />
+        <display value="T3" />
+      </concept>
+      <concept>
+        <code value="T3a" />
+        <display value="T3a" />
+      </concept>
+      <concept>
+        <code value="T3b" />
+        <display value="T3b" />
+      </concept>
+      <concept>
+        <code value="T3c" />
+        <display value="T3c" />
+      </concept>
+      <concept>
+        <code value="T3d" />
+        <display value="T3d" />
+      </concept>
+      <concept>
+        <code value="T3e" />
+        <display value="T3e" />
+      </concept>
+      <concept>
+        <code value="T4" />
+        <display value="T4" />
+      </concept>
+      <concept>
+        <code value="T4a" />
+        <display value="T4a" />
+      </concept>
+      <concept>
+        <code value="T4b" />
+        <display value="T4b" />
+      </concept>
+      <concept>
+        <code value="T4c" />
+        <display value="T4c" />
+      </concept>
+      <concept>
+        <code value="T4d" />
+        <display value="T4d" />
+      </concept>
+      <concept>
+        <code value="T4e" />
+        <display value="T4e" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uni-koeln-work-tnm-t-1" />
+    <timestamp value="2018-10-31" />
+    <total value="40" />
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="TX" />
+      <display value="TX" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T0" />
+      <display value="T0" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="Tis" />
+      <display value="Tis" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="Tis(LAMN)" />
+      <display value="Tis (LAMN)" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="Tis(DCIS)" />
+      <display value="Tis (DCIS)" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="Tis(LCIS)" />
+      <display value="Tis (LCIS)" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="Tis(Paget)" />
+      <display value="Tis (Paget)" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="Ta" />
+      <display value="Ta" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1" />
+      <display value="T1" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1mi" />
+      <display value="T1mi" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1a" />
+      <display value="T1a" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1a1" />
+      <display value="T1a1" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1a2" />
+      <display value="T1a2" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1b" />
+      <display value="T1b" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1b1" />
+      <display value="T1b1" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1b2" />
+      <display value="T1b2" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1c" />
+      <display value="T1c" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1c1" />
+      <display value="T1c1" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1c2" />
+      <display value="T1c2" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1c3" />
+      <display value="T1c3" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T1d" />
+      <display value="T1d" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T2" />
+      <display value="T2" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T2a" />
+      <display value="T2a" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T2a1" />
+      <display value="T2a1" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T2a2" />
+      <display value="T2a2" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T2b" />
+      <display value="T2b" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T2c" />
+      <display value="T2c" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T2d" />
+      <display value="T2d" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T3" />
+      <display value="T3" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T3a" />
+      <display value="T3a" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T3b" />
+      <display value="T3b" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T3c" />
+      <display value="T3c" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T3d" />
+      <display value="T3d" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T3e" />
+      <display value="T3e" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T4" />
+      <display value="T4" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T4a" />
+      <display value="T4a" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T4b" />
+      <display value="T4b" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T4c" />
+      <display value="T4c" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T4d" />
+      <display value="T4d" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="T4e" />
+      <display value="T4e" />
+    </contains>
+  </expansion>
+</ValueSet>

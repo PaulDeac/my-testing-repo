@@ -1,0 +1,95 @@
+<ProcedureRequest xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-08-22T16:10:38+00:00" />
+  </meta>
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>%Some xhtml content%</p>
+    </div>
+  </text>
+  <extension url="[base-structure]/ca-on-lab-ext-note">
+    <extension url="source">
+      <valueCoding>
+        <system value="http://hl7.org/fhir/v2/0105" />
+        <code value="P" />
+        <display value="Order" />
+      </valueCoding>
+    </extension>
+    <extension url="annotation">
+      <valueAnnotation>
+        <authorString value="[id-system-global-base]/ca-on-lab-license:4008" />
+        <text value="Example of procedure request note" />
+      </valueAnnotation>
+    </extension>
+  </extension>
+  <extension url="[base-structure]/ca-on-lab-ext-ordering-facility">
+    <valueReference>
+      <reference value="Organization#1" />
+    </valueReference>
+  </extension>
+  <extension url="[base-structure]/ca-on-lab-ext-cc-list">
+    <valueReference>
+      <reference value="Practitioner#1" />
+    </valueReference>
+  </extension>
+  <extension url="[base-structure]/ca-on-lab-ext-trq-placer">
+    <valueReference>
+      <reference value="Organization#1" />
+    </valueReference>
+  </extension>
+  <extension url="[base-structure]/ca-on-lab-ext-dest-lab">
+    <valueReference>
+      <reference value="Organization#2" />
+    </valueReference>
+  </extension>
+  <extension url="[base-structure]/ca-on-lab-ext-record-block">
+    <valueBoolean value="true" />
+  </extension>
+  <extension url="[base-structure]/ca-on-lab-ext-poc-test-id">
+    <valueString value="PORT" />
+  </extension>
+  <extension url="[base-structure]/ca-on-lab-ext-record-replace">
+    <valueBoolean value="true" />
+  </extension>
+  <extension url="[base-structure]/ca-on-lab-ext-trq-sort-key">
+    <valueString value="AC2345" />
+  </extension>
+  <identifier>
+    <system value="[id-system-local-base]/lab/test-request-id-lab-license-4004" />
+    <value value="1231-R1" />
+    <assigner>
+      <reference value="#Org1" />
+    </assigner>
+  </identifier>
+  <requisition>
+    <system value="[id-system-local-base]/lab/report-id-lab-license-4008" />
+    <value value="11111121" />
+    <assigner>
+      <reference value="#Org1" />
+    </assigner>
+  </requisition>
+  <status value="completed" />
+  <intent value="order" />
+  <priority value="routine" />
+  <code>
+    <coding>
+      <system value="[code-system-local-base]/lab/test-request-codes" />
+      <code value="TR11663-2" />
+      <display value="Electrolytes" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient#1" />
+  </subject>
+  <context>
+    <reference value="Encounter#1" />
+  </context>
+  <occurrenceDateTime value="2017-08-22T12:10:41-04:00" />
+  <authoredOn value="2017-08-22T12:10:41-04:00" />
+  <requester>
+    <agent>
+      <reference value="Practitioner#1" />
+    </agent>
+  </requester>
+</ProcedureRequest>

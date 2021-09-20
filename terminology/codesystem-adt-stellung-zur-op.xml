@@ -1,0 +1,33 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/stellung-zur-op" />
+  <version value="0.1" />
+  <name value="adt-stellung-zur-op" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Stellung der Therapie zur Operation" />
+  <caseSensitive value="true" />
+  <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/stellung-zur-op" />
+  <content value="complete" />
+  <concept>
+    <code value="O" />
+    <display value="ohne Bezug zu einer operativen Therapie" />
+  </concept>
+  <concept>
+    <code value="A" />
+    <display value="adjuvant/postoperativ" />
+  </concept>
+  <concept>
+    <code value="N" />
+    <display value="neoadjuvant/präoperativ" />
+  </concept>
+  <concept>
+    <code value="I" />
+    <display value="intraoperativ" />
+  </concept>
+  <concept>
+    <code value="S" />
+    <display value="sonstiges" />
+  </concept>
+</CodeSystem>

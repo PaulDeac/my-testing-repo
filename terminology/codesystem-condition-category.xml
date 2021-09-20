@@ -1,0 +1,45 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/condition-category" />
+  <version value="0.1" />
+  <name value="condition-category" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Kategorien zur Unterscheidung verschiedener Diagnoseklassen." />
+  <caseSensitive value="true" />
+  <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/condition-category" />
+  <content value="complete" />
+  <concept>
+    <code value="primaer" />
+    <display value="Primärtumor" />
+  </concept>
+  <concept>
+    <code value="fernmetastase" />
+    <display value="Fernmetastase" />
+  </concept>
+  <concept>
+    <code value="zweit" />
+    <display value="Zweittumor" />
+  </concept>
+  <concept>
+    <code value="komplikation" />
+    <display value="Komplikation infolge eines Eingriffs" />
+  </concept>
+  <concept>
+    <code value="nebenwirkung" />
+    <display value="Nebenwirkung der systemischen oder Strahlentherapie" />
+  </concept>
+  <concept>
+    <code value="vorbestehend" />
+    <display value="Vorbestehende Erkrankung (anamnestisch)" />
+  </concept>
+  <concept>
+    <code value="folge" />
+    <display value="Folgeerkrankung" />
+  </concept>
+  <concept>
+    <code value="sonstige" />
+    <display value="Sonstige Erkrankung (nicht tumorbezogen)" />
+  </concept>
+</CodeSystem>

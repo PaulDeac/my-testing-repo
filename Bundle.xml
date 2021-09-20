@@ -1,0 +1,56 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="0c479e81-9924-4065-8df7-fc3200510319" />
+  <meta>
+    <lastUpdated value="2019-03-08T19:31:13.6037476+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Bundle" />
+  <name value="Bundle" />
+  <status value="draft" />
+  <date value="2019-03-08T19:31:13.4197501+00:00" />
+  <description value="A container for a collection of resources." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle.id">
+      <path value="Bundle.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type" />
+      <fixedCode value="searchset" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.total">
+      <path value="Bundle.total" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.link">
+      <path value="Bundle.link" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.link.relation">
+      <path value="Bundle.link.relation" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.link.url">
+      <path value="Bundle.link.url" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.entry">
+      <path value="Bundle.entry" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.entry.link">
+      <path value="Bundle.entry.link" />
+      <max value="1" />
+    </element>
+    <element id="Bundle.entry.resource">
+      <path value="Bundle.entry.resource" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

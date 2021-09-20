@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "ca-on-patient-hcn-123456",
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "ANON",
+            "display": "Anonymous Identifier"
+          }
+        ],
+        "text": "OLIS Nonnominal identifier"
+      },
+      "system": "http://ehealthontario.ca/fhir/NamingSystem/lab/patient-id-lab-license-991",
+      "value": "123456"
+    }
+  ],
+  "gender": "male",
+  "address": [
+    {
+      "use": "home",
+      "type": "both",
+      "line": [
+        "775 street"
+      ],
+      "city": "Mississauga",
+      "state": "ON",
+      "postalCode": "L6P 0K1",
+      "country": "CAN"
+    }
+  ]
+}

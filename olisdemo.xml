@@ -1,0 +1,30 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <url value="https://simplifier.net/guide/olisdemo" />
+  <name value="OLIS DEMO" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <page>
+    <source value="Home-duplicate-3.md" />
+    <title value="Home" />
+    <kind value="page" />
+    <format value="text/markdown" />
+    <page>
+      <source value="Intro.md" />
+      <title value="Intro" />
+      <kind value="page" />
+      <format value="text/markdown" />
+    </page>
+    <page>
+      <source value="Business.md" />
+      <title value="Business" />
+      <kind value="page" />
+      <format value="text/markdown" />
+    </page>
+    <page>
+      <source value="iGuide.md" />
+      <title value="iGuide" />
+      <kind value="page" />
+      <format value="text/markdown" />
+    </page>
+  </page>
+</ImplementationGuide>

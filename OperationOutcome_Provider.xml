@@ -1,0 +1,69 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="64342225-d8bd-48cc-a64t-323488d4180c" />
+  <meta>
+    <lastUpdated value="2019-03-08T19:13:16.6930748+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-provider-profile-OperationOutcome" />
+  <name value="OperationOutcome" />
+  <status value="draft" />
+  <date value="2019-03-08T19:13:16.4379688+00:00" />
+  <description value="A collection of error, warning, or information messages that result from a system action." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="OperationOutcome" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/OperationOutcome" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="OperationOutcome.id">
+      <path value="OperationOutcome.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue">
+      <path value="OperationOutcome.issue" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.severity">
+      <path value="OperationOutcome.issue.severity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.code">
+      <path value="OperationOutcome.issue.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.details">
+      <path value="OperationOutcome.issue.details" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.details.coding">
+      <path value="OperationOutcome.issue.details.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.details.coding.code">
+      <path value="OperationOutcome.issue.details.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.details.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="OperationOutcome.issue.details.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.details.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="OperationOutcome.issue.details.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.diagnostics">
+      <path value="OperationOutcome.issue.diagnostics" />
+      <mustSupport value="true" />
+    </element>
+    <element id="OperationOutcome.issue.location">
+      <path value="OperationOutcome.issue.location" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,45 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-lymphknoten" />
+  <version value="0.1" />
+  <name value="adt-tumorstatus-lymphknoten" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Tumorstatus der Lymphknoten nach ADT." />
+  <caseSensitive value="true" />
+  <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/tumorstatus-lymphknoten" />
+  <content value="complete" />
+  <concept>
+    <code value="K" />
+    <display value="kein Lymphknotenbefall nachweisbar" />
+  </concept>
+  <concept>
+    <code value="R" />
+    <display value="neu aufgetretenes Lymphknotenrezidiv" />
+  </concept>
+  <concept>
+    <code value="T" />
+    <display value="bekannter Lymphknotenbefall Residuen" />
+  </concept>
+  <concept>
+    <code value="P" />
+    <display value="bekannter Lymphknotenbefall Progress" />
+  </concept>
+  <concept>
+    <code value="N" />
+    <display value="bekannter Lymphknotenbefall No Change" />
+  </concept>
+  <concept>
+    <code value="F" />
+    <display value="fraglicher Befund" />
+  </concept>
+  <concept>
+    <code value="U" />
+    <display value="unbekannt" />
+  </concept>
+  <concept>
+    <code value="X" />
+    <display value="fehlende Angabe" />
+  </concept>
+</CodeSystem>

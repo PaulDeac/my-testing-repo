@@ -1,0 +1,32 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uni-koeln.de/fhir/ValueSet/cancer-base/tnm-praefix-a" />
+  <version value="0.1" />
+  <name value="tnm-praefix-a" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Universität Köln" />
+  <description value="TNM Präfix a" />
+  <compose>
+    <include>
+      <!-- FIXME: canonical URL -->
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <concept>
+        <code value="a" />
+        <display value="a" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uni-koeln-work-tnm-praefix-a-1" />
+    <timestamp value="2018-10-31" />
+    <total value="1" />
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="a" />
+      <display value="a" />
+    </contains>
+  </expansion>
+</ValueSet>

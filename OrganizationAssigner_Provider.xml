@@ -1,0 +1,29 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="9e019851-b080-45a2-915d-3e300e9e09d5" />
+  <meta>
+    <lastUpdated value="2019-03-11T18:04:51.254935+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-provider-profile-Organization-assigner" />
+  <name value="OrganizationAssigner" />
+  <status value="draft" />
+  <date value="2019-03-11T18:04:51.0781179+00:00" />
+  <description value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc.&#xD;&#xA;This resource will represent assigner which is reference from identifier data type from DiagnosticReport,  ProcedureRequest and Observation resources." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.id">
+      <path value="Organization.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <definition value="This resource will represent assigner which is reference from identifier data type from DiagnosticReport,  ProcedureRequest and Observation resources." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

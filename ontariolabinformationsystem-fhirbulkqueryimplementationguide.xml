@@ -1,0 +1,193 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <url value="https://simplifier.net/guide/ontariolaboratoriesinformationsystemproviderquery1.1.0" />
+  <version value="1.1.0" />
+  <name value="Ontario Laboratories Information System HL7 FHIR® Patient Query for Providers Implementation Guide - v1.1.0" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <page>
+    <source value="a.md" />
+    <title value="a" />
+    <kind value="page" />
+    <format value="text/markdown" />
+    <page>
+      <source value="Home-duplicate-7.md" />
+      <title value="Home" />
+      <kind value="page" />
+      <format value="text/markdown" />
+      <page>
+        <source value="Introduction-duplicate-3.md" />
+        <title value="Introduction" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="Scope-duplicate-3.md" />
+        <title value="Scope" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="IntendedAudience-duplicate-2.md" />
+        <title value="Intended Audience" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="ReferenceMaterials-duplicate-4.md" />
+        <title value="Reference Materials" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="IdentifierPolicy-duplicate-2.md" />
+        <title value="Identifier Policy" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="AcronymsandAbbreviations-duplicate-2.md" />
+        <title value="Acronyms and Abbreviations" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="RevisionHistory-duplicate-2.md" />
+        <title value="Revision History" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="KnownIssues-duplicate-2.md" />
+        <title value="Known Issues" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+    </page>
+    <page>
+      <source value="BusinessContext-duplicate-2.md" />
+      <title value="Business Context" />
+      <kind value="page" />
+      <format value="text/markdown" />
+      <page>
+        <source value="BusinessModel-duplicate-3.md" />
+        <title value="Business Model" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="BusinessData-duplicate-3.md" />
+        <title value="Business Data" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="UseCases-duplicate-2.md" />
+        <title value="Use Cases" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="BusinessRules-duplicate-3.md" />
+        <title value="Business Rules" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+    </page>
+    <page>
+      <source value="ImplementationGuidance-duplicate-2.md" />
+      <title value="Implementation Guidance" />
+      <kind value="page" />
+      <format value="text/markdown" />
+      <page>
+        <source value="ConsumerResponsibility-duplicate-3.md" />
+        <title value="Consumer Responsibility" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="ImplementationConsideration-duplicate-3.md" />
+        <title value="Implementation Consideration" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="Connectivity-duplicate-3.md" />
+        <title value="Connectivity" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+    </page>
+    <page>
+      <source value="ProfilesandOperations.md" />
+      <title value="Profiles and Operations" />
+      <kind value="page" />
+      <format value="text/markdown" />
+      <page>
+        <source value="ProfilesandOperations-duplicate-2.md" />
+        <title value="Profiles and Operations" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="DiagnosticReportSearch-PatientQueryForProviders.md" />
+        <title value="DiagnosticReport Search - Patient Query For Providers" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="DiagnosticReportSearch-COVIDQuery.md" />
+        <title value="DiagnosticReport Search - COVID Query" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+    </page>
+    <page>
+      <source value="CapabilityStatement.md" />
+      <title value="Capability Statement" />
+      <kind value="page" />
+      <format value="text/markdown" />
+      <page>
+        <source value="CapabilityStatement-duplicate-3.md" />
+        <title value="Capability Statement" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="ResponseHandling.md" />
+        <title value="Response Handling" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+    </page>
+    <page>
+      <source value="Terminology-duplicate-3.md" />
+      <title value="Terminology" />
+      <kind value="page" />
+      <format value="text/markdown" />
+      <page>
+        <source value="Terminology-duplicate-5.md" />
+        <title value="Terminology" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="TerminologyUpdates.md" />
+        <title value="Terminology Updates" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="Identifiers-duplicate-3.md" />
+        <title value="Identifiers" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+    </page>
+    <page>
+      <source value="Downloads-duplicate-4.md" />
+      <title value="Downloads" />
+      <kind value="page" />
+      <format value="text/markdown" />
+    </page>
+  </page>
+</ImplementationGuide>

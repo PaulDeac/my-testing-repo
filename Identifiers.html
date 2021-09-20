@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Ontario Laboratories Information System HL7 FHIR® Provider Query Implementation Guide - v1.0.0 </title>
+
+        <link rel="icon" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/favicon.ico" />
+
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/jquery/jquery.min.js"></script>
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/main.min.css" />
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/rendering.min.css" />
+
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/project/OntarioLaboratoriesInformationSystemProviderQuery1.0.0-Draft/style.css?v=1d59583fe7a9f00" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-twolevelmenu">
+
+                    <div class="header">
+                        
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=".html">
+                Ontario Laboratories Information System HL7 FHIR&#xAE; Provider Query Implementation Guide - v1.0.0 
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Home <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="Home.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="Introduction.html">
+                                            Introduction
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Scope.html">
+                                            Scope
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="IntendedAudience.html">
+                                            Intended Audience
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ReferenceMaterials.html">
+                                            Reference Materials
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="IdentifierPolicy.html">
+                                            Identifier Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AcronymsandAbbreviations.html">
+                                            Acronyms and Abbreviations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="RevisionHistory.html">
+                                            Revision History
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="KnownIssues.html">
+                                            Known Issues
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Business Context <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="BusinessContext.html">
+                                            Business Context
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="BusinessModel.html">
+                                            Business Model
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="BusinessData.html">
+                                            Business Data
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="UseCases.html">
+                                            Use Cases
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="BusinessRules.html">
+                                            Business Rules
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Implementation Guidance <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuidance.html">
+                                            Implementation Guidance
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ConsumerResponsibility.html">
+                                            Consumer Responsibility
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationConsideration.html">
+                                            Implementation Consideration
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Connectivity.html">
+                                            Connectivity
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Profiles &amp; Operations <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ProfilesOperations.html">
+                                            Profiles &amp; Operations
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="DiagnosticReportSearch.html">
+                                            DiagnosticReport Search
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Capability Statement <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="CapabilityStatement.html">
+                                            Capability Statement
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ResponseHandling.html">
+                                            Response Handling
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Terminology <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="Terminology.html">
+                                            Terminology
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="TerminologyUpdates.html">
+                                            Terminology Updates
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Identifiers.html">
+                                            Identifiers
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Downloads.html">
+                                Downloads
+                            </a>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                    </div>
+
+                    <div class="content container">
+                        
+
+    <div class="row">
+
+
+        <div class="col-md-24">
+
+            <div id="preview-content">
+
+                <p id="breadcrumb">
+<p><a href="https://simplifier.net/guide/OntarioLaboratoriesInformationSystemProviderQuery/Terminology">Terminology</a> &gt; Identifiers</p>
+</p>
+<p>The following names (URIs) may be used in the system element of the Identifier data type. If a URI is defined here, it SHALL be used in preference to any other identifying mechanism. If an identifier system is not listed here, the correct URI may be determined by working with the Standards team.</p>
+<h1 id="identifiers">Identifiers</h1>
+<p>Global Identifiers</p>
+<table class="regular">
+<thead>
+<tr>
+<th>URI</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-patient-hcn">https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-patient-hcn</a></td>
+<td>Ontario, Canada Personal Health Number</td>
+</tr>
+<tr>
+<td><a href="https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-license-physician">https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-license-physician</a></td>
+<td>Ontario, Canada CPSO License Number</td>
+</tr>
+<tr>
+<td><a href="https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-license-midwife">https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-license-midwife</a></td>
+<td>College of Midwives of Ontario Licence Number</td>
+</tr>
+<tr>
+<td><a href="https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-license-nurse">https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-license-nurse</a></td>
+<td>College of Nurses of Ontario Licence Number</td>
+</tr>
+<tr>
+<td><a href="https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-license-dental-surgeon">https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-license-dental-surgeon</a></td>
+<td>Royal College of Dental Surgeons of Ontario Licence Number</td>
+</tr>
+<tr>
+<td><a href="https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-license-naturopath">https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-license-naturopath</a></td>
+<td>College of Naturopaths of Ontario</td>
+</tr>
+<tr>
+<td><a href="https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-lab-license">https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-lab-license</a></td>
+<td>Ontario Organization Identifiers assigned by the Ministry of Health lab branch (LAB)</td>
+</tr>
+<tr>
+<td><a href="https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-scc-license">https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-scc-license</a></td>
+<td>Ontario Organization Identifiers assigned by the Ministry of Health lab branch (SCC)</td>
+</tr>
+<tr>
+<td><a href="https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-health-care-facility-id">https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-health-care-facility-id</a></td>
+<td>Ontario Organization Identifiers assigned by the Ministry of Health</td>
+</tr>
+<tr>
+<td><a href="https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-provider-upi">https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-provider-upi</a></td>
+<td>Unique identifier assigned by eHealth Ontario to providers and organizations</td>
+</tr>
+</tbody>
+</table>
+<p>Local Identifiers</p>
+<table class="regular">
+<thead>
+<tr>
+<th>URI</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/report-id-[type]-license-[id]</code></td>
+<td>Diagnostic Report Identifier generated by laboratory</td>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/report-id-lab-license-4004</code></td>
+</tr>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/report-id-[type]-[number]</code></td>
+<td>Diagnostic Report Identifier generated by laboratory using UPI</td>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/report-id-lab-UPI-234556543123</code></td>
+</tr>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/report-id-[type]-license-[id]</code></td>
+<td>Diagnostic Report Identifier generated by specimen collector center</td>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/report-id-scc-license-3001</code></td>
+</tr>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/report-id-hos-facility-number-[number]</code></td>
+<td>Diagnostic Report Identifier generated by hospital</td>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/report-id-hos-facility-number-0678</code></td>
+</tr>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/test-request-id-[type]-license-[id]</code></td>
+<td>Procedure Request Identifier generated by laboratory</td>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/test-request-id-lab-license-4004</code></td>
+</tr>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/test-request-id-[type]-[number]</code></td>
+<td>Procedure Request Identifier generated by laboratory using UPI</td>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/test-request-id-lab-UPI-234556543123</code></td>
+</tr>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/test-request-id-[type]-license-[id]</code></td>
+<td>Procedure Request Identifier generated by specimen collector center</td>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/test-request-id-scc-license-3001</code></td>
+</tr>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/test-request-id-hos-facility-number-[number]</code></td>
+<td>Procedure Request Identifier generated by hospital</td>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/test-request-id-hos-facility-number-0678</code></td>
+</tr>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/filler-id-[type]-license-[id]</code></td>
+<td>Observation Identifier generated by laboratory</td>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/filler-id-lab-license-4004</code></td>
+</tr>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/filler-id-[type]-[number]</code></td>
+<td>Observation Identifier generated by laboratory using UPI</td>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/filler-id-lab-UPI-234556543123</code></td>
+</tr>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/filler-id-[type]-license-[id]</code></td>
+<td>Observation Identifier generated by specimen collector center</td>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/filler-id-scc-license-3001</code></td>
+</tr>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/filler-id-hos-facility-number-[number]</code></td>
+<td>Observation Identifier generated by hospital</td>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/filler-id-hos-facility-number-0678</code></td>
+</tr>
+</tbody>
+</table>
+<h1 id="code-system-identifiers">Code System Identifiers</h1>
+<table class="regular">
+<thead>
+<tr>
+<th>URI</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>http://loinc.org/</td>
+<td>LOINC</td>
+</tr>
+<tr>
+<td><a href="http://snomed.info/sct">http://snomed.info/sct</a></td>
+<td>SNOMED CT</td>
+</tr>
+<tr>
+<td><a href="http://hl7.org/fhir/sid/icd-10-ca">http://hl7.org/fhir/sid/icd-10-ca</a></td>
+<td>ICD-10-CA</td>
+</tr>
+<tr>
+<td><code>http://ehealthontario.ca/fhir/NamingSystem/lab/observation-temp-codes]</code></td>
+<td>Observation coding system for OLIS temporary codes</td>
+</tr>
+<tr>
+<td><code> http://ehealthontario.ca/fhir/NamingSystem/lab/observation-micro-historical-codes</code></td>
+<td>Observation microbiology coding system for OLIS historical microbiology codes</td>
+</tr>
+</tbody>
+</table>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

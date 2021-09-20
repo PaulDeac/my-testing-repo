@@ -1,0 +1,55 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/medication-category" />
+  <version value="0.1" />
+  <name value="medication-category" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Kategorien zur Unterscheidung verschiedener Medikationsklassen." />
+  <compose>
+    <include>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/medication-category" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-medication-category-1" />
+    <timestamp value="2018-10-31" />
+    <total value="7" />
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/medication-category" />
+      <code value="C" />
+      <display value="Chemotherapie" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/medication-category" />
+      <code value="I" />
+      <display value="Immuntherapie/Antikörpertherapie" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/medication-category" />
+      <code value="H" />
+      <display value="Hormontherapie/antihormonelle Therapie" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/medication-category" />
+      <code value="KM" />
+      <display value="Konditionierung für Knochenmarktransplantation" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/medication-category" />
+      <code value="BP" />
+      <display value="Biphosphonate" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/medication-category" />
+      <code value="B" />
+      <display value="Begleitmedikation" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/medication-category" />
+      <code value="SO" />
+      <display value="sonstige medikamentöse Therapie" />
+    </contains>
+  </expansion>
+</ValueSet>

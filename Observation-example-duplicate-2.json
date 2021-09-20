@@ -1,0 +1,69 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+    "lastUpdated": "2017-08-24T15:51:23Z"
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>%Some xhtml content%</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "[id-system-local-base]/lab/filler-id-lab-license-4004",
+      "value": "23423432-F2",
+      "assigner": [
+        {
+          "reference": "#Org1"
+        }
+      ]
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "ProcedureRequest#1"
+    }
+  ],
+  "status": "registered",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org/",
+        "code": "18955-5",
+        "display": "NITROFURANTOIN:SUSC:PT:ISOLATE:ORDQN"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Pat#1"
+  },
+  "effectiveDateTime": "2017-08-24T11:51:24-04:00",
+  "issued": "2017-08-24T11:51:24-04:00",
+  "performer": [
+    {
+      "reference": "Org#1"
+    }
+  ],
+  "interpretation": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v2/0078",
+        "code": "R",
+        "display": "Resistant"
+      }
+    ]
+  },
+  "method": {
+    "text": "PCR"
+  },
+  "specimen": {
+    "reference": "Specimen#1"
+  },
+  "related": [
+    {
+      "type": "derived-from",
+      "target": {
+        "reference": "Observation#1"
+      }
+    }
+  ]
+}

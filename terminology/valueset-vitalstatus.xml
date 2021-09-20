@@ -1,0 +1,55 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/vitalstatus" />
+  <version value="0.1" />
+  <name value="vitalstatus" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Vitalstatus des Patienten" />
+  <compose>
+    <include>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/vitalstatus" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-vitalstatus-1" />
+    <timestamp value="2018-10-31" />
+    <total value="7" />
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/vitalstatus" />
+      <code value="L" />
+      <display value="Patient lebt" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/vitalstatus" />
+      <code value="T" />
+      <display value="Patient verstorben" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/vitalstatus" />
+      <code value="A" />
+      <display value="unbekannt, Patient nicht mehr auffindbar (lost to follow-up)" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/vitalstatus" />
+      <code value="N" />
+      <display value="unbekannt, Betreuung/Nachsorge nicht mehr nötig" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/vitalstatus" />
+      <code value="B" />
+      <display value="unbekannt, Patient ist anderenorts in Betreuung" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/vitalstatus" />
+      <code value="V" />
+      <display value="unbekannt, Patient verweigert weitere Betreuung" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/vitalstatus" />
+      <code value="X" />
+      <display value="unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

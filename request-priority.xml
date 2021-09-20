@@ -1,0 +1,26 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <id value="olis-RequestPriority" />
+  <url value="http://ehealthontario.ca/fhir/ValueSet/lab/request-priority" />
+  <version value="1.0.0" />
+  <name value="RequestPriority" />
+  <status value="active" />
+  <publisher value="eHealth Ontario" />
+  <description value="Codes providing request priority supported by eHealth Ontario. This is strict sub-set of the core FHIR value set." />
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/request-priority" />
+      <concept>
+        <code value="routine" />
+        <display value="Routine" />
+      </concept>
+      <concept>
+        <code value="asap" />
+        <display value="ASAP" />
+      </concept>
+      <concept>
+        <code value="stat" />
+        <display value="STAT" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,50 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/intention-op" />
+  <version value="0.1" />
+  <name value="adt-intention-op" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Intention von Operationen und anderen Eingriffen" />
+  <compose>
+    <include>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-intention-op-1" />
+    <timestamp value="2018-10-31" />
+    <total value="6" />
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op" />
+      <code value="K" />
+      <display value="kurativ" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op" />
+      <code value="P" />
+      <display value="palliativ" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op" />
+      <code value="D" />
+      <display value="diagnostisch" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op" />
+      <code value="R" />
+      <display value="Revision/Komplikation" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op" />
+      <code value="S" />
+      <display value="sonstiges" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op" />
+      <code value="X" />
+      <display value="fehlende Angabe" />
+    </contains>
+  </expansion>
+</ValueSet>

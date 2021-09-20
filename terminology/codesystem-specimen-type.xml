@@ -1,0 +1,73 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/specimen-type" />
+  <version value="0.1" />
+  <name value="specimen-type" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Kategorien zur Unterscheidung verschiedener Biomaterialtypen." />
+  <caseSensitive value="true" />
+  <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/specimen-type" />
+  <content value="complete" />
+  <concept>
+    <code value="gewebe" />
+    <display value="Gewebe" />
+    <concept>
+      <code value="paraffin" />
+      <display value="Paraffin" />
+    </concept>
+    <concept>
+      <code value="kryo-frisch" />
+      <display value="kryo/frisch" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="fluessig" />
+    <display value="flüssig" />
+    <concept>
+      <code value="vollblut" />
+      <display value="Vollblut" />
+    </concept>
+    <concept>
+      <code value="serum" />
+      <display value="Serum" />
+    </concept>
+    <concept>
+      <code value="plasma" />
+      <display value="Plasma" />
+    </concept>
+    <concept>
+      <code value="urin" />
+      <display value="Urin" />
+    </concept>
+    <concept>
+      <code value="liquor" />
+      <display value="Liquor" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="km" />
+    <display value="Knochenmark" />
+  </concept>
+  <concept>
+    <code value="isoliert" />
+    <display value="isoliertes Material" />
+    <concept>
+      <code value="zellen" />
+      <display value="Zellen" />
+    </concept>
+    <concept>
+      <code value="dna" />
+      <display value="DNA" />
+    </concept>
+    <concept>
+      <code value="rna" />
+      <display value="RNA" />
+    </concept>
+    <concept>
+      <code value="protein" />
+      <display value="Protein" />
+    </concept>
+  </concept>
+</CodeSystem>

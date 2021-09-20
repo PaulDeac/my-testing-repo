@@ -1,0 +1,30 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <id value="olis-NatureOfAbnormalTest" />
+  <url value="http://ehealthontario.ca/fhir/ValueSet/lab/observation-abnormal-nature" />
+  <version value="1.0.0" />
+  <name value="NatureOfAbnormalTest" />
+  <status value="active" />
+  <publisher value="eHealth Ontario" />
+  <description value="Codes supported by eHealth Ontario differentiating types nature of abnormal tests" />
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v2/0080" />
+      <concept>
+        <code value="A" />
+        <display value="Age Based" />
+      </concept>
+      <concept>
+        <code value="N" />
+        <display value="Normal Range" />
+      </concept>
+      <concept>
+        <code value="R" />
+        <display value="Race Based" />
+      </concept>
+      <concept>
+        <code value="S" />
+        <display value="Sex Based" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

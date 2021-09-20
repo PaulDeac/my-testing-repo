@@ -1,0 +1,55 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2019-03-14T16:58:31.2121963+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Organization-requesting" />
+  <name value="OrganizationRequesting" />
+  <status value="draft" />
+  <date value="2019-03-14T16:58:31.0132065+00:00" />
+  <description value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc.&#xD;&#xA;This resource will represent requesting/ordering organization when ordering practitioner information in unavailable. It  is reference from ProcedureRequest resource." />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="OLIS-HL7-v2" />
+    <name value="OLIS HL7 v2" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.id">
+      <path value="Organization.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier.system">
+      <path value="Organization.identifier.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR.16.1" />
+      </mapping>
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR16.2" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

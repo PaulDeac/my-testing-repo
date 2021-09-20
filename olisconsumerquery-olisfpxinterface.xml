@@ -1,0 +1,24 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <url value="https://simplifier.net/guide/olisconsumerquery-olisfpxinterface" />
+  <name value="OLIS Consumer Query - OLIS FPX Interface" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <page>
+    <source value="Home-duplicate-8.md" />
+    <title value="Home" />
+    <kind value="page" />
+    <format value="text/markdown" />
+    <page>
+      <source value="Privacy-preservingInterface.md" />
+      <title value="Privacy-preserving Interface" />
+      <kind value="page" />
+      <format value="text/markdown" />
+    </page>
+    <page>
+      <source value="DiagnosticReportSearch-duplicate-3.md" />
+      <title value="DiagnosticReport Search" />
+      <kind value="page" />
+      <format value="text/markdown" />
+    </page>
+  </page>
+</ImplementationGuide>

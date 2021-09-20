@@ -1,0 +1,93 @@
+{
+  "resourceType": "Patient",
+  "id": "4713a403-0af5-4a3a-a143-ff06a743ddd0",
+  "meta": {
+    "lastUpdated": "2017-08-21T14:31:32Z"
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>%Some xhtml content%</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-patient-hcn",
+      "value": "1234567",
+      "extension": [
+        {
+          "url": "http://ehealthontario.ca/API/fhir/StructureDefinition/ext-identifier-hcn-version-code",
+          "valueString": "HN"
+        }
+      ]
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": [
+        "Onsmith1"
+      ],
+      "given": [
+        "Onjohn1",
+        "William"
+      ],
+      "_given": [
+        null,
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "MID"
+            }
+          ]
+        }
+      ],
+      "suffix": [
+        "III"
+      ],
+      "prefix": [
+        "DR"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-555-5555",
+      "use": "work"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1926-02-24",
+  "address": [
+    {
+      "use": "home",
+      "type": "physical",
+      "line": [
+        "13 Boring St"
+      ],
+      "city": "Toronto",
+      "state": "ON",
+      "postalCode": "M1M M2M",
+      "country": "CAN"
+    }
+  ],
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/patient-contact-relationship",
+              "code": "emergency"
+            }
+          ]
+        }
+      ],
+      "telecom": [
+        {
+          "value": "555-555-5555"
+        }
+      ]
+    }
+  ]
+}

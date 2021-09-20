@@ -1,0 +1,295 @@
+{
+  "resourceType": "DiagnosticReport",
+  "meta": {
+    "lastUpdated": "2017-08-22T14:55:53Z"
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>%Some xhtml content%</p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Patient",
+      "id": "Patient1",
+      "identifier": [
+        {
+          "system": "https://fhir.infoway-inforoute.ca/NamingSystem/ca-on-patient-hcn",
+          "value": "1234567",
+          "extension": [
+            {
+              "url": "http://ehealthontario.ca/API/fhir/StructureDefinition/ext-identifier-hcn-version-code",
+              "valueString": "HN"
+            }
+          ]
+        }
+      ],
+      "name": [
+        {
+          "use": "official",
+          "family": [
+            "Onsmith1"
+          ],
+          "given": [
+            "Onjohn1",
+            "William"
+          ],
+          "_given": [
+            null,
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+                  "valueCode": "MID"
+                }
+              ]
+            }
+          ],
+          "suffix": [
+            "III"
+          ],
+          "prefix": [
+            "DR"
+          ]
+        }
+      ],
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "555-555-5555",
+          "use": "work"
+        }
+      ],
+      "gender": "male",
+      "birthDate": "1926-02-24",
+      "deceasedDateTime": "2017-08-21T10:31:32-04:00",
+      "address": [
+        {
+          "use": "home",
+          "type": "physical",
+          "line": [
+            "13 Boring St"
+          ],
+          "city": "Toronto",
+          "state": "ON",
+          "postalCode": "M1M M2M",
+          "country": "CAN"
+        }
+      ],
+      "contact": [
+        {
+          "relationship": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/patient-contact-relationship",
+                  "code": "emergency"
+                }
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "value": "555-555-5555"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resourceType": "Organization",
+      "id": "lab1",
+      "identifier": [
+        {
+          "system": "[id-system-global-base]/ca-on-lab-license",
+          "value": "12345"
+        }
+      ],
+      "name": "Best Lab",
+      "address": [
+        {
+          "type": "both",
+          "line": [
+            "15 Happy St"
+          ],
+          "city": "Toronto",
+          "state": "ON",
+          "postalCode": "M1M M2M",
+          "country": "CAN"
+        }
+      ]
+    },
+    {
+      "resourceType": "Specimen",
+      "id": "spec1",
+      "type": {
+        "coding": [
+          {
+            "system": "[code-system-local-base]/lab/specimen-source",
+            "code": "SER",
+            "display": "SERUM"
+          }
+        ]
+      },
+      "subject": {
+        "reference": "Patient#1"
+      },
+      "receivedTime": "2017-08-24T09:32:00-04:00",
+      "request": [
+        {
+          "reference": "ProcedureRequet#1"
+        }
+      ],
+      "collection": {
+        "collectedPeriod": {
+          "start": "2017-08-24T09:32:00-04:00",
+          "end": "2017-08-24T15:32:00-04:00"
+        },
+        "quantity": {
+          "value": "5.4",
+          "unit": "mg/mL"
+        }
+      },
+      "container": {
+        "identifier": [
+          {
+            "value": "ACL235617"
+          }
+        ],
+        "extension": [
+          {
+            "url": "[base-structure]/ca-on-lab-ext-container-sample-num",
+            "valueQuantity": {
+              "value": "2"
+            }
+          }
+        ]
+      },
+      "note": [
+        {
+          "text": "Patient did not fast."
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "observation1",
+      "identifier": [
+        {
+          "system": "[id-system-local-base]/lab/filler-id-lab-license-4004",
+          "value": "23423432-F2",
+          "assigner": [
+            {
+              "reference": "#Org1"
+            }
+          ]
+        }
+      ],
+      "basedOn": [
+        {
+          "reference": "ProcedureRequest#1"
+        }
+      ],
+      "status": "registered",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org/",
+            "code": "18955-5",
+            "display": "NITROFURANTOIN:SUSC:PT:ISOLATE:ORDQN"
+          }
+        ]
+      },
+      "subject": {
+        "reference": "Pat#1"
+      },
+      "effectiveDateTime": "2017-08-24T11:51:24-04:00",
+      "issued": "2017-08-24T11:51:24-04:00",
+      "performer": [
+        {
+          "reference": "Org#1"
+        }
+      ],
+      "interpretation": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0078",
+            "code": "R",
+            "display": "Resistant"
+          }
+        ]
+      },
+      "method": {
+        "text": "PCR"
+      },
+      "specimen": {
+        "reference": "Specimen#1"
+      },
+      "related": [
+        {
+          "type": "derived-from",
+          "target": {
+            "reference": "Observation#1"
+          }
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "[base-structure]/ca-on-lab-ext-replace-all",
+      "valueBoolean": "true"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "[id-system-local-base]/lab/report-id-lab-license-4008",
+      "value": "Contained 11111121",
+      "assigner": [
+        {
+          "reference": "#Org1"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "11502-2",
+        "display": ":Laboratory Report"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient#1"
+  },
+  "issued": "2017-08-22T10:55:53-04:00",
+  "performer": [
+    {
+      "actor": {
+        "reference": "#lab1"
+      }
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "#Spec1"
+    }
+  ],
+  "result": [
+    {
+      "reference": "#Observation1"
+    }
+  ],
+  "codedDiagnosis": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10-ca",
+          "code": "A009",
+          "display": "Cholera unspecified"
+        }
+      ]
+    }
+  ]
+}

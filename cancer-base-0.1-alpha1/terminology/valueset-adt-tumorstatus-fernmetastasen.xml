@@ -1,0 +1,65 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uni-koeln.de/fhir/ValueSet/cancer-base/adt/tumorstatus-fernmetastasen" />
+  <version value="0.1" />
+  <name value="adt-tumorstatus-fernmetastasen" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Universität Köln" />
+  <description value="Tumorstatus Fernmetastasen nach ADT." />
+  <compose>
+    <include>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-fernmetastasen" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uni-koeln-work-tumorstatus-fernmetastasen-1" />
+    <timestamp value="2018-10-31" />
+    <total value="9" />
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-fernmetastasen" />
+      <code value="K" />
+      <display value="keine Fernmetastasen nachweisbar" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-fernmetastasen" />
+      <code value="M" />
+      <display value="verbliebene Fernmetastase(n)" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-fernmetastasen" />
+      <code value="R" />
+      <display value="neu aufgetretene Fernmetastase(n) bzw. Metastasenrezidiv" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-fernmetastasen" />
+      <code value="T" />
+      <display value="Fernmetastasen Residuen" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-fernmetastasen" />
+      <code value="P" />
+      <display value="Fernmetastasen Progress" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-fernmetastasen" />
+      <code value="N" />
+      <display value="Fernmetastasen No Change" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-fernmetastasen" />
+      <code value="F" />
+      <display value="fraglicher Befund" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-fernmetastasen" />
+      <code value="U" />
+      <display value="unbekannt" />
+    </contains>
+    <contains>
+      <system value="http://uni-koeln.de/fhir/CodeSystem/cancer-base/adt/tumorstatus-fernmetastasen" />
+      <code value="X" />
+      <display value="fehlende Angabe" />
+    </contains>
+  </expansion>
+</ValueSet>

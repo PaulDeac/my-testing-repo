@@ -1,0 +1,44 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2019-03-11T17:51:19.9169543+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-cc-list" />
+  <name value="practitioner-copied" />
+  <status value="draft" />
+  <date value="2019-03-11T17:51:19.7382537+00:00" />
+  <description value="Copied Practitioner - Identify practitioners who are to be copied on this order/report. It is important to identify all cc’d practitioners so that each practitioner is aware who is copied, and to ensure that the report is available to each practitioner through the practitioner query." />
+  <purpose value="OLIS can return up to 10 copied practitioners to one ProcedureRequest" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="ProcedureRequest" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <mustSupport value="false" />
+      <isModifier value="false" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-cc-list" />
+    </element>
+    <element id="Extension.value[x]:valueReference">
+      <path value="Extension.valueReference" />
+      <sliceName value="valueReference" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Practitioner-copied" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Extension.value[x]:valueReference.reference">
+      <path value="Extension.valueReference.reference" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

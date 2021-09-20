@@ -1,0 +1,40 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2019-03-11T18:44:43.6372593+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ext-id-health-card-version-code" />
+  <name value="healthCard-versionCode" />
+  <status value="draft" />
+  <date value="2019-03-11T18:44:43.473374+00:00" />
+  <description value="An assigned sequence code, uniquely identifying a Health Card issued (or potentially issued) to a Registered Person" />
+  <purpose value="Uniquely identify a Health Card issued to a Registered Person" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Patient.identifier.value" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+      <mustSupport value="false" />
+      <isModifier value="false" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealthontario.ca/fhir/StructureDefinition/ext-id-health-card-version-code" />
+    </element>
+    <element id="Extension.value[x]:valueString">
+      <path value="Extension.valueString" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

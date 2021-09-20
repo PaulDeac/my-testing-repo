@@ -1,0 +1,42 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/tnm-n-qualifier-i" />
+  <version value="0.1" />
+  <name value="tnm-n-qualifier-i" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="TNM N-Qualifier i" />
+  <compose>
+    <include>
+      <!-- FIXME: canonical URL -->
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <concept>
+        <code value="i-" />
+        <display value="i-" />
+      </concept>
+      <concept>
+        <code value="i+" />
+        <display value="i+" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-tnm-n-qualifier-i-1" />
+    <timestamp value="2018-10-31" />
+    <total value="2" />
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="i-" />
+      <display value="i-" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="i+" />
+      <display value="i+" />
+    </contains>
+  </expansion>
+</ValueSet>

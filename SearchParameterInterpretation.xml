@@ -1,0 +1,70 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2019-03-12T19:48:08.5474653+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-SearchParameter-interpretation" />
+  <name value="SearchParameterInterpretation" />
+  <status value="draft" />
+  <date value="2019-03-12T19:48:08.3556604+00:00" />
+  <description value="A search parameter that defines a named search item that can be used to search/filter on a resource." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="SearchParameter" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/SearchParameter" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="SearchParameter.id">
+      <path value="SearchParameter.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.url">
+      <path value="SearchParameter.url" />
+      <type>
+        <code value="uri" />
+        <profile value="http://ehealthontario.ca/fhir/SearchParameter/Observation-interpretation" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.url.id">
+      <path value="SearchParameter.url.id" />
+      <max value="0" />
+    </element>
+    <element id="SearchParameter.name">
+      <path value="SearchParameter.name" />
+      <fixedString value="interpretation" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.status">
+      <path value="SearchParameter.status" />
+      <fixedCode value="active" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.jurisdiction">
+      <path value="SearchParameter.jurisdiction" />
+      <max value="1" />
+    </element>
+    <element id="SearchParameter.code">
+      <path value="SearchParameter.code" />
+      <fixedCode value="Interpretation" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.base">
+      <path value="SearchParameter.base" />
+      <max value="1" />
+      <fixedCode value="Observation" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.type">
+      <path value="SearchParameter.type" />
+      <fixedCode value="token" />
+      <mustSupport value="true" />
+    </element>
+    <element id="SearchParameter.description">
+      <path value="SearchParameter.description" />
+      <short value="Returns observation results with an interpretation matching the specified code." />
+      <fixedMarkdown value="Returns observation results with an interpretation matching the specified code" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

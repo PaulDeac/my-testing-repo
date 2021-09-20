@@ -1,0 +1,166 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <url value="https://simplifier.net/guide/ontariolaboratoriesinformationsystemconsumerquery" />
+  <name value="Ontario Laboratories Information System HL7 FHIR® Consumer Query Implementation Guide-v1.0.1" />
+  <status value="draft" />
+  <description value="Implementation Guide and FHIR artifacts for the OLIS Consumer Query" />
+  <fhirVersion value="3.0.1" />
+  <page>
+    <title value="Ontario Laboratories Information System HL7 FHIR® Consumer Query Implementation Guide-v1.0.1" />
+    <page>
+      <source value="Home.md" />
+      <title value="Home" />
+      <kind value="page" />
+      <format value="text/markdown" />
+      <page>
+        <source value="Introduction.md" />
+        <title value="Introduction" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="Scope.md" />
+        <title value="Scope" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="Audience.md" />
+        <title value="Intended Audience" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="ReferenceMaterials-duplicate-3.md" />
+        <title value="Reference Materials" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="PackageContent.md" />
+        <title value="Identifier Policy" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="ConformanceVerbs.md" />
+        <title value="Acronyms and Abbreviations" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="Newitem-duplicate-17.md" />
+        <title value="Revision History" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="Newitem-duplicate-18.md" />
+        <title value="Known Issues" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+    </page>
+    <page>
+      <source value="Newitem.md" />
+      <title value="Business Context" />
+      <kind value="page" />
+      <format value="text/markdown" />
+      <page>
+        <source value="BusinessModel.md" />
+        <title value="Business Model" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="BusinessData.md" />
+        <title value="Business Data" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="Newitem-duplicate-6.md" />
+        <title value="Use Cases" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="BusinessRules.md" />
+        <title value="Business Rules" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+    </page>
+    <page>
+      <source value="Newitem-duplicate-2.md" />
+      <title value="Implementation Guidance" />
+      <kind value="page" />
+      <format value="text/markdown" />
+      <page>
+        <source value="ConsumerResponsibility.md" />
+        <title value="Consumer Responsibility" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="ImplementationConsideration.md" />
+        <title value="Implementation Consideration" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="Connectivity.md" />
+        <title value="Connectivity" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+    </page>
+    <page>
+      <source value="ProfilesOperations.md" />
+      <title value="Profiles &amp; Operations" />
+      <kind value="page" />
+      <format value="text/markdown" />
+      <page>
+        <source value="DiagnoticReportSearch.md" />
+        <title value="DiagnosticReport Search" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+    </page>
+    <page>
+      <source value="ConformanceRequirements.md" />
+      <title value="Capability Statement" />
+      <kind value="page" />
+      <format value="text/markdown" />
+      <page>
+        <source value="Errors.md" />
+        <title value="Response Handling" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+    </page>
+    <page>
+      <source value="Terminology.md" />
+      <title value="Terminology" />
+      <kind value="page" />
+      <format value="text/markdown" />
+      <page>
+        <source value="Newitem-duplicate-16.md" />
+        <title value="Terminology Updates" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+      <page>
+        <source value="Identifiers.md" />
+        <title value="Identifiers" />
+        <kind value="page" />
+        <format value="text/markdown" />
+      </page>
+    </page>
+    <page>
+      <source value="Downloads.md" />
+      <title value="Downloads" />
+      <kind value="page" />
+      <format value="text/markdown" />
+    </page>
+  </page>
+</ImplementationGuide>

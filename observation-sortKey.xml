@@ -1,0 +1,40 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2019-03-12T19:10:50.5637971+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-obs-sort-key" />
+  <name value="observation-sortKey" />
+  <status value="draft" />
+  <date value="2019-03-12T19:10:50.3766453+00:00" />
+  <description value="Allows laboratories to suggest the sequence of test results within a single test request to simplify the display of the patient report by other external systems (e.g., a practitioner’s electronic medical record system)." />
+  <purpose value="To allow laboratories to suggest the sequence of test results within a single test request" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Observation" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+      <mustSupport value="false" />
+      <isModifier value="false" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-obs-sort-key" />
+    </element>
+    <element id="Extension.value[x]:valueString">
+      <path value="Extension.valueString" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

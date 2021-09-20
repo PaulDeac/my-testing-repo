@@ -1,0 +1,62 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/residualtumor" />
+  <version value="0.1" />
+  <name value="residualtumor" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Residualtumor (R-Klassifikation)" />
+  <compose>
+    <include>
+      <!-- FIXME: canonical URL -->
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <concept>
+        <code value="R0" />
+        <display value="R0" />
+      </concept>
+      <concept>
+        <code value="R1" />
+        <display value="R1" />
+      </concept>
+      <concept>
+        <code value="R2" />
+        <display value="R2" />
+      </concept>
+      <concept>
+        <code value="RX" />
+        <display value="RX" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-residualtumor-1" />
+    <timestamp value="2018-10-31" />
+    <total value="4" />
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="R0" />
+      <display value="R0" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="R1" />
+      <display value="R1" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="R2" />
+      <display value="R2" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="RX" />
+      <display value="RX" />
+    </contains>
+  </expansion>
+</ValueSet>

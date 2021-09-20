@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/medication" />
+  <version value="0.1" />
+  <name value="medication" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Codierung für Medikamente. Dieses Minimal-ValueSet beschreibt lediglich das Nicht-Vorhandensein dieser Angabe und sollte daher niemals required gebunden werden." />
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/NullFlavor" />
+      <concept>
+        <code value="NI" />
+        <display value="NoInformation" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-medication-1" />
+    <timestamp value="2018-10-31" />
+    <total value="1" />
+    <contains>
+      <system value="http://hl7.org/fhir/v3/NullFlavor" />
+      <code value="NI" />
+      <display value="NoInformation" />
+    </contains>
+  </expansion>
+</ValueSet>

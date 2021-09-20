@@ -1,0 +1,21 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/clinicalimpression-investigation" />
+  <version value="0.1" />
+  <name value="clinicalimpression-investigation" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Kategorien zur Unterscheidung verschiedener Klassen von Abklärungen (investigation)." />
+  <caseSensitive value="true" />
+  <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/clinicalimpression-investigation" />
+  <content value="complete" />
+  <concept>
+    <code value="imaging" />
+    <display value="bildgebende Untersuchung" />
+  </concept>
+  <concept>
+    <code value="clinical" />
+    <display value="klinische Untersuchung" />
+  </concept>
+</CodeSystem>

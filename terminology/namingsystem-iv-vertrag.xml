@@ -1,0 +1,14 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <name value="iv-vertragsnummer" />
+  <status value="draft" />
+  <kind value="identifier" />
+  <date value="2017-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Namensraum für vertragsnummern der integrierten Versorgung (IV)." />
+  <usage value="Wird zur Identifizierung im Bereich der integrierten Versorgung verwendet." />
+  <uniqueId>
+    <type value="uri" />
+    <value value="http://uk-koeln.de/fhir/identifier/cancer-base/iv-vertragsnummer" />
+    <preferred value="true" />
+  </uniqueId>
+</NamingSystem>

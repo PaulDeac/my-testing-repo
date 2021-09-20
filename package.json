@@ -1,0 +1,11 @@
+{
+  "name": "dev.cihub.CancerCareRecord",
+  "version": "0.0.1",
+  "description": "Cancer Care Record for Clinical Integration HUB building on  several standardized and proprietary models (proprietary models used in the German healthcare system) ",
+  "devDependencies": null,
+  "canonicals": null,
+  "dependencies": {
+    "basisprofil.de": "0.2.0",
+    "Simplifier.Core.STU3": "3.0.3"
+  }
+}

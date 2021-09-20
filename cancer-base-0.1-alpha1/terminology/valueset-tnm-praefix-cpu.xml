@@ -1,0 +1,52 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uni-koeln.de/fhir/ValueSet/cancer-base/tnm-praefix-cpu" />
+  <version value="0.1" />
+  <name value="tnm-praefix-cpu" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Universität Köln" />
+  <description value="TNM Präfix c/p/u" />
+  <compose>
+    <include>
+      <!-- FIXME: canonical URL -->
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <concept>
+        <code value="c" />
+        <display value="c" />
+      </concept>
+      <concept>
+        <code value="p" />
+        <display value="p" />
+      </concept>
+      <concept>
+        <code value="u" />
+        <display value="u" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uni-koeln-work-tnm-praefix-cpu-1" />
+    <timestamp value="2018-10-31" />
+    <total value="3" />
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="c" />
+      <display value="c" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="p" />
+      <display value="p" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="u" />
+      <display value="u" />
+    </contains>
+  </expansion>
+</ValueSet>

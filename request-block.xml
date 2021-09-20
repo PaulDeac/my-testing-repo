@@ -1,0 +1,39 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2019-03-12T17:57:38.0183167+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-record-block" />
+  <name value="request-block" />
+  <status value="draft" />
+  <date value="2019-03-12T17:57:37.5393638+00:00" />
+  <description value="Test Request Blocking Indicator indicates that access to Test Request and its Test Results must be restricted to the practitioners named on the order." />
+  <purpose value="To cover request level blocking OLIS functinality." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="ProcedureRequest" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+      <mustSupport value="false" />
+      <isModifier value="false" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-record-block" />
+    </element>
+    <element id="Extension.value[x]:valueBoolean">
+      <path value="Extension.valueBoolean" />
+      <sliceName value="valueBoolean" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

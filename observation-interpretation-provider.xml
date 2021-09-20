@@ -1,0 +1,70 @@
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  <id value="olis-InterpretationProvider" />
+  <url value="http://ehealthontario.ca/fhir/ValueSet/lab/observation-interpretation" />
+  <version value="1.0.1" />
+  <name value="Interpretation" />
+  <status value="draft" />
+  <publisher value="eHealth Ontario" />
+  <description value="Abnormal observation flags supported by eHealth Ontario" />
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v2/0078" />
+      <concept>
+        <code value="L" />
+        <display value="Low" />
+      </concept>
+      <concept>
+        <code value="H" />
+        <display value="High" />
+      </concept>
+      <concept>
+        <code value="LL" />
+        <display value="Critical low" />
+      </concept>
+      <concept>
+        <code value="HH" />
+        <display value="Critical high" />
+      </concept>
+      <concept>
+        <code value="N" />
+        <display value="Normal" />
+      </concept>
+      <concept>
+        <code value="A" />
+        <display value="Abnormal" />
+      </concept>
+      <concept>
+        <code value="AA" />
+        <display value="Critical abnormal" />
+      </concept>
+      <concept>
+        <code value="S" />
+        <display value="Susceptible" />
+      </concept>
+      <concept>
+        <code value="I" />
+        <display value="Intermediate" />
+      </concept>
+      <concept>
+        <code value="R" />
+        <display value="Resistant" />
+      </concept>
+      <concept>
+        <code value="MS" />
+        <display value="Moderately susceptible" />
+      </concept>
+      <concept>
+        <code value="VS" />
+        <display value="Very susceptible" />
+      </concept>
+      <concept>
+        <code value="NI" />
+        <display value="No Interpretation" />
+      </concept>
+      <concept>
+        <code value="S-DD" />
+        <display value="Susceptible-dose dependant" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

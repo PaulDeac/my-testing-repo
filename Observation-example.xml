@@ -1,0 +1,91 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-08-24T15:51:23+00:00" />
+  </meta>
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>%Some xhtml content%</p>
+    </div>
+  </text>
+  <extension url="[base-structure]/ca-on-lab-ext-obs-sub-id">
+    <valueString value="1" />
+  </extension>
+  <extension url="[base-structure]/ca-on-lab-ext-obs-sort-key">
+    <valueString value="3" />
+  </extension>
+  <extension url="[base-structure]/ca-on-lab-ext-note">
+    <extension url="sorce">
+      <valueCoding>
+        <system value="http://hl7.org/fhir/v2/0105" />
+        <code value="P" />
+        <display value="Order" />
+      </valueCoding>
+    </extension>
+    <extension url="annotation">
+      <valueAnnotation>
+        <authorString value="[id-system-global-base]/ca-on-lab-license:4008" />
+        <text value="Example of procedure request note" />
+      </valueAnnotation>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="[id-system-local-base]/lab/filler-id-lab-license-4004" />
+    <value value="23423432" />
+    <assigner>
+      <reference value="#Org1" />
+    </assigner>
+  </identifier>
+  <basedOn>
+    <reference value="ProcedureRequest#1" />
+  </basedOn>
+  <status value="registered" />
+  <code>
+    <coding>
+      <system value="http://loinc.org/" />
+      <code value="39792-7" />
+      <display value="Sodium:SCnc:Pt:BldC:Qn" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Pat#1" />
+  </subject>
+  <effectiveDateTime value="2017-08-24T11:51:24-04:00" />
+  <issued value="2017-08-24T11:51:24-04:00" />
+  <performer>
+    <reference value="Org#1" />
+  </performer>
+  <valueQuantity>
+    <value value="205" />
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://hl7.org/fhir/v2/0078" />
+      <code value="AA" />
+      <display value="Critical abnormal" />
+    </coding>
+  </interpretation>
+  <method>
+    <text value="PCR" />
+  </method>
+  <specimen>
+    <reference value="Specimen#1" />
+  </specimen>
+  <referenceRange>
+    <low>
+      <value value="135" />
+      <unit value="mmol" />
+    </low>
+    <high>
+      <value value="145" />
+      <unit value="mmol" />
+    </high>
+    <appliesTo>
+      <coding>
+        <system value="http://hl7.org/fhir/v2/0080" />
+        <code value="R" />
+        <display value="Race" />
+      </coding>
+    </appliesTo>
+  </referenceRange>
+</Observation>

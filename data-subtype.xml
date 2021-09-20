@@ -1,0 +1,46 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2019-03-12T19:00:18.7780238+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-subtype" />
+  <name value="data-subtype" />
+  <status value="draft" />
+  <date value="2019-03-12T19:00:18.6022902+00:00" />
+  <description value="Indicate the subtype of data (exmpale. PDF,XML)" />
+  <purpose value="OLIS supports data subtype for Attachment data type." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Attachment" />
+  <context value="Observation.value[x]" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-subtype" />
+    </element>
+    <element id="Extension.value[x]:valueCoding">
+      <path value="Extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <type>
+        <code value="Coding" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Extension.value[x]:valueCoding.system">
+      <path value="Extension.valueCoding.system" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetUri value="http://ehealthontario.ca/fhir/ValueSet/lab/observation-data-subtype" />
+      </binding>
+    </element>
+    <element id="Extension.value[x]:valueCoding.code">
+      <path value="Extension.valueCoding.code" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

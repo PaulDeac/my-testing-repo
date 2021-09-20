@@ -1,0 +1,30 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/behandelbarkeit" />
+  <version value="0.1" />
+  <name value="behandelbarkeit" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Behandelbarkeit" />
+  <compose>
+    <include>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/behandelbarkeit" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-behandelbarkeit" />
+    <timestamp value="2018-10-31" />
+    <total value="2" />
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/behandelbarkeit" />
+      <code value="ko" />
+      <display value="kurativ operabel" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/behandelbarkeit" />
+      <code value="nko" />
+      <display value="nicht kurativ operabel" />
+    </contains>
+  </expansion>
+</ValueSet>

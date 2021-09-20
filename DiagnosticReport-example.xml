@@ -1,0 +1,65 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-08-22T14:55:53+00:00" />
+  </meta>
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>%Some xhtml content%</p>
+    </div>
+  </text>
+  <extension url="[base-structure]/ca-on-lab-ext-note">
+    <extension url="source">
+      <valueCoding>
+        <system value="http://hl7.org/fhir/v2/0105" />
+        <code value="P" />
+        <display value="Order" />
+      </valueCoding>
+    </extension>
+    <extension url="annotation">
+      <valueAnnotation>
+        <authorString value="[id-system-global-base]/ca-on-lab-license:4008" />
+        <text value="Example of procedure request note" />
+      </valueAnnotation>
+    </extension>
+  </extension>
+  <extension url="[base-structure]/ca-on-lab-ext-replace-all">
+    <valueBoolean value="true" />
+  </extension>
+  <identifier>
+    <system value="[id-system-local-base]/lab/report-id-lab-license-4008" />
+    <value value="11111121" />
+    <assigner>
+      <reference value="#Org1" />
+    </assigner>
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <code value="11502-2" />
+      <display value=":Laboratory Report" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient#1" />
+  </subject>
+  <issued value="2017-08-22T10:55:53-04:00" />
+  <performer>
+    <actor>
+      <reference value="#lab1" />
+    </actor>
+  </performer>
+  <specimen>
+    <reference value="#Spec1" />
+  </specimen>
+  <result>
+    <reference value="#Observation1" />
+  </result>
+  <codedDiagnosis>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10-ca" />
+      <code value="A009" />
+      <display value="Cholera unspecified" />
+    </coding>
+  </codedDiagnosis>
+</DiagnosticReport>

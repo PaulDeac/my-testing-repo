@@ -1,0 +1,55 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/clinicalimpression" />
+  <version value="0.1" />
+  <name value="clinicalimpression" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Kategorien zur Unterscheidung verschiedener Klassen von Clinical Impressions (Erkrankungsverlauf)." />
+  <compose>
+    <include>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/clinicalimpression" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-clinicalimpression-1" />
+    <timestamp value="2018-10-31" />
+    <total value="7" />
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/clinicalimpression" />
+      <code value="L" />
+      <display value="Nachsorgeuntersuchung (Langzeitbetreuung)" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/clinicalimpression" />
+      <code value="B" />
+      <display value="abgeschlossene Behandlungsphase" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/clinicalimpression" />
+      <code value="T" />
+      <display value="Tumorsymptomatik führte zum Arzt" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/clinicalimpression" />
+      <code value="K" />
+      <display value="Untersuchung wegen einer Behandlungskomplikation" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/clinicalimpression" />
+      <code value="S" />
+      <display value="Selbstuntersuchung" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/clinicalimpression" />
+      <code value="A" />
+      <display value="andere Untersuchung" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/clinicalimpression" />
+      <code value="X" />
+      <display value="unbekannt" />
+    </contains>
+  </expansion>
+</ValueSet>

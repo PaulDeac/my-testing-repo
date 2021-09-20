@@ -1,0 +1,163 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="9e016051-b080-45a2-915d-3e300e9e06r7" />
+  <meta>
+    <lastUpdated value="2019-03-11T17:47:02.4989115+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-provider-profile-Practitioner-copied" />
+  <name value="PractitionerCopied" />
+  <status value="draft" />
+  <date value="2019-03-11T17:47:02.3336352+00:00" />
+  <description value="A person who is directly or indirectly involved in the provisioning of healthcare. This resource will represent extension for cc’d list physicians (reference from ProcedureRequest)" />
+  <fhirVersion value="3.0.1" />
+  <mapping>
+    <identity value="OLIS-HL7-v2" />
+    <name value="OLIS HL7 v2" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Practitioner" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Practitioner">
+      <path value="Practitioner" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.id">
+      <path value="Practitioner.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier" />
+      <definition value="An identifier that applies to this person in this role.&#xD;&#xA;Practitioner ID (Licence): Practitioner, Dentist, Nurse Practitioner, Midwife." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.identifier.system">
+      <path value="Practitioner.identifier.system" />
+      <definition value="Establishes the namespace for the value - that is, a URL that describes a set values that are unique.&#xD;&#xA;URI of a licence regulating body" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR.28.22/OBR.28.13" />
+      </mapping>
+    </element>
+    <element id="Practitioner.identifier.value">
+      <path value="Practitioner.identifier.value" />
+      <short value="Licence  number" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR.28.1" />
+      </mapping>
+    </element>
+    <element id="Practitioner.name">
+      <path value="Practitioner.name" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name.family">
+      <path value="Practitioner.name.family" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR.28.2" />
+      </mapping>
+    </element>
+    <element id="Practitioner.name.given">
+      <path value="Practitioner.name.given" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="extension.url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <max value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name.given:given-first">
+      <path value="Practitioner.name.given" />
+      <sliceName value="given-first" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR.28.3" />
+      </mapping>
+    </element>
+    <element id="Practitioner.name.given:given-middle">
+      <path value="Practitioner.name.given" />
+      <sliceName value="given-middle" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR.28.4" />
+      </mapping>
+    </element>
+    <element id="Practitioner.name.given:given-second.extension">
+      <path value="Practitioner.name.given.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Practitioner.name.given:given-middle.extension:EN-qualifier">
+      <path value="Practitioner.name.given.extension" />
+      <sliceName value="EN-qualifier" />
+      <short value="Used to indicate additional information about the name part and how it should be used." />
+      <definition value="Use on data type: OLIS uses for  HumanName.given" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name.given:given-middle.extension:EN-qualifier.id">
+      <path value="Practitioner.name.given.extension.id" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Practitioner.name.given:given-middle.extension:EN-qualifier.url">
+      <path value="Practitioner.name.given.extension.url" />
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" />
+    </element>
+    <element id="Practitioner.name.given:given-middle.extension:EN-qualifier.value[x]:valueCode">
+      <path value="Practitioner.name.given.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <type>
+        <code value="code" />
+      </type>
+      <fixedCode value="MID" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name.prefix">
+      <path value="Practitioner.name.prefix" />
+      <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.&#xD;&#xA;&#xD;&#xA;OLIS will return maximum one prefix" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR.28.6" />
+      </mapping>
+    </element>
+    <element id="Practitioner.name.suffix">
+      <path value="Practitioner.name.suffix" />
+      <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.&#xD;&#xA;&#xD;&#xA;OLIS will return maximum one suffix" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="OLIS-HL7-v2" />
+        <map value="OBR.28.5" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

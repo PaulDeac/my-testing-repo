@@ -1,0 +1,40 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2019-03-12T19:13:42.7179234+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-obs-sub-id" />
+  <name value="observation-subID" />
+  <status value="draft" />
+  <date value="2019-03-12T19:13:42.5300007+00:00" />
+  <description value="In OLIS, a test result or observation is uniquely identified within a test request by Observation Identifier, Observation Sub-ID, and Test Result Release Date/Time .&#xD;&#xA;Use this field to distinguish between multiple rsults with the same observation ID associated with one obseravation, for example three occult blood test results reported under the same test result code, or an initial result accompanied by a supplemental result that does not replace the initial result." />
+  <purpose value="To distinguish between multiple rsults with the same observation ID associated with one obseravation" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Observation" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+      <mustSupport value="false" />
+      <isModifier value="false" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-obs-sub-id" />
+    </element>
+    <element id="Extension.value[x]:valueString">
+      <path value="Extension.valueString" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

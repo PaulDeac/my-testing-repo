@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Ontario Laboratories Information System HL7 FHIR® Provider Query Implementation Guide - v1.0.0 </title>
+
+        <link rel="icon" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/favicon.ico" />
+
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/jquery/jquery.min.js"></script>
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/main.min.css" />
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/rendering.min.css" />
+
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="guide/OntarioLaboratoriesInformationSystemProviderQuery/files/project/OntarioLaboratoriesInformationSystemProviderQuery1.0.0-Draft/style.css?v=1d59583fe7a9f00" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-twolevelmenu">
+
+                    <div class="header">
+                        
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=".html">
+                Ontario Laboratories Information System HL7 FHIR&#xAE; Provider Query Implementation Guide - v1.0.0 
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Home <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="Home.html">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="Introduction.html">
+                                            Introduction
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Scope.html">
+                                            Scope
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="IntendedAudience.html">
+                                            Intended Audience
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ReferenceMaterials.html">
+                                            Reference Materials
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="IdentifierPolicy.html">
+                                            Identifier Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="AcronymsandAbbreviations.html">
+                                            Acronyms and Abbreviations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="RevisionHistory.html">
+                                            Revision History
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="KnownIssues.html">
+                                            Known Issues
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Business Context <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="BusinessContext.html">
+                                            Business Context
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="BusinessModel.html">
+                                            Business Model
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="BusinessData.html">
+                                            Business Data
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="UseCases.html">
+                                            Use Cases
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="BusinessRules.html">
+                                            Business Rules
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Implementation Guidance <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuidance.html">
+                                            Implementation Guidance
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ConsumerResponsibility.html">
+                                            Consumer Responsibility
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationConsideration.html">
+                                            Implementation Consideration
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Connectivity.html">
+                                            Connectivity
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Profiles &amp; Operations <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ProfilesOperations.html">
+                                            Profiles &amp; Operations
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="DiagnosticReportSearch.html">
+                                            DiagnosticReport Search
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Capability Statement <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="CapabilityStatement.html">
+                                            Capability Statement
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ResponseHandling.html">
+                                            Response Handling
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Terminology <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="Terminology.html">
+                                            Terminology
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="TerminologyUpdates.html">
+                                            Terminology Updates
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Identifiers.html">
+                                            Identifiers
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Downloads.html">
+                                Downloads
+                            </a>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                    </div>
+
+                    <div class="content container">
+                        
+
+    <div class="row">
+
+
+        <div class="col-md-24">
+
+            <div id="preview-content">
+
+                <p id="breadcrumb">
+<p><a href="https://simplifier.net/guide/OntarioLaboratoriesInformationSystemProviderQuery/BusinessContext">Business Context</a> &gt; Use Cases</p>
+</p>
+<h1 id="use-cases">Use Cases</h1>
+<p>The use cases below provide a basic illustration of how different actors interact with OLIS using the Provider Query with the basic flow.</p>
+<h2 id="participants">Participants</h2>
+<p><strong>Table: Use Case Participants</strong></p>
+<table class="regular">
+<thead>
+<tr>
+<th>Participant</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Health Care Provider</td>
+<td>Human</td>
+<td>A person such as the health care provider who interacts with the system via a health care provider application to search a person’s laboratory information in OLIS based on the Ontario Health card.</td>
+</tr>
+<tr>
+<td>Health care Provider Application</td>
+<td>System</td>
+<td>A web based application (handheld device, web or portal), used by the health care provider to search lab information in OLIS. The application maintains, manages and validates the user information and credentials, prior to the request being sent to OLIS.</td>
+</tr>
+<tr>
+<td>Provider  Gateway</td>
+<td>System</td>
+<td>An interface layer that processes security and user based information received from a health care provider application. The Provider Gateway authorizes the query be processed by OLIS.</td>
+</tr>
+<tr>
+<td>OLIS</td>
+<td>System</td>
+<td>The EHR asset that receives the request, processes the query, and returns the results.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="uc1-olis-health-care-provider-requests-lab-information-and-retrieves-the-request">UC1 – OLIS health care provider requests lab information and retrieves the request</h2>
+<p>An authorized Health Care Provider uses their Health Care Provider Application to search OLIS for their lab information.</p>
+<p><strong>Table: Use Case #1</strong></p>
+<table class="regular">
+<thead>
+<tr>
+<th>Step</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.</td>
+<td>Health care provider enters the search criteria for the search in the Health Care Provider  Application to look up lab information based on the Ontario Health Card Number</td>
+</tr>
+<tr>
+<td>1.</td>
+<td>Health Care Provider Application authenticates the validity of the Health Care Provider requesting the query as well as ensures that the request is valid, and all mandatory criteria provided. The application then formulates the request and submits it to the Provider gateway and OLIS.</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Provider gateway receives the request, ensures the requested information is available for authorization and records the information prior to authorizing OLIS to process the request.</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>OLIS receives the request, validates, processes the query and returns the result back to the Health Care Provider via the Provider gateway.</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Provider gateway processes the response back to the Health Care Provider  Application.</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>Health Care Provider  Application displays the information received by the Provider gateway back to the Health Care Provider.</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>Health Care Provider reviews the information and might choose to store the information locally (if applicable).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="alternate-flows-not-expanded-include">Alternate flows (not expanded) include:</h2>
+<ol type="i">
+<li>Provider gateway fails to authorize the request (e.g. missing required information). Negative response returned to the Health Care Provider.</li>
+<li>Invalid parameter information (including incorrect format, blank value provided for parameter) provided in the request. Negative response returned to the Health Care Provider.</li>
+</ol>
+<h2 id="uc2-hic-organization-requests-lab-information-and-retrieves-the-request">UC2 – HIC organization requests lab information and retrieves the request</h2>
+<p>An authorized Health Information Custodian uses their organization application to search OLIS for their lab information.</p>
+<p><strong>Table: Use Case #2</strong></p>
+<table class="regular">
+<thead>
+<tr>
+<th>Step</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.</td>
+<td>User enters the search criteria for the search in the HIC organization  Application to look up lab information based on the Ontario Health Card Number.</td>
+</tr>
+<tr>
+<td>1.</td>
+<td>HIC organization Application authenticates the validity of the Health Care Provider requesting the query as well as ensures that the request is valid, and all mandatory criteria provided. The application then formulates the request and submits it to the Provider gateway and OLIS.</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Provider gateway receives the request, ensures the requested information is available for authorization and records the information prior to authorizing OLIS to process the request.</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>OLIS receives the request, validates, processes the query and returns the result back to the Health Care Provider via the Provider gateway.</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Provider gateway processes the response back to the HIC organization  Application.</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>HIC organization  Application displays the information received by the Provider gateway back to the Health Care Provider.</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>Health Care Provider reviews the information and might choose to store the information locally (if applicable).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="alternate-flows-not-expanded-include-1">Alternate flows (not expanded) include:</h2>
+<ol type="i">
+<li>Provider gateway fails to authorize the request (e.g. missing required information). Negative response returned to the Health Care Provider.</li>
+<li>Invalid parameter information (including incorrect format, blank value provided for parameter) provided in the request. Negative response returned to the Health Care Provider.</li>
+</ol>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer">
+                
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

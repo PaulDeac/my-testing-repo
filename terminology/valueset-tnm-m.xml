@@ -1,0 +1,82 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/tnm-m" />
+  <version value="0.1" />
+  <name value="tnm-m" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="TNM: M-Klassifikation" />
+  <compose>
+    <include>
+      <!-- FIXME: canonical URL -->
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <concept>
+        <code value="M0" />
+        <display value="M0" />
+      </concept>
+      <concept>
+        <code value="M1" />
+        <display value="M1" />
+      </concept>
+      <concept>
+        <code value="M1a" />
+        <display value="M1a" />
+      </concept>
+      <concept>
+        <code value="M1b" />
+        <display value="M1b" />
+      </concept>
+      <concept>
+        <code value="M1c" />
+        <display value="M1c" />
+      </concept>
+      <concept>
+        <code value="M1d" />
+        <display value="M1d" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-tnm-m-1" />
+    <timestamp value="2018-10-31" />
+    <total value="6" />
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="M0" />
+      <display value="M0" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="M1" />
+      <display value="M1" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="M1a" />
+      <display value="M1a" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="M1b" />
+      <display value="M1b" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="M1c" />
+      <display value="M1c" />
+    </contains>
+    <contains>
+      <system value="urn:oid:2.16.840.1.113883.15.16" />
+      <version value="8" />
+      <code value="M1d" />
+      <display value="M1d" />
+    </contains>
+  </expansion>
+</ValueSet>

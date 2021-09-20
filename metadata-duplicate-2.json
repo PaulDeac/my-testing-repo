@@ -1,0 +1,183 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "OLIS-ProviderQuery-server",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t<p>eHealth Ontario OLIS Provider Query FHIR Capability Statement</p>\n\t\t</div>"
+  },
+  "url": "https://consumer.ehealthontario.ca/api/fhirstu3/v1/DiagnosticReport/metadata",
+  "version": "1.0.0",
+  "name": "Ontario Laboratories Information System FHIR Capability Statement",
+  "title": "Ontario Laboratories Information System FHIR Capability Statement",
+  "status": "active",
+  "experimental": false,
+  "date": "2018-12-05",
+  "publisher": "eHealth Ontario",
+  "contact": [
+    {
+      "name": "eHealth Ontario",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "architecture@ehealthontario.on.ca"
+        }
+      ]
+    }
+  ],
+  "description": "This is the FHIR capability statement for Ontario Laboratories Information System (OLIS) server-Provider",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "CA-ON",
+          "display": "Canada Ontario"
+        }
+      ]
+    }
+  ],
+  "purpose": "Main EHR capability statement, published for contracting and operational support",
+  "copyright": "Copyright © eHealth Ontario",
+  "kind": "instance",
+  "fhirVersion": "3.0.1",
+  "acceptUnknown": "no",
+  "format": [
+    "json",
+    "xml"
+  ],
+  "profile": [
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-DiagnosticReport"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-ProcedureRequest"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Observation"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Observation-child"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Specimen"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Patient"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Practitioner-ordering"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Practitioner-copied"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Practitioner-attending"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Practitioner-admitting"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Organization-ordering"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Organization-performing"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Organization-reporting"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Organization-specimen"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Organization-requestPlacer"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Organization-destination"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Organization-assigner"
+    },
+    {
+      "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-Encounter"
+    }
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "documentation": "Support retrieval of patient's laboratory records, or retrieve all lab results for certain category",
+      "security": {
+        "cors": true,
+        "description": "JWT. Please refer to Ontario JWT Guide."
+      },
+      "resource": [
+        {
+          "type": "DiagnosticReport",
+          "profile": {
+            "reference": "http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-profile-DiagnosticReport"
+          },
+          "documentation": "Retrieve history of patient's lab results",
+          "interaction": [
+            {
+              "code": "search-type",
+              "documentation": "Search DiagnosticReport resources using specified parameters. For 1.0.0 OLIS supports only GET operation"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "patient.identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/Patient-identifier",
+              "type": "token",
+              "documentation": "Only supports search by Ontario Health Card Number- mandatory for OLIS patient query, not supported for bulk query"
+            },
+            {
+              "name": "patient.gender",
+              "definition": "http://hl7.org/fhir/SearchParameter/Patient-gender",
+              "type": "token",
+              "documentation": "Patient gender- mandatory for OLIS patient query, not supported for bulk query"
+            },
+            {
+              "name": "patient.birthDate",
+              "definition": "http://hl7.org/fhir/SearchParameter/Patient-birthDate",
+              "type": "date",
+              "documentation": "Patient date of birth - mandatory for OLIS patient query, not supported for bulk query"
+            },
+            {
+              "name": "issued",
+              "type": "date",
+              "documentation": "Start date of the search criteria, the date can either be the date  that OLIS recieves the report (issued), or the date that the test was performed (specimen.collected). Mandatory for bulk query"
+            },
+            {
+              "name": "specimen.collected",
+              "definition": "http://hl7.org/fhir/SearchParameter/Specimen-collected",
+              "type": "date",
+              "documentation": "Start date of the search criteria, the date can either be the date  that OLIS recieves the report (issued), or the date that the test was performed (specimen.collected). Not supported for bulk query"
+            },
+            {
+              "name": "result.based-on:ProcedureRequest.code",
+              "definition": "http://hl7.org/fhir/SearchParameter/ProcerdureRequest-code",
+              "type": "token",
+              "documentation": "Test request status code- optional. Not supported for bulk query"
+            },
+            {
+              "name": "result.interpretation",
+              "definition": "http://ehealthontario.ca/fhir/SearchParameter/Observation-interpretation",
+              "type": "token",
+              "documentation": "Abnormal results- optional. Not supported for bulk query"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Diagnostic report identifier- optional. Not supported for bulk query"
+            },
+            {
+              "name": "result.code",
+              "definition": "http://ehealthontario.ca/fhir/SearchParameter/result-code",
+              "type": "token",
+              "documentation": "Test result code- optional. Not supported for bulk query"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

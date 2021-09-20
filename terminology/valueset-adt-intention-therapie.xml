@@ -1,0 +1,40 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/intention-therapie" />
+  <version value="0.1" />
+  <name value="adt-intention-therapie" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Intention von systemischen und Strahlentherapien" />
+  <compose>
+    <include>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-therapie" />
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="uk-koeln-work-intention-therapie-1" />
+    <timestamp value="2018-10-31" />
+    <total value="4" />
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-therapie" />
+      <code value="K" />
+      <display value="kurativ" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-therapie" />
+      <code value="P" />
+      <display value="palliativ" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-therapie" />
+      <code value="S" />
+      <display value="sonstiges" />
+    </contains>
+    <contains>
+      <system value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-therapie" />
+      <code value="X" />
+      <display value="fehlende Angabe" />
+    </contains>
+  </expansion>
+</ValueSet>

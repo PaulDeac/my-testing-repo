@@ -1,0 +1,59 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ed1c4e77-ecaf-49d8-970e-4d8640d686b3" />
+  <meta>
+    <lastUpdated value="2019-03-12T19:02:58.1136823+00:00" />
+  </meta>
+  <url value="http://ehealthontario.ca/fhir/StructureDefinition/Attachment" />
+  <name value="Attachment" />
+  <status value="draft" />
+  <date value="2019-03-12T19:02:57.9188615+00:00" />
+  <description value="Extension 'data-subtype' is added to attachment datatype which used in Observation and ObservationMicrobiology profiles" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Attachment" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Attachment" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Attachment.extension">
+      <path value="Attachment.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Attachment.extension:data-subtype">
+      <path value="Attachment.extension" />
+      <sliceName value="data-subtype" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealthontario.ca/fhir/StructureDefinition/ca-on-lab-ext-subtype" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Attachment.extension:data-subtype.id">
+      <path value="Attachment.extension.id" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Attachment.extension:data-subtype.value[x]:valueCoding">
+      <path value="Attachment.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <type>
+        <code value="Coding" />
+      </type>
+      <mustSupport value="false" />
+    </element>
+    <element id="Attachment.contentType">
+      <path value="Attachment.contentType" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Attachment.data">
+      <path value="Attachment.data" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

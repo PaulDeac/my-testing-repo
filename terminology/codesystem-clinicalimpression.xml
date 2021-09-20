@@ -1,0 +1,41 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/clinicalimpression" />
+  <version value="0.1" />
+  <name value="clinicalimpression" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-10-31" />
+  <publisher value="Uniklinik Köln" />
+  <description value="Kategorien zur Unterscheidung verschiedener Klassen von Clinical Impressions (Erkrankungsverlauf)." />
+  <caseSensitive value="true" />
+  <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/clinicalimpression" />
+  <content value="complete" />
+  <concept>
+    <code value="L" />
+    <display value="Nachsorgeuntersuchung (Langzeitbetreuung)" />
+  </concept>
+  <concept>
+    <code value="B" />
+    <display value="abgeschlossene Behandlungsphase" />
+  </concept>
+  <concept>
+    <code value="T" />
+    <display value="Tumorsymptomatik führte zum Arzt" />
+  </concept>
+  <concept>
+    <code value="K" />
+    <display value="Untersuchung wegen einer Behandlungskomplikation" />
+  </concept>
+  <concept>
+    <code value="S" />
+    <display value="Selbstuntersuchung" />
+  </concept>
+  <concept>
+    <code value="A" />
+    <display value="andere Untersuchung" />
+  </concept>
+  <concept>
+    <code value="X" />
+    <display value="unbekannt" />
+  </concept>
+</CodeSystem>

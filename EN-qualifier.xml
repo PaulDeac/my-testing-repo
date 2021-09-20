@@ -1,0 +1,42 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="4367b574-7f9c-4c28-b51c-ea48b98c5bc7" />
+  <meta>
+    <lastUpdated value="2019-03-11T17:39:20.0714838+00:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" />
+  <name value="EN-qualifier" />
+  <status value="draft" />
+  <date value="2019-03-11T17:39:19.9050664+00:00" />
+  <description value="URL = http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier&#xD;&#xA;EN-qualifier: A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type.&#xD;&#xA;Binding: EntityNamePartQualifier (required)&#xD;&#xA;Use on data type: HumanName.family, HumanName.given, HumanName.prefix, HumanName.suffix" />
+  <purpose value="Return human middle name used in patient and practitioner resource" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Patient.name.given" />
+  <context value="Practitioner.name.given" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+      <mustSupport value="false" />
+      <isModifier value="false" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" />
+    </element>
+    <element id="Extension.value[x]:valueCode">
+      <path value="Extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
