@@ -1,0 +1,18 @@
+# example predicate rule
+- name: id-mandatory
+  status: "Checking if all resources have an id"
+  predicate: id.exists()
+  error-message: "Resource {{filepath}} must have an id"
+
+# example unique rule
+- action: unique
+  name: unique-id
+  status: "Checking if all resources have a unique id"
+  unique: id
+
+# Specify what you want to validate
+
+- action: validate
+  files: 
+    - /examples/*.xml
+    - /conformance/*.json
